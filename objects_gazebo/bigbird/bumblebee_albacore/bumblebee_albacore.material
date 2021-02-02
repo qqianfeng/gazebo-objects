@@ -7,7 +7,7 @@ material bumblebee_albacore
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../bumblebee_albacore/optimized_poisson_texture_mapped_mesh.png
+        texture ../bumblebee_albacore/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

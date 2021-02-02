@@ -7,7 +7,7 @@ material vo5_extra_body_volumizing_shampoo
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../vo5_extra_body_volumizing_shampoo/optimized_poisson_texture_mapped_mesh.png
+        texture ../vo5_extra_body_volumizing_shampoo/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

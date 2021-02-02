@@ -7,7 +7,7 @@ material nature_valley_crunchy_oats_n_honey
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../nature_valley_crunchy_oats_n_honey/optimized_poisson_texture_mapped_mesh.png
+        texture ../nature_valley_crunchy_oats_n_honey/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

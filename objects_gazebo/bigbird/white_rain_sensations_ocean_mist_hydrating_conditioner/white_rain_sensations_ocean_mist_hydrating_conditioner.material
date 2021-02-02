@@ -7,7 +7,7 @@ material white_rain_sensations_ocean_mist_hydrating_conditioner
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_poisson_texture_mapped_mesh.png
+        texture ../white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

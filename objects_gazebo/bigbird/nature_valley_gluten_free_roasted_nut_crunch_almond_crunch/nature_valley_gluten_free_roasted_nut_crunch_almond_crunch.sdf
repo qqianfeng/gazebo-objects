@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.01201352354238675 -0.004895055190754219 0.07180433111521257 1.545205649745845 -0.012797832935276563 -2.5426108236239426</pose> 
-        <mass>0.09588978696164191</mass>
+        <pose>0.013004093621819882 -0.003708693906911327 0.0700644005230505 1.579027282583953 -0.011997244490286075 -2.5517832085361762</pose> 
+        <mass>0.10336387006975993</mass>
         <inertia>
-          <ixx>0.0003395638797502571</ixx>
-          <ixy>-8.624337686156768e-22</ixy>
-          <ixz>1.1052005771758087e-20</ixz>
-          <iyy>0.0002066700868451491</iyy>
-          <iyz>1.183379898094259e-22</iyz>
-          <izz>0.00016337137799020025</izz>
+          <ixx>0.00037012768584743797</ixx>
+          <ixy>9.476069809552141e-22</ixy>
+          <ixz>6.807413284049765e-20</ixz>
+          <iyy>0.00023789691428559239</iyy>
+          <iyz>-7.058765001670034e-21</iyz>
+          <izz>0.00017204036432423372</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

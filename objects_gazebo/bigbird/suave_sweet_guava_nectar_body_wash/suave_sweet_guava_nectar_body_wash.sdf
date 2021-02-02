@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.00502211319216603 -0.005800137674100224 0.11191421879606978 3.1392546025169215 -0.0014909984570776087 -2.8936068302861404</pose> 
-        <mass>0.042927303379737165</mass>
+        <pose>0.006483597067130071 -0.00506054745110456 0.10315182797072935 -3.1415394111120056 0.002940219235359369 -2.888212209699006</pose> 
+        <mass>0.05270228161972665</mass>
         <inertia>
-          <ixx>0.00015280488801448376</ixx>
-          <ixy>1.4531792702001626e-20</ixy>
-          <ixz>3.431360687291457e-21</ixz>
-          <iyy>0.00014525041555434886</iyy>
-          <iyz>-1.2542995555233914e-20</iyz>
-          <izz>1.6265765541624417e-05</izz>
+          <ixx>0.0001982693481140818</ixx>
+          <ixy>1.537153738528384e-20</ixy>
+          <ixz>-1.2218512662173975e-21</ixz>
+          <iyy>0.0001881504291468228</iyy>
+          <iyz>5.090983067735382e-21</iyz>
+          <izz>2.395225027241932e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/suave_sweet_guava_nectar_body_wash/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/suave_sweet_guava_nectar_body_wash/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

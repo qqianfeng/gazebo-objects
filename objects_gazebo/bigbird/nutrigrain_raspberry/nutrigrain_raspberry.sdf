@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.009620741340186027 -0.0013032747507806738 0.07507911267436887 1.5650303325253199 0.0032339447302848863 -2.4923045829646773</pose> 
-        <mass>0.1296610410928592</mass>
+        <pose>0.01102322044208651 -0.0014354301965872052 0.07387532820678863 1.5636390608717228 -0.0009088212173648092 -2.497948509173135</pose> 
+        <mass>0.13750465548566668</mass>
         <inertia>
-          <ixx>0.0006282123032505187</ixx>
-          <ixy>1.1362805721226683e-22</ixy>
-          <ixz>-2.1053570403438154e-20</ixz>
-          <iyy>0.0004284569964665136</iyy>
-          <iyz>7.130915898290047e-22</iyz>
-          <izz>0.00024318855913459572</izz>
+          <ixx>0.0006783101251884953</ixx>
+          <ixy>3.5315726687772764e-22</ixy>
+          <ixz>1.446992106130065e-19</ixz>
+          <iyy>0.0004810672169751697</iyy>
+          <iyz>3.174931453584562e-22</iyz>
+          <izz>0.0002509653766264881</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nutrigrain_raspberry/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/nutrigrain_raspberry/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

@@ -7,7 +7,7 @@ material nature_valley_sweet_and_salty_nut_roasted_mix_nut
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../nature_valley_sweet_and_salty_nut_roasted_mix_nut/optimized_poisson_texture_mapped_mesh.png
+        texture ../nature_valley_sweet_and_salty_nut_roasted_mix_nut/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

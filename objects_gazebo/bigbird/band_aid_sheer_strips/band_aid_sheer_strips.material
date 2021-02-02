@@ -7,7 +7,7 @@ material band_aid_sheer_strips
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../band_aid_sheer_strips/optimized_poisson_texture_mapped_mesh.png
+        texture ../band_aid_sheer_strips/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

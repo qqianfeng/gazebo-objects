@@ -7,7 +7,7 @@ material quaker_chewy_peanut_butter_chocolate_chip
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../quaker_chewy_peanut_butter_chocolate_chip/optimized_poisson_texture_mapped_mesh.png
+        texture ../quaker_chewy_peanut_butter_chocolate_chip/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -7,7 +7,7 @@ material spam
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../spam/optimized_poisson_texture_mapped_mesh.png
+        texture ../spam/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

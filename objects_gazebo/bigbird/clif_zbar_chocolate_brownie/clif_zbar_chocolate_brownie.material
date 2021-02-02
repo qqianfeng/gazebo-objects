@@ -7,7 +7,7 @@ material clif_zbar_chocolate_brownie
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../clif_zbar_chocolate_brownie/optimized_poisson_texture_mapped_mesh.png
+        texture ../clif_zbar_chocolate_brownie/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

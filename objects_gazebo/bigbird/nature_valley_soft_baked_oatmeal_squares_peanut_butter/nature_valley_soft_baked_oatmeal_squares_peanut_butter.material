@@ -7,7 +7,7 @@ material nature_valley_soft_baked_oatmeal_squares_peanut_butter
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../nature_valley_soft_baked_oatmeal_squares_peanut_butter/optimized_poisson_texture_mapped_mesh.png
+        texture ../nature_valley_soft_baked_oatmeal_squares_peanut_butter/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

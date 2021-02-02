@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>-0.03426526612834242 -0.003586596757912654 0.11137906245948165 2.8449223845309035 0.1572753041730476 -2.954991671242146</pose> 
-        <mass>0.27871815072751593</mass>
+        <pose>-0.0026655546745232212 0.001095012992015946 0.10137799162106606 0.0684257988082603 -0.00515048073617621 -1.7559788019969884</pose> 
+        <mass>0.024892193488350714</mass>
         <inertia>
-          <ixx>0.001513316570643476</ixx>
-          <ixy>-1.9035723573193375e-19</ixy>
-          <ixz>-2.297446375768448e-20</ixz>
-          <iyy>0.001013091477739232</iyy>
-          <iyz>1.4205454833897722e-19</iyz>
-          <izz>0.0008542413571185382</izz>
+          <ixx>4.0843921191136916e-05</ixx>
+          <ixy>3.929460109193021e-21</ixy>
+          <ixz>7.168166000442524e-21</ixz>
+          <iyy>4.009095654861304e-05</iyy>
+          <iyz>-4.805059873216259e-22</iyz>
+          <izz>7.291413516083792e-06</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/palmolive_orange/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/palmolive_orange/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

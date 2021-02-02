@@ -7,7 +7,7 @@ material south_beach_good_to_go_dark_chocolate
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../south_beach_good_to_go_dark_chocolate/optimized_poisson_texture_mapped_mesh.png
+        texture ../south_beach_good_to_go_dark_chocolate/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -7,7 +7,7 @@ material expo_marker_red
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../expo_marker_red/optimized_poisson_texture_mapped_mesh.png
+        texture ../expo_marker_red/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

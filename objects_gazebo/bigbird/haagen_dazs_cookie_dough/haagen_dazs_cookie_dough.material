@@ -7,7 +7,7 @@ material haagen_dazs_cookie_dough
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../haagen_dazs_cookie_dough/optimized_poisson_texture_mapped_mesh.png
+        texture ../haagen_dazs_cookie_dough/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.009505008371804473 0.0033123809064876356 0.07590365384101663 1.589713323030901 -0.015790246416944383 -2.2842767814586917</pose> 
-        <mass>0.13045358947346017</mass>
+        <pose>0.011328773549596903 0.0034638737142849555 0.07512624724546586 1.541269494151783 -0.01611162800379166 -2.290448287720176</pose> 
+        <mass>0.13450506218065914</mass>
         <inertia>
-          <ixx>0.0005265166472310062</ixx>
-          <ixy>1.2382602994151412e-21</ixy>
-          <ixz>-6.709731162443794e-20</ixz>
-          <iyy>0.0003246983564464138</iyy>
-          <iyz>3.809974555491186e-22</iyz>
-          <izz>0.0002613111471233468</izz>
+          <ixx>0.000542142296350181</ixx>
+          <ixy>1.720515956889731e-21</ixy>
+          <ixz>-7.861883210434836e-20</ixz>
+          <iyy>0.00035081515275547676</iyy>
+          <iyz>-2.368292009328253e-21</iyz>
+          <izz>0.00026031307463621813</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

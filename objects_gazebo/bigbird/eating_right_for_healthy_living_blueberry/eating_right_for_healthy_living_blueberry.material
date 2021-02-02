@@ -7,7 +7,7 @@ material eating_right_for_healthy_living_blueberry
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../eating_right_for_healthy_living_blueberry/optimized_poisson_texture_mapped_mesh.png
+        texture ../eating_right_for_healthy_living_blueberry/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

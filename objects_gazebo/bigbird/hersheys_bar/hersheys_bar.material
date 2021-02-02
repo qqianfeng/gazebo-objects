@@ -7,7 +7,7 @@ material hersheys_bar
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../hersheys_bar/optimized_poisson_texture_mapped_mesh.png
+        texture ../hersheys_bar/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

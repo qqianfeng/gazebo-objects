@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>-0.0011847298852329673 0.0045549357583514 0.052487044002622524 -3.134279210148998 0.02952791841171477 -2.7892933801425266</pose> 
-        <mass>0.02180147824748765</mass>
+        <pose>0.0005043098821521756 0.0053629679648746756 0.0507474610331556 -3.100175213203313 0.04352722522565849 -2.829529947562849</pose> 
+        <mass>0.026223899752216884</mass>
         <inertia>
-          <ixx>2.6488266192672476e-05</ixx>
-          <ixy>4.124600567785426e-21</ixy>
-          <ixz>-5.758120193844231e-24</ixz>
-          <iyy>1.906640512332997e-05</iyy>
-          <iyz>1.1423157715243849e-21</iyz>
-          <izz>1.063148483968134e-05</izz>
+          <ixx>3.245053252608925e-05</ixx>
+          <ixy>-1.401684634642813e-21</ixy>
+          <ixz>3.0363826455587446e-22</ixz>
+          <iyy>2.2869447410555802e-05</iyy>
+          <iyz>1.5091249620216443e-22</iyz>
+          <izz>1.5114577035099251e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/crayola_24_crayons/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/crayola_24_crayons/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

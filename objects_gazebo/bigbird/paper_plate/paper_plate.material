@@ -7,7 +7,7 @@ material paper_plate
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../paper_plate/optimized_poisson_texture_mapped_mesh.png
+        texture ../paper_plate/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

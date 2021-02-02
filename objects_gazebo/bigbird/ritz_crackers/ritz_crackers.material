@@ -7,7 +7,7 @@ material ritz_crackers
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../ritz_crackers/optimized_poisson_texture_mapped_mesh.png
+        texture ../ritz_crackers/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

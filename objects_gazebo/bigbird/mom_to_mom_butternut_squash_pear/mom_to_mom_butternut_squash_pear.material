@@ -7,7 +7,7 @@ material mom_to_mom_butternut_squash_pear
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../mom_to_mom_butternut_squash_pear/optimized_poisson_texture_mapped_mesh.png
+        texture ../mom_to_mom_butternut_squash_pear/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

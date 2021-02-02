@@ -7,7 +7,7 @@ material cheez_it_white_cheddar
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../cheez_it_white_cheddar/optimized_poisson_texture_mapped_mesh.png
+        texture ../cheez_it_white_cheddar/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

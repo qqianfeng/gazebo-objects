@@ -7,7 +7,7 @@ material nature_valley_sweet_and_salty_nut_almond
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../nature_valley_sweet_and_salty_nut_almond/optimized_poisson_texture_mapped_mesh.png
+        texture ../nature_valley_sweet_and_salty_nut_almond/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

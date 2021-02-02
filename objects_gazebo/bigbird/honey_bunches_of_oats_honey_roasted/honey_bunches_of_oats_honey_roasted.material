@@ -7,7 +7,7 @@ material honey_bunches_of_oats_honey_roasted
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../honey_bunches_of_oats_honey_roasted/optimized_poisson_texture_mapped_mesh.png
+        texture ../honey_bunches_of_oats_honey_roasted/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

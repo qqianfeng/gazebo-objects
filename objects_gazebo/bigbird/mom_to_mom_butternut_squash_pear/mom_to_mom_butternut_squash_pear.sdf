@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.009193967508567229 0.0009397423058965414 0.07132815570068361 3.1396317557638134 -0.03818993318268155 -2.5967604492295284</pose> 
-        <mass>0.025308469210482083</mass>
+        <pose>0.011239651631474919 0.0032633987336099066 0.07176585301266387 3.1356935455188957 -0.025558376835151112 -2.5730410995167716</pose> 
+        <mass>0.031217958278512235</mass>
         <inertia>
-          <ixx>4.854181580857487e-05</ixx>
-          <ixy>2.2905891365742013e-21</ixy>
-          <ixz>7.258810167254433e-21</ixz>
-          <iyy>4.5562986998836544e-05</iyy>
-          <iyz>-1.277201701813967e-20</iyz>
-          <izz>7.626590737056486e-06</izz>
+          <ixx>6.181117409801756e-05</ixx>
+          <ixy>-1.9486022374062508e-20</ixy>
+          <ixz>1.2601637177308726e-21</ixz>
+          <iyy>5.651776313514306e-05</iyy>
+          <iyz>-4.364826436981837e-21</iyz>
+          <izz>1.226832850937959e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

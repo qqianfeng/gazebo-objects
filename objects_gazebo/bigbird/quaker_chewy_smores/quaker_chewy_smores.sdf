@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.004325129085799765 -0.005088778521631267 0.08575137052954157 3.132363161664498 -0.027084519019835638 2.705624482074536</pose> 
-        <mass>0.10874872390281244</mass>
+        <pose>0.004716973733212433 -0.0037978613001486243 0.08389887687279007 -3.113921178918828 -0.03324321930188743 2.7086955225758906</pose> 
+        <mass>0.11356740495590673</mass>
         <inertia>
-          <ixx>0.0004328663518687157</ixx>
-          <ixy>-6.61335241403817e-20</ixy>
-          <ixz>2.2268375748673216e-21</ixz>
-          <iyy>0.00025773982158226543</iyy>
-          <iyz>9.683648253189847e-22</iyz>
-          <izz>0.0002100186970985777</izz>
+          <ixx>0.00045352274170854196</ixx>
+          <ixy>6.562501410839256e-20</ixy>
+          <ixz>4.898967704534876e-21</ixz>
+          <iyy>0.00026595140381326126</iyy>
+          <iyz>-3.71939088136775e-21</iyz>
+          <izz>0.0002286796153417918</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/quaker_chewy_smores/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/quaker_chewy_smores/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

@@ -7,7 +7,7 @@ material krylon_low_odor_clear_finish
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../krylon_low_odor_clear_finish/optimized_poisson_texture_mapped_mesh.png
+        texture ../krylon_low_odor_clear_finish/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

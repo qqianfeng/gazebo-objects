@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.0049931100534965 -0.002787818687302103 0.06352442685548987 -0.012420788789577645 -0.01161270907404868 -2.055229614367877</pose> 
-        <mass>0.03644121703861219</mass>
+        <pose>0.005421196987074197 -0.0026760179720042164 0.06268279779864787 3.107497279692052 0.010427488698075976 -0.8114061880161663</pose> 
+        <mass>0.039711662220987716</mass>
         <inertia>
-          <ixx>4.7202729775306205e-05</ixx>
-          <ixy>8.402163515583247e-21</ixy>
-          <ixz>-1.7874994760434338e-20</ixz>
-          <iyy>4.718884397494287e-05</iyy>
-          <iyz>-8.614074910263698e-21</iyz>
-          <izz>1.8528314002969323e-05</izz>
+          <ixx>5.1327439855842035e-05</ixx>
+          <ixy>1.1854698069814132e-20</ixy>
+          <ixz>-1.0815679352837485e-20</ixz>
+          <iyy>5.055634821971619e-05</iyy>
+          <iyz>-1.5747483410562783e-20</iyz>
+          <izz>2.2698754451516812e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/campbells_soup_at_hand_creamy_tomato/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/campbells_soup_at_hand_creamy_tomato/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

@@ -7,7 +7,7 @@ material spongebob_squarepants_fruit_snaks
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../spongebob_squarepants_fruit_snaks/optimized_poisson_texture_mapped_mesh.png
+        texture ../spongebob_squarepants_fruit_snaks/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

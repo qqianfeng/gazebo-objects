@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.0068395143174480545 0.002298687349800761 0.08849746740746306 -3.13652068750569 0.006343359770506734 -2.5580225402909473</pose> 
-        <mass>0.15947210436924883</mass>
+        <pose>0.007419456748498663 0.003829795217206244 0.08757391247157834 3.13071320081857 0.008411008490499538 -2.566949917670076</pose> 
+        <mass>0.1645186349242316</mass>
         <inertia>
-          <ixx>0.0006021357454037909</ixx>
-          <ixy>-3.986833797006518e-20</ixy>
-          <ixz>5.058619666899653e-21</ixz>
-          <iyy>0.0004488604892928815</iyy>
-          <iyz>-3.6702032891658524e-21</iyz>
-          <izz>0.0002847286389224411</izz>
+          <ixx>0.0006240123383081539</ixx>
+          <ixy>-1.375682585800997e-19</ixy>
+          <ixz>7.5582089689026265e-22</ixz>
+          <iyy>0.00045208359053323867</iyy>
+          <iyz>-7.333798166335557e-22</iyz>
+          <izz>0.0003161338148172267</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/fruit_by_the_foot/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/fruit_by_the_foot/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

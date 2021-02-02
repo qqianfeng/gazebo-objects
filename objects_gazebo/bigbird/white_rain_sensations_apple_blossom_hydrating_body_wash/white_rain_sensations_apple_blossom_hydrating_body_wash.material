@@ -7,7 +7,7 @@ material white_rain_sensations_apple_blossom_hydrating_body_wash
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../white_rain_sensations_apple_blossom_hydrating_body_wash/optimized_poisson_texture_mapped_mesh.png
+        texture ../white_rain_sensations_apple_blossom_hydrating_body_wash/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

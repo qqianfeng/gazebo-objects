@@ -7,7 +7,7 @@ material crystal_hot_sauce
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../crystal_hot_sauce/optimized_poisson_texture_mapped_mesh.png
+        texture ../crystal_hot_sauce/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

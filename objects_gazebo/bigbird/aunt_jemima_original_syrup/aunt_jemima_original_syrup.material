@@ -7,7 +7,7 @@ material aunt_jemima_original_syrup
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../aunt_jemima_original_syrup/optimized_poisson_texture_mapped_mesh.png
+        texture ../aunt_jemima_original_syrup/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -7,7 +7,7 @@ material blue_clover_baby_toy
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../blue_clover_baby_toy/optimized_poisson_texture_mapped_mesh.png
+        texture ../blue_clover_baby_toy/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

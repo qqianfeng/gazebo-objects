@@ -7,7 +7,7 @@ material mahatma_rice
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../mahatma_rice/optimized_poisson_texture_mapped_mesh.png
+        texture ../mahatma_rice/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

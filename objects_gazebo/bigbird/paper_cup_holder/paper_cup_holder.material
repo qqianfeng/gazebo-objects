@@ -7,7 +7,7 @@ material paper_cup_holder
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../paper_cup_holder/optimized_poisson_texture_mapped_mesh.png
+        texture ../paper_cup_holder/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

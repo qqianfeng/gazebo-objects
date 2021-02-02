@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>-0.004935733589333164 -0.015372018336617338 0.09423316953473317 3.1354040957994145 0.034375523620901696 2.8576578591674284</pose> 
-        <mass>0.14541739664112086</mass>
+        <pose>-0.004377179149907652 -0.0147204365152445 0.09264021231525225 3.1397575661854265 0.02954721257352075 2.853600819471062</pose> 
+        <mass>0.15186604713360083</mass>
         <inertia>
-          <ixx>0.0006577808628300172</ixx>
-          <ixy>-1.0631549716616062e-20</ixy>
-          <ixz>1.4011824168261215e-22</ixz>
-          <iyy>0.0004314665758455555</iyy>
-          <iyz>-3.0024033897234296e-20</iyz>
-          <izz>0.00029285673362808263</izz>
+          <ixx>0.0006947281610153412</ixx>
+          <ixy>4.690376930139573e-20</ixy>
+          <ixz>-1.9296973369823654e-21</ixz>
+          <iyy>0.0004417261448531862</iyy>
+          <iyz>3.0391699429157804e-21</iyz>
+          <izz>0.00032943681878434345</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/spongebob_squarepants_fruit_snaks/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/spongebob_squarepants_fruit_snaks/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

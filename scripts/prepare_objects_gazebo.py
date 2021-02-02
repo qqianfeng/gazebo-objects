@@ -14,11 +14,12 @@ import sys
 
 base_folder = '/home/vm/object_datasets'
 
-datasets = ['kit', 'ycb', 'bigbird']
+# datasets = ['kit', 'ycb', 'bigbird']
+datasets = ['bigbird']
 
 if __name__ == "__main__":
-    letter = input(
-        'Are you sure that you want to execute this? Only execute if you have all the necessary raw data from ycb, kit, bibird in a directory called objects_raw. Press y to continue n to abort'
+    letter = raw_input(
+        "Are you sure that you want to execute this? Only execute if you have all the necessary raw data from ycb, kit, bibird in a directory called objects_raw. Press y to continue n to abort: "
     )
     if letter == 'y':
         pass
@@ -111,14 +112,17 @@ if __name__ == "__main__":
             elif dataset == 'bigbird':
                 visual_mesh_path = os.path.join(objects_raw_folder, model_name, model_name,
                                                 'textured_meshes',
-                                                'optimized_poisson_texture_mapped_mesh.obj')
+                                                'optimized_tsdf_texture_mapped_mesh.obj')
                 collision_mesh_path = os.path.join(objects_raw_folder, model_name, model_name,
                                                    'meshes', model_name + '_250_collision.obj')
                 texture_mesh_path = os.path.join(objects_raw_folder, model_name, model_name,
                                                  'textured_meshes',
-                                                 'optimized_poisson_texture_mapped_mesh.png')
+                                                 'optimized_tsdf_texture_mapped_mesh.png')
                 inertia_mesh_path = os.path.join(objects_raw_folder, model_name, model_name,
                                                  'meshes', model_name + '_convex_hull.obj')
+                mtl_mesh_path = os.path.join(objects_raw_folder, model_name, model_name,
+                                             'textured_meshes',
+                                             'optimized_tsdf_texture_mapped_mesh.mtl')
 
             # Copy the material, visual and collision meshes to their new destinations
             shutil.copyfile(texture_mesh_path,
@@ -133,6 +137,9 @@ if __name__ == "__main__":
                     collision_mesh_path,
                     os.path.join(model_dest_folder,
                                  collision_mesh_path.split('/')[-1]))
+                shutil.copyfile(mtl_mesh_path,
+                                os.path.join(model_dest_folder,
+                                             mtl_mesh_path.split('/')[-1]))
             else:
                 collision_mesh = trimesh.load(collision_mesh_path)
 

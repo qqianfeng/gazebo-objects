@@ -7,7 +7,7 @@ material krylon_crystal_clear
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../krylon_crystal_clear/optimized_poisson_texture_mapped_mesh.png
+        texture ../krylon_crystal_clear/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

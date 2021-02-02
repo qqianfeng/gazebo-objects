@@ -7,7 +7,7 @@ material detergent
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../detergent/optimized_poisson_texture_mapped_mesh.png
+        texture ../detergent/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

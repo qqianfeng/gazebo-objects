@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.0026194139552581596 -0.005532521107963029 0.11036670059734714 -3.139322388808202 0.013997103692212663 -0.034511927360753154</pose> 
-        <mass>0.04945111931796846</mass>
+        <pose>0.003768806733128963 -0.0049041806415245056 0.10439461267852092 3.13961111530257 0.01209803447414782 -0.0036754607780346915</pose> 
+        <mass>0.06175602806274389</mass>
         <inertia>
-          <ixx>0.00017781079834368143</ixx>
-          <ixy>5.544241000203519e-22</ixy>
-          <ixz>-1.6154804271656477e-20</ixz>
-          <iyy>0.0001689939827385725</iyy>
-          <iyz>-7.691378270427667e-20</iyz>
-          <izz>2.069063056241359e-05</izz>
+          <ixx>0.00024859117009384997</ixx>
+          <ixy>1.0081378159031405e-21</ixy>
+          <ixz>2.0272481564754843e-21</ixz>
+          <iyy>0.00023366899637320524</iyy>
+          <iyz>5.783116946006955e-21</iyz>
+          <izz>3.263574045949132e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

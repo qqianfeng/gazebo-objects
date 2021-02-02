@@ -7,7 +7,7 @@ material bai5_sumatra_dragonfruit
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../bai5_sumatra_dragonfruit/optimized_poisson_texture_mapped_mesh.png
+        texture ../bai5_sumatra_dragonfruit/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

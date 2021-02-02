@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.015085474606907935 -0.0037654028848160587 0.07343392497750717 1.5674368675387074 -0.0166696728493068 -2.1293415477093567</pose> 
-        <mass>0.09800453415012259</mass>
+        <pose>0.01578973083462967 -0.002594172977169135 0.07213066522105015 1.5690148076244077 -0.01402046296903289 -2.144653414241004</pose> 
+        <mass>0.10342441953584942</mass>
         <inertia>
-          <ixx>0.0003441741965161078</ixx>
-          <ixy>-5.610133499018634e-22</ixy>
-          <ixz>3.9168631827617646e-21</ixz>
-          <iyy>0.00019982858782389293</iyy>
-          <iyz>1.0725024536050864e-23</iyz>
-          <izz>0.0001770501869892024</izz>
+          <ixx>0.0003653737959306068</ixx>
+          <ixy>1.3365548086385733e-21</ixy>
+          <ixz>-8.57358070716239e-21</ixz>
+          <iyy>0.00022417022119397304</iyy>
+          <iyz>4.841710783556037e-22</iyz>
+          <izz>0.00018140033651496112</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

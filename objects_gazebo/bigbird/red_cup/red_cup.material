@@ -7,7 +7,7 @@ material red_cup
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../red_cup/optimized_poisson_texture_mapped_mesh.png
+        texture ../red_cup/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

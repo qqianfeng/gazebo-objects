@@ -7,7 +7,7 @@ material honey_bunches_of_oats_with_almonds
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../honey_bunches_of_oats_with_almonds/optimized_poisson_texture_mapped_mesh.png
+        texture ../honey_bunches_of_oats_with_almonds/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

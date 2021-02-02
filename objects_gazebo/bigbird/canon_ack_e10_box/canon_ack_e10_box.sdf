@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.004262864319416597 -0.002377661712173268 0.09292297835331405 3.135340258176682 -0.02406702320389953 2.6790442186745613</pose> 
-        <mass>0.0820341630032533</mass>
+        <pose>0.0050638095119359345 -0.0017624912220324505 0.08943973385349428 3.1381505235632656 -0.024781377214279872 2.684208437661448</pose> 
+        <mass>0.09219330686975427</mass>
         <inertia>
-          <ixx>0.00025975744916536696</ixx>
-          <ixy>-4.010388301143758e-20</ixy>
-          <ixz>5.764406362430453e-21</ixz>
-          <iyy>0.0002349082639078589</iyy>
-          <iyz>6.699140411459414e-21</iyz>
-          <izz>6.556597033717185e-05</izz>
+          <ixx>0.00028864289807023003</ixx>
+          <ixy>-1.3476173560765013e-20</ixy>
+          <ixz>1.1780549418390618e-20</ixz>
+          <iyy>0.00026223711363290014</iyy>
+          <iyz>1.1430668623751036e-20</iyz>
+          <izz>8.381659645809014e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/canon_ack_e10_box/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/canon_ack_e10_box/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

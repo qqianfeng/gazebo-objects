@@ -7,7 +7,7 @@ material dove_beauty_cream_bar
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../dove_beauty_cream_bar/optimized_poisson_texture_mapped_mesh.png
+        texture ../dove_beauty_cream_bar/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

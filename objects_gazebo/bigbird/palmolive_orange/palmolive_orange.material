@@ -7,7 +7,7 @@ material palmolive_orange
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../palmolive_orange/optimized_poisson_texture_mapped_mesh.png
+        texture ../palmolive_orange/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

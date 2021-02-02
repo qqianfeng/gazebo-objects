@@ -7,7 +7,7 @@ material krylon_matte_finish
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../krylon_matte_finish/optimized_poisson_texture_mapped_mesh.png
+        texture ../krylon_matte_finish/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

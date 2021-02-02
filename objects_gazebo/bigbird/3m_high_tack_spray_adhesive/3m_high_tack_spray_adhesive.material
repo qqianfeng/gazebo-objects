@@ -7,7 +7,7 @@ material 3m_high_tack_spray_adhesive
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../3m_high_tack_spray_adhesive/optimized_poisson_texture_mapped_mesh.png
+        texture ../3m_high_tack_spray_adhesive/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

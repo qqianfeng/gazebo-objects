@@ -7,7 +7,7 @@ material zilla_night_black_heat
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../zilla_night_black_heat/optimized_poisson_texture_mapped_mesh.png
+        texture ../zilla_night_black_heat/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

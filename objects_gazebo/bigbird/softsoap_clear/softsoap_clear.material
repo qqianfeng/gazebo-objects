@@ -7,7 +7,7 @@ material softsoap_clear
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../softsoap_clear/optimized_poisson_texture_mapped_mesh.png
+        texture ../softsoap_clear/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

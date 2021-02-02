@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.010491642352812906 0.01487862636969084 0.056750559805095906 3.123170567597963 -0.013343838147378205 0.5497077465661009</pose> 
-        <mass>0.06158600756649746</mass>
+        <pose>0.011706491801282148 0.015516223959093236 0.0559022219223109 3.1414801944901827 0.00034480931976144964 -1.7602627701179887</pose> 
+        <mass>0.06484913502237656</mass>
         <inertia>
-          <ixx>8.463752274900501e-05</ixx>
-          <ixy>5.9193528119752105e-22</ixy>
-          <ixz>2.5288483399166347e-22</ixz>
-          <iyy>8.416186550876041e-05</iyy>
-          <iyz>3.7550285616217754e-21</iyz>
-          <izz>5.64835396875818e-05</izz>
+          <ixx>8.949335587052157e-05</ixx>
+          <ixy>5.776680817614776e-21</ixy>
+          <ixz>-1.1825481758332732e-22</ixz>
+          <iyy>8.832846972267276e-05</iyy>
+          <iyz>2.0803622481137415e-23</iyz>
+          <izz>6.539979933470645e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/progresso_new_england_clam_chowder/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/progresso_new_england_clam_chowder/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

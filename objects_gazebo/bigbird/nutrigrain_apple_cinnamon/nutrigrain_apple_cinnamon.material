@@ -7,7 +7,7 @@ material nutrigrain_apple_cinnamon
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../nutrigrain_apple_cinnamon/optimized_poisson_texture_mapped_mesh.png
+        texture ../nutrigrain_apple_cinnamon/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -7,7 +7,7 @@ material pringles_bbq
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../pringles_bbq/optimized_poisson_texture_mapped_mesh.png
+        texture ../pringles_bbq/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

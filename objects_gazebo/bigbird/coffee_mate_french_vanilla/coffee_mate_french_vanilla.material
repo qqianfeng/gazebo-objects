@@ -7,7 +7,7 @@ material coffee_mate_french_vanilla
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../coffee_mate_french_vanilla/optimized_poisson_texture_mapped_mesh.png
+        texture ../coffee_mate_french_vanilla/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>-0.000566193190437784 0.0006818106363836024 0.08743778230441136 -0.0006293870342092057 0.04179634898742956 0.33353850694921355</pose> 
-        <mass>0.021361326709812386</mass>
+        <pose>-0.00014436353098133006 0.0014185911579525617 0.07933470281575629 -3.1078580653273753 0.0223361182407063 1.3640838268773923</pose> 
+        <mass>0.02623282392945838</mass>
         <inertia>
-          <ixx>4.222912405253565e-05</ixx>
-          <ixy>-7.738069767964801e-21</ixy>
-          <ixz>-3.771576340723164e-21</ixz>
-          <iyy>4.2125725773804534e-05</iyy>
-          <iyz>-9.129004459807849e-21</iyz>
-          <izz>4.697300792127478e-06</izz>
+          <ixx>5.971404706041841e-05</ixx>
+          <ixy>3.0102617693102685e-21</ixy>
+          <ixz>3.582045630012294e-21</ixz>
+          <iyy>5.959020047985964e-05</iyy>
+          <iyz>4.064806131175832e-22</iyz>
+          <izz>7.07357626337395e-06</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/cholula_chipotle_hot_sauce/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/cholula_chipotle_hot_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

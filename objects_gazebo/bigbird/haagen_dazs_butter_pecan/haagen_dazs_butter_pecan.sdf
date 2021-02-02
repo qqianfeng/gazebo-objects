@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.003444021737067686 -0.0050437396546514825 0.059647964432340966 0.04997718146362355 -0.03727566060218061 -1.6338553310277446</pose> 
-        <mass>0.05208834972190196</mass>
+        <pose>0.004573280526083763 -0.004501420807844326 0.05740725266480443 -3.1402461541005002 0.01387906453624184 -0.8701407834934775</pose> 
+        <mass>0.059883124507765846</mass>
         <inertia>
-          <ixx>6.291368502844522e-05</ixx>
-          <ixy>-1.2228880061399941e-21</ixy>
-          <ixz>7.914113978499297e-21</ixz>
-          <iyy>6.278048442462535e-05</iyy>
-          <iyz>8.80598884257098e-22</iyz>
-          <izz>4.509755786311327e-05</izz>
+          <ixx>7.530818634200777e-05</ixx>
+          <ixy>-8.015670240127828e-21</ixy>
+          <ixz>-9.141382707400528e-22</ixz>
+          <iyy>7.462286116929278e-05</iyy>
+          <iyz>-1.170065563231206e-21</iyz>
+          <izz>5.9921193315015455e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/haagen_dazs_butter_pecan/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/haagen_dazs_butter_pecan/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.002199314579086761 -8.832137589209132e-05 0.11207442209121797 -3.134232857068785 0.02724541286384859 -0.10495795495932234</pose> 
-        <mass>0.042849440070783645</mass>
+        <pose>0.003154458255397068 0.0005107195973028858 0.10060602466248283 -3.140176546722504 0.025731361531502177 -0.08019021715131812</pose> 
+        <mass>0.05226116082687432</mass>
         <inertia>
-          <ixx>0.00012946980552354715</ixx>
-          <ixy>-4.746424989838047e-22</ixy>
-          <ixz>-1.5327233411354647e-20</ixz>
-          <iyy>0.00012173456120217171</iyy>
-          <iyz>-1.4283137685989575e-20</iyz>
-          <izz>1.725443742275599e-05</izz>
+          <ixx>0.00018233611930891587</ixx>
+          <ixy>-2.16056684512855e-21</ixy>
+          <ixz>-1.3839964897612314e-20</ixz>
+          <iyy>0.00017231459910366313</iyy>
+          <iyz>-3.193804637439888e-20</iyz>
+          <izz>2.43414055574935e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/vo5_tea_therapy_healthful_green_tea_smoothing_shampoo/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/vo5_tea_therapy_healthful_green_tea_smoothing_shampoo/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>

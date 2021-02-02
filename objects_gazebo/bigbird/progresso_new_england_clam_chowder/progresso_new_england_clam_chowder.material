@@ -7,7 +7,7 @@ material progresso_new_england_clam_chowder
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../progresso_new_england_clam_chowder/optimized_poisson_texture_mapped_mesh.png
+        texture ../progresso_new_england_clam_chowder/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

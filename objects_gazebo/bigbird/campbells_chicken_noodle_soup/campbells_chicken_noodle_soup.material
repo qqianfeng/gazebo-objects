@@ -7,7 +7,7 @@ material campbells_chicken_noodle_soup
       texture_unit
       {
         // Relative to the location of the material script
-        texture ../campbells_chicken_noodle_soup/optimized_poisson_texture_mapped_mesh.png
+        texture ../campbells_chicken_noodle_soup/optimized_tsdf_texture_mapped_mesh.png
       }
     }
   }

@@ -4,15 +4,15 @@
     <static>false</static>
     <link name="link">
       <inertial>       
-        <pose>0.008486027468755293 0.005252355879688314 0.05873008622474224 -3.1329084187306933 0.024568083819332627 1.3094435131217759</pose> 
-        <mass>0.05722854564823832</mass>
+        <pose>0.009167223551875802 0.005890063134727028 0.057431929507393044 -3.131973723580226 -0.002263655946118573 -2.91991131821713</pose> 
+        <mass>0.06164745413836462</mass>
         <inertia>
-          <ixx>7.093537881272369e-05</ixx>
-          <ixy>7.332005922293245e-21</ixy>
-          <ixz>-3.3911026597712734e-20</ixz>
-          <iyy>7.033167251045263e-05</iyy>
-          <iyz>4.508331792320198e-21</iyz>
-          <izz>5.4496984073311806e-05</izz>
+          <ixx>7.779257442617299e-05</ixx>
+          <ixy>-8.611604653089339e-21</ixy>
+          <ixz>3.8697504640529535e-23</ixz>
+          <iyy>7.731488260322061e-05</iyy>
+          <iyz>-2.395903897302756e-22</iyz>
+          <izz>6.415115606089477e-05</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -34,7 +34,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/haagen_dazs_cookie_dough/optimized_poisson_texture_mapped_mesh.obj</uri>
+            <uri>model://bigbird/haagen_dazs_cookie_dough/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
