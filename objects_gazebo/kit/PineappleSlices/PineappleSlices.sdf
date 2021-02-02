@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="PineappleSlices">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0024821286580378457 0.02016298709154956 -0.00040758660891613446 1.5715955731470472 0.8361840539402121 -3.133033010375148</pose> 
+        <mass>0.06653996503614625</mass>
+        <inertia>
+          <ixx>0.00010349179725086917</ixx>
+          <ixy>2.402629513499433e-20</ixy>
+          <ixz>-9.611061060079187e-21</ixz>
+          <iyy>0.00010319121321462133</iyy>
+          <iyz>9.363991949109703e-21</iyz>
+          <izz>6.150845781020466e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/PineappleSlices/PineappleSlices_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/PineappleSlices/PineappleSlices_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/PineappleSlices/PineappleSlices.material</uri>
+            <name>PineappleSlices</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

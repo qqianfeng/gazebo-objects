@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Sauerkraut">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00017395144392666584 0.021687617596055395 -0.0041044264144471845 1.5426132894129487 -0.09599556580194861 -3.139324692151271</pose> 
+        <mass>0.0953570673091761</mass>
+        <inertia>
+          <ixx>0.0001730526940180882</ixx>
+          <ixy>-2.6565119378888816e-21</ixy>
+          <ixz>-1.130620360784467e-21</ixz>
+          <iyy>0.0001724754509125192</iyy>
+          <iyz>-1.6731656104759546e-20</iyz>
+          <izz>0.00012162671155775592</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Sauerkraut/Sauerkraut_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Sauerkraut/Sauerkraut_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Sauerkraut/Sauerkraut.material</uri>
+            <name>Sauerkraut</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

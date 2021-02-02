@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="TomatoSoup">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0009365776414567448 0.013862144592814334 0.0009260902718112321 -1.7134122495196602 1.5400049134657745 3.0054645204199364</pose> 
+        <mass>0.03597604383441202</mass>
+        <inertia>
+          <ixx>4.0768841584134555e-05</ixx>
+          <ixy>-1.5658181678703603e-21</ixy>
+          <ixz>-2.4849332371738995e-21</ixz>
+          <iyy>4.071136478750259e-05</iyy>
+          <iyz>1.3278860949490672e-23</iyz>
+          <izz>2.0368878503168474e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/TomatoSoup/TomatoSoup_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/TomatoSoup/TomatoSoup_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/TomatoSoup/TomatoSoup.material</uri>
+            <name>TomatoSoup</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

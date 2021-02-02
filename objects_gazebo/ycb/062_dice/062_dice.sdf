@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="062_dice">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.01122473006561931 0.009193421351383985 0.008415601214903753 -3.107213501302882 -0.004619173514300538 1.316396016254344</pose> 
+        <mass>0.00043791240057642364</mass>
+        <inertia>
+          <ixx>1.9251365017925102e-08</ixx>
+          <ixy>-3.366024483321365e-24</ixy>
+          <ixz>-2.029523078933226e-24</ixz>
+          <iyy>1.91396029675606e-08</iyy>
+          <iyz>-5.329815965841953e-25</iyz>
+          <izz>1.8198483992494567e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/062_dice/062_dice_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/062_dice/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/062_dice/062_dice.material</uri>
+            <name>062_dice</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

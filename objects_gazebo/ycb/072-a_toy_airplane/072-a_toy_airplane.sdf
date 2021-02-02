@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="072-a_toy_airplane">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.03641376852445169 0.02111059426629102 0.08523355111686143 0.07150627176419652 -1.4369397943421447 -1.5848932619775498</pose> 
+        <mass>0.6385413702222174</mass>
+        <inertia>
+          <ixx>0.004448963631594207</ixx>
+          <ixy>-1.1624738275041307e-20</ixy>
+          <ixz>2.137960277751723e-19</ixz>
+          <iyy>0.0035566842393737657</iyy>
+          <iyz>-5.545044284453274e-20</iyz>
+          <izz>0.003109709892472095</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/072-a_toy_airplane/072-a_toy_airplane_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/072-a_toy_airplane/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/072-a_toy_airplane/072-a_toy_airplane.material</uri>
+            <name>072-a_toy_airplane</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

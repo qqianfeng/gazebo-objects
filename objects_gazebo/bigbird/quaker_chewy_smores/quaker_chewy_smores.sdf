@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="quaker_chewy_smores">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004325129085799765 -0.005088778521631267 0.08575137052954157 3.132363161664498 -0.027084519019835638 2.705624482074536</pose> 
+        <mass>0.10874872390281244</mass>
+        <inertia>
+          <ixx>0.0004328663518687157</ixx>
+          <ixy>-6.61335241403817e-20</ixy>
+          <ixz>2.2268375748673216e-21</ixz>
+          <iyy>0.00025773982158226543</iyy>
+          <iyz>9.683648253189847e-22</iyz>
+          <izz>0.0002100186970985777</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/quaker_chewy_smores/quaker_chewy_smores_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/quaker_chewy_smores/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/quaker_chewy_smores/quaker_chewy_smores.material</uri>
+            <name>quaker_chewy_smores</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

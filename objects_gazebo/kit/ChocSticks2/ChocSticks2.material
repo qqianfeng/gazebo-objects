@@ -1,0 +1,14 @@
+material ChocSticks2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../ChocSticks2/ChocSticks2_25k_tex.png
+      }
+    }
+  }
+}

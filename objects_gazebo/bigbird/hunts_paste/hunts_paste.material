@@ -1,0 +1,14 @@
+material hunts_paste
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../hunts_paste/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

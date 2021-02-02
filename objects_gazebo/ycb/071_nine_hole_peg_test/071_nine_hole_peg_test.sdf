@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="071_nine_hole_peg_test">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0003073368348358941 0.018598219900160806 0.020011908957137066 -0.17747141559858148 -1.5680820727511113 -1.3173670878891117</pose> 
+        <mass>0.07041265552868826</mass>
+        <inertia>
+          <ixx>0.0002065317888939805</ixx>
+          <ixy>4.421213104259762e-23</ixy>
+          <ixz>-1.601200254416235e-21</ixz>
+          <iyy>0.000125370784374135</iyy>
+          <iyz>-1.0079723083525242e-20</iyz>
+          <izz>9.957766820117454e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/071_nine_hole_peg_test/071_nine_hole_peg_test_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/071_nine_hole_peg_test/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/071_nine_hole_peg_test/071_nine_hole_peg_test.material</uri>
+            <name>071_nine_hole_peg_test</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

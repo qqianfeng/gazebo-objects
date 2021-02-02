@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="BroccoliSoup">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.005990281702246245 0.028067924538085185 0.00041597663438074984 1.5670273006859725 0.3948773519608746 -3.1261340150425547</pose> 
+        <mass>0.040575345259851556</mass>
+        <inertia>
+          <ixx>8.508842459351003e-05</ixx>
+          <ixy>2.4948710162447482e-21</ixy>
+          <ixz>8.373074362511747e-21</ixz>
+          <iyy>5.91360094235298e-05</iyy>
+          <iyz>-2.3510285683772253e-20</iyz>
+          <izz>3.3439598696339286e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/BroccoliSoup/BroccoliSoup_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/BroccoliSoup/BroccoliSoup_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/BroccoliSoup/BroccoliSoup.material</uri>
+            <name>BroccoliSoup</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

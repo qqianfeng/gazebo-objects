@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="TomatoHerbSauce">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0002563380597626488 0.017335437527471537 -8.8928475348763e-05 -1.586771239041483 0.3169782836011999 3.1253082935325027</pose> 
+        <mass>0.0420672803755552</mass>
+        <inertia>
+          <ixx>6.401471576499472e-05</ixx>
+          <ixy>1.5174070377012471e-22</ixy>
+          <ixz>-7.394132753893932e-21</ixz>
+          <iyy>5.0834815949145084e-05</iyy>
+          <iyz>-2.1275028794335476e-20</iyz>
+          <izz>2.9384803518360506e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/TomatoHerbSauce/TomatoHerbSauce_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/TomatoHerbSauce/TomatoHerbSauce_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/TomatoHerbSauce/TomatoHerbSauce.material</uri>
+            <name>TomatoHerbSauce</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

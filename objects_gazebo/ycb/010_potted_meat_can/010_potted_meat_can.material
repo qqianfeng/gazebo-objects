@@ -1,0 +1,14 @@
+material 010_potted_meat_can
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../010_potted_meat_can/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material campbells_chicken_noodle_soup
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../campbells_chicken_noodle_soup/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

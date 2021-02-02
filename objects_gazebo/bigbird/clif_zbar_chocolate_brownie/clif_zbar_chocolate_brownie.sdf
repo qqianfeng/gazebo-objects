@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="clif_zbar_chocolate_brownie">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0067578922353974825 -0.0037059942222145816 0.06997728126973721 1.5638022732954024 0.020684311462592104 -2.510284152952529</pose> 
+        <mass>0.09977737839451084</mass>
+        <inertia>
+          <ixx>0.00037369524838009265</ixx>
+          <ixy>-2.9050340871816596e-22</ixy>
+          <ixz>-2.1748137140300222e-20</ixz>
+          <iyy>0.00023939114510101515</iyy>
+          <iyz>-1.4380901792134384e-21</iyz>
+          <izz>0.0001658285365837048</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/clif_zbar_chocolate_brownie/clif_zbar_chocolate_brownie_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/clif_zbar_chocolate_brownie/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/clif_zbar_chocolate_brownie/clif_zbar_chocolate_brownie.material</uri>
+            <name>clif_zbar_chocolate_brownie</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

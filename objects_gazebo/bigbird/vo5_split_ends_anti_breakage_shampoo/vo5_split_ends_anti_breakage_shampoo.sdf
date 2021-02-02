@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="vo5_split_ends_anti_breakage_shampoo">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002549730718794765 0.0001727719849650633 0.10792771157241793 3.1319394671548584 0.00046151653629661403 -3.0805982137273444</pose> 
+        <mass>0.03756646816488999</mass>
+        <inertia>
+          <ixx>0.00011195099918509745</ixx>
+          <ixy>-1.5218257819353506e-21</ixy>
+          <ixz>-3.5314225633121016e-23</ixz>
+          <iyy>0.00010564050041657996</iyy>
+          <iyz>3.959856493124218e-22</iyz>
+          <izz>1.341088626033598e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/vo5_split_ends_anti_breakage_shampoo/vo5_split_ends_anti_breakage_shampoo_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/vo5_split_ends_anti_breakage_shampoo/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/vo5_split_ends_anti_breakage_shampoo/vo5_split_ends_anti_breakage_shampoo.material</uri>
+            <name>vo5_split_ends_anti_breakage_shampoo</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

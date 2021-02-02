@@ -1,0 +1,14 @@
+material VitalisCereals
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../VitalisCereals/VitalisCereals_25k_tex.png
+      }
+    }
+  }
+}

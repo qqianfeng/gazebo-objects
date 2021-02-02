@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="clif_crunch_white_chocolate_macademia_nut">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.011765428765569184 -0.0033052155167572375 0.07613644491164556 1.591289793739364 0.008823703041447552 -2.3516537874020416</pose> 
+        <mass>0.11464195280274708</mass>
+        <inertia>
+          <ixx>0.0004370444048026956</ixx>
+          <ixy>-2.3021010794368436e-21</ixy>
+          <ixz>-5.807158092423685e-20</ixz>
+          <iyy>0.0002591949570590435</iyy>
+          <iyz>-1.4589051955614075e-21</iyz>
+          <izz>0.000222539905743825</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/clif_crunch_white_chocolate_macademia_nut/clif_crunch_white_chocolate_macademia_nut_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/clif_crunch_white_chocolate_macademia_nut/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/clif_crunch_white_chocolate_macademia_nut/clif_crunch_white_chocolate_macademia_nut.material</uri>
+            <name>clif_crunch_white_chocolate_macademia_nut</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

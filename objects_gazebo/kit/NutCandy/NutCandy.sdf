@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="NutCandy">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004279052839389405 0.049515790939236214 -0.0012137420346301918 1.575000392982093 0.36097253269577073 -3.1257675813784584</pose> 
+        <mass>0.09318794359784996</mass>
+        <inertia>
+          <ixx>0.00035640237654804195</ixx>
+          <ixy>-1.427607894737705e-20</ixy>
+          <ixz>-1.8847117101969926e-20</ixz>
+          <iyy>0.00024059861417008853</iyy>
+          <iyz>4.0836744994738145e-20</iyz>
+          <izz>0.00014203197262454027</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/NutCandy/NutCandy_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/NutCandy/NutCandy_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/NutCandy/NutCandy.material</uri>
+            <name>NutCandy</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

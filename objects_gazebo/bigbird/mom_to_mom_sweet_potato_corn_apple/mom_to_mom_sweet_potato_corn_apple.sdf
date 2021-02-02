@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="mom_to_mom_sweet_potato_corn_apple">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.013576654982771979 -0.004178188462684577 0.07294731242589401 0.03930187706619634 0.06457486099347251 0.501749966661708</pose> 
+        <mass>0.024539619469624768</mass>
+        <inertia>
+          <ixx>4.714338579149e-05</ixx>
+          <ixy>2.3077991409249162e-21</ixy>
+          <ixz>-2.5615906183277556e-21</ixz>
+          <iyy>4.4531394735126155e-05</iyy>
+          <iyz>-1.046652223012824e-20</iyz>
+          <izz>7.039297494679257e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/mom_to_mom_sweet_potato_corn_apple/mom_to_mom_sweet_potato_corn_apple_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/mom_to_mom_sweet_potato_corn_apple/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/mom_to_mom_sweet_potato_corn_apple/mom_to_mom_sweet_potato_corn_apple.material</uri>
+            <name>mom_to_mom_sweet_potato_corn_apple</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

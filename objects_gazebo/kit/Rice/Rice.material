@@ -1,0 +1,14 @@
+material Rice
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Rice/Rice_25k_tex.png
+      }
+    }
+  }
+}

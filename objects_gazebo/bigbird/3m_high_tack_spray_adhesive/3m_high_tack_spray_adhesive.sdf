@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="3m_high_tack_spray_adhesive">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004720074209556108 -0.006737115338312048 0.11522319236855405 -3.143563884345193e-05 0.004544289299003785 0.30920895801148884</pose> 
+        <mass>0.09696100514661947</mass>
+        <inertia>
+          <ixx>0.00043057681554769584</ixx>
+          <ixy>6.199087252607979e-21</ixy>
+          <ixz>8.547254026221449e-20</ixz>
+          <iyy>0.0004303415300326241</iyy>
+          <iyz>1.407413144441213e-19</iyz>
+          <izz>6.5711251368312e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/3m_high_tack_spray_adhesive/3m_high_tack_spray_adhesive_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/3m_high_tack_spray_adhesive/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/3m_high_tack_spray_adhesive/3m_high_tack_spray_adhesive.material</uri>
+            <name>3m_high_tack_spray_adhesive</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

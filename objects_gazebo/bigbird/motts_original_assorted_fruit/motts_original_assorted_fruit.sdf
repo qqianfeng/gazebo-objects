@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="motts_original_assorted_fruit">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003848578960145512 0.006701918813109115 0.09381906107030734 3.1356780449803257 0.008322807714547187 -2.3232759123930085</pose> 
+        <mass>0.14690617470516318</mass>
+        <inertia>
+          <ixx>0.0006702523875694558</ixx>
+          <ixy>-1.2675232107477366e-19</ixy>
+          <ixz>-1.6667063647938682e-22</ixz>
+          <iyy>0.00043510100395420114</iyy>
+          <iyz>6.847566173106576e-22</iyz>
+          <izz>0.0003031790420663155</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/motts_original_assorted_fruit/motts_original_assorted_fruit_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/motts_original_assorted_fruit/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/motts_original_assorted_fruit/motts_original_assorted_fruit.material</uri>
+            <name>motts_original_assorted_fruit</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

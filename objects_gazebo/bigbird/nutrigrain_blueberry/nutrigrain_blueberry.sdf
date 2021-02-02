@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nutrigrain_blueberry">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009804836042770293 -0.004716823201423347 0.07522943287037272 1.5868336464180548 0.004420019396394865 -2.3871406585960377</pose> 
+        <mass>0.12908291899203977</mass>
+        <inertia>
+          <ixx>0.0006329084209171734</ixx>
+          <ixy>-2.462055985760718e-21</ixy>
+          <ixz>-9.009047260190866e-20</ixz>
+          <iyy>0.0004293690888655855</iyy>
+          <iyz>2.0884511759260326e-21</iyz>
+          <izz>0.00024549541808101044</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nutrigrain_blueberry/nutrigrain_blueberry_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nutrigrain_blueberry/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nutrigrain_blueberry/nutrigrain_blueberry.material</uri>
+            <name>nutrigrain_blueberry</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

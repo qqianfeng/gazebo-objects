@@ -1,0 +1,14 @@
+material 017_orange
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../017_orange/texture_map.png
+      }
+    }
+  }
+}

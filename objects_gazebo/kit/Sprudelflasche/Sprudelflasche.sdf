@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Sprudelflasche">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.010038280581299219 -0.002512344811829068 -0.004443559420449967 -1.5883044975608334 0.8267755265734034 8.784812380871835e-05</pose> 
+        <mass>0.10765333342743844</mass>
+        <inertia>
+          <ixx>0.0005732654579415252</ixx>
+          <ixy>-7.347825798187321e-20</ixy>
+          <ixz>-8.885875551309203e-21</ixz>
+          <iyy>0.0005723282099830893</iyy>
+          <iyz>1.4413714284085054e-21</iyz>
+          <izz>7.399802224144747e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Sprudelflasche/Sprudelflasche_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Sprudelflasche/Sprudelflasche_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Sprudelflasche/Sprudelflasche.material</uri>
+            <name>Sprudelflasche</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

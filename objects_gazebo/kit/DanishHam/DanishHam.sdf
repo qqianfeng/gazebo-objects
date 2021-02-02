@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="DanishHam">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0019084551192489183 -0.013692488269371361 0.0021912080662578126 2.7166829129259558 -0.005623636771639799 1.5912010171933797</pose> 
+        <mass>0.06082850446522045</mass>
+        <inertia>
+          <ixx>0.0001300614868226267</ixx>
+          <ixy>7.936777172996289e-21</ixy>
+          <ixz>-2.3200247356696707e-20</ixz>
+          <iyy>0.00010064005286019044</iyy>
+          <iyz>-4.085008010862483e-21</iyz>
+          <izz>5.3671106195678324e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/DanishHam/DanishHam_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/DanishHam/DanishHam_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/DanishHam/DanishHam.material</uri>
+            <name>DanishHam</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,14 @@
+material FizzyTablets
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../FizzyTablets/FizzyTablets_25k_tex.png
+      }
+    }
+  }
+}

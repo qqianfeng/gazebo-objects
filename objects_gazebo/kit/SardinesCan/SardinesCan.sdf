@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="SardinesCan">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0029618182048520834 0.014039208801381164 -0.00013866986999914224 1.586197275985518 0.4853381833550162 -3.079635513514707</pose> 
+        <mass>0.0161979424520672</mass>
+        <inertia>
+          <ixx>1.8223136812212755e-05</ixx>
+          <ixy>-2.203616242350468e-21</ixy>
+          <ixz>1.1055772274930046e-21</ixz>
+          <iyy>1.4502564802870625e-05</iyy>
+          <iyz>-1.9885661483527917e-21</iyz>
+          <izz>5.62586492780817e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/SardinesCan/SardinesCan_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/SardinesCan/SardinesCan_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/SardinesCan/SardinesCan.material</uri>
+            <name>SardinesCan</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

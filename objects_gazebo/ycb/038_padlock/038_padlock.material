@@ -1,0 +1,14 @@
+material 038_padlock
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../038_padlock/texture_map.png
+      }
+    }
+  }
+}

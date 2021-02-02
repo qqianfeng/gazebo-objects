@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="CokePlasticSmallGrasp">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002877735044204354 0.035094342364022126 -0.0021308162693654837 -1.5721639094233983 0.6637728226240749 -0.0041498801875598</pose> 
+        <mass>0.06493740272297813</mass>
+        <inertia>
+          <ixx>0.00024070045476696873</ixx>
+          <ixy>-3.271869596428918e-20</ixy>
+          <ixz>8.034611856428024e-22</ixz>
+          <iyy>0.00024061995111257205</iyy>
+          <iyz>-2.94426253731891e-21</iyz>
+          <izz>3.160755744701094e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/CokePlasticSmallGrasp/CokePlasticSmallGrasp_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/CokePlasticSmallGrasp/CokePlasticSmallGrasp_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/CokePlasticSmallGrasp/CokePlasticSmallGrasp.material</uri>
+            <name>CokePlasticSmallGrasp</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

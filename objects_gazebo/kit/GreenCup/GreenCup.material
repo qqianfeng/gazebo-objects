@@ -1,0 +1,14 @@
+material GreenCup
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../GreenCup/GreenCup_25k_tex.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="OrgFruitTea">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0008269305080028529 0.0284621888636734 -0.0027116939378927403 1.5487484956016866 0.2001343464546781 -3.1290916290497086</pose> 
+        <mass>0.06789257211613645</mass>
+        <inertia>
+          <ixx>0.00012817929047418027</ixx>
+          <ixy>1.0633760034168228e-20</ixy>
+          <ixz>2.195403066676218e-21</ixz>
+          <iyy>0.00012107169526155293</iyy>
+          <iyz>-5.0781527993061034e-21</iyz>
+          <izz>5.848764504650722e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/OrgFruitTea/OrgFruitTea_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/OrgFruitTea/OrgFruitTea_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/OrgFruitTea/OrgFruitTea.material</uri>
+            <name>OrgFruitTea</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

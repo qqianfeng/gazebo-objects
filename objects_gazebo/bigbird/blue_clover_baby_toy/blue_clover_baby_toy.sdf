@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="blue_clover_baby_toy">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.000179140139904388 0.00041072311161501507 0.0245664795193376 -0.00261089137933675 -0.04289118757295194 -2.4004527839849765</pose> 
+        <mass>0.003944230484655249</mass>
+        <inertia>
+          <ixx>7.984440512946856e-07</ixx>
+          <ixy>3.123593082523593e-23</ixy>
+          <ixz>8.93024955264671e-23</ixz>
+          <iyy>7.957817886260628e-07</iyy>
+          <iyz>1.239057863716933e-22</iyz>
+          <izz>6.129093559888053e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/blue_clover_baby_toy/blue_clover_baby_toy_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/blue_clover_baby_toy/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/blue_clover_baby_toy/blue_clover_baby_toy.material</uri>
+            <name>blue_clover_baby_toy</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

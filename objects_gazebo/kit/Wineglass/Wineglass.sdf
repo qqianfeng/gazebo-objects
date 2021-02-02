@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Wineglass">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0013995788718887414 0.06035724001434162 -0.003181657721563916 -1.594249997841386 -1.0582293847017616 0.029083575922983527</pose> 
+        <mass>0.07554943329306539</mass>
+        <inertia>
+          <ixx>0.0002108319314716228</ixx>
+          <ixy>4.179059154801671e-21</ixy>
+          <ixz>-1.0938265916454352e-20</ixz>
+          <iyy>0.00021062758432309202</iyy>
+          <iyz>1.0011133654872276e-21</iyz>
+          <izz>5.201983964566207e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Wineglass/Wineglass_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Wineglass/Wineglass_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Wineglass/Wineglass.material</uri>
+            <name>Wineglass</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

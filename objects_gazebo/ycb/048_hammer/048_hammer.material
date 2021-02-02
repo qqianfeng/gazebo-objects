@@ -1,0 +1,14 @@
+material 048_hammer
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../048_hammer/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material palmolive_orange
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../palmolive_orange/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

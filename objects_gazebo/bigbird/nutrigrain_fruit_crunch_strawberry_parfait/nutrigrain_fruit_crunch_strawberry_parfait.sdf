@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nutrigrain_fruit_crunch_strawberry_parfait">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.015066938983344528 -0.008019297347004817 0.07576098491706008 1.5739426009366841 -0.020297179937606623 -2.589750447820815</pose> 
+        <mass>0.12766092266975596</mass>
+        <inertia>
+          <ixx>0.0005090442149162278</ixx>
+          <ixy>8.0913068877060965e-22</ixy>
+          <ixz>-3.7156688542093335e-20</ixz>
+          <iyy>0.00031135674430033446</iyy>
+          <iyz>-3.7714044842932064e-21</iyz>
+          <izz>0.0002546450207733136</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nutrigrain_fruit_crunch_strawberry_parfait/nutrigrain_fruit_crunch_strawberry_parfait_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nutrigrain_fruit_crunch_strawberry_parfait/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nutrigrain_fruit_crunch_strawberry_parfait/nutrigrain_fruit_crunch_strawberry_parfait.material</uri>
+            <name>nutrigrain_fruit_crunch_strawberry_parfait</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

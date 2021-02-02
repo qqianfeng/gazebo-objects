@@ -1,0 +1,14 @@
+material Waterglass
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Waterglass/Waterglass_25k_tex.png
+      }
+    }
+  }
+}

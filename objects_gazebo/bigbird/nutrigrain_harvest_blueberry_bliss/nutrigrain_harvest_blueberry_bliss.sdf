@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nutrigrain_harvest_blueberry_bliss">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0119238628544717 0.0021343020317900275 0.07627932255149807 1.5520711630852824 -0.029639298861576818 -2.041421717845769</pose> 
+        <mass>0.12715702376149676</mass>
+        <inertia>
+          <ixx>0.0005055390062025442</ixx>
+          <ixy>-8.602141098527872e-21</ixy>
+          <ixz>1.1009114708349479e-19</ixz>
+          <iyy>0.000307608875452126</iyy>
+          <iyz>6.833043494092148e-22</iyz>
+          <izz>0.0002541348452478674</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nutrigrain_harvest_blueberry_bliss/nutrigrain_harvest_blueberry_bliss_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nutrigrain_harvest_blueberry_bliss/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nutrigrain_harvest_blueberry_bliss/nutrigrain_harvest_blueberry_bliss.material</uri>
+            <name>nutrigrain_harvest_blueberry_bliss</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

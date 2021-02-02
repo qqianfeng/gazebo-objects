@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="palmolive_orange">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.03426526612834242 -0.003586596757912654 0.11137906245948165 2.8449223845309035 0.1572753041730476 -2.954991671242146</pose> 
+        <mass>0.27871815072751593</mass>
+        <inertia>
+          <ixx>0.001513316570643476</ixx>
+          <ixy>-1.9035723573193375e-19</ixy>
+          <ixz>-2.297446375768448e-20</ixz>
+          <iyy>0.001013091477739232</iyy>
+          <iyz>1.4205454833897722e-19</iyz>
+          <izz>0.0008542413571185382</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/palmolive_orange/palmolive_orange_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/palmolive_orange/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/palmolive_orange/palmolive_orange.material</uri>
+            <name>palmolive_orange</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

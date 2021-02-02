@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="quaker_chewy_dipps_peanut_butter_chocolate">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.010430119459781041 0.00667435651251567 0.07532152222185735 1.6338061306512006 -0.012897719102016487 2.661029733347646</pose> 
+        <mass>0.09821062398688053</mass>
+        <inertia>
+          <ixx>0.00033609511945791916</ixx>
+          <ixy>9.97878905544104e-22</ixy>
+          <ixz>-9.682199884068538e-22</ixz>
+          <iyy>0.00018854298207795958</iyy>
+          <iyz>6.528144864659827e-22</iyz>
+          <izz>0.00018150663606299625</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/quaker_chewy_dipps_peanut_butter_chocolate/quaker_chewy_dipps_peanut_butter_chocolate_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/quaker_chewy_dipps_peanut_butter_chocolate/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/quaker_chewy_dipps_peanut_butter_chocolate/quaker_chewy_dipps_peanut_butter_chocolate.material</uri>
+            <name>quaker_chewy_dipps_peanut_butter_chocolate</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

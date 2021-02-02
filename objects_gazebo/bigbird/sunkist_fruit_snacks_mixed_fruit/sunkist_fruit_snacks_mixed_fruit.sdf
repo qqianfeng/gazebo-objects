@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="sunkist_fruit_snacks_mixed_fruit">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.011777401185698247 0.00785980127812719 0.09552803940328869 3.140403591817735 0.0005328831270147254 -2.529399979454162</pose> 
+        <mass>0.1492498389625656</mass>
+        <inertia>
+          <ixx>0.0006829477734304904</ixx>
+          <ixy>2.7086195210225135e-20</ixy>
+          <ixz>6.862749168649335e-23</ixz>
+          <iyy>0.0004514856912312573</iyy>
+          <iyz>-8.919712016840839e-23</iyz>
+          <izz>0.0003025637632144059</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/sunkist_fruit_snacks_mixed_fruit/sunkist_fruit_snacks_mixed_fruit_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/sunkist_fruit_snacks_mixed_fruit/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/sunkist_fruit_snacks_mixed_fruit/sunkist_fruit_snacks_mixed_fruit.material</uri>
+            <name>sunkist_fruit_snacks_mixed_fruit</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

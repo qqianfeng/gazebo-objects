@@ -1,0 +1,14 @@
+material nature_valley_sweet_and_salty_nut_cashew
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../nature_valley_sweet_and_salty_nut_cashew/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

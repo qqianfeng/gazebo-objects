@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="hunts_paste">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.007587535729553817 0.004576626659430261 0.05332195838945088 3.1378120451405263 0.006488395225122448 -1.427401399092866</pose> 
+        <mass>0.03613055444463663</mass>
+        <inertia>
+          <ixx>3.929917725166303e-05</ixx>
+          <ixy>-3.548920386984158e-21</ixy>
+          <ixz>-1.9279156522305456e-21</ixz>
+          <iyy>3.89752509008089e-05</iyy>
+          <iyz>6.147690802440948e-22</iyz>
+          <izz>2.0625964631072086e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/hunts_paste/hunts_paste_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/hunts_paste/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/hunts_paste/hunts_paste.material</uri>
+            <name>hunts_paste</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

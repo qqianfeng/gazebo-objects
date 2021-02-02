@@ -1,0 +1,14 @@
+material GreenSaltCylinder
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../GreenSaltCylinder/GreenSaltCylinder_25k_tex.png
+      }
+    }
+  }
+}

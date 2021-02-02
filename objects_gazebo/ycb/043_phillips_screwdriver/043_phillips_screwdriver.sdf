@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="043_phillips_screwdriver">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.01397660737412893 0.013874377601725956 0.01560602450084127 1.8209049583777168 -1.3990692228447572 -1.3524610788786808</pose> 
+        <mass>0.011326228538925509</mass>
+        <inertia>
+          <ixx>2.4623743720616394e-05</ixx>
+          <ixy>7.644740084434037e-22</ixy>
+          <ixz>-7.8454007656543e-22</ixz>
+          <iyy>2.46112465753e-05</iyy>
+          <iyz>5.3362420527190844e-21</iyz>
+          <izz>1.2976250880965993e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/043_phillips_screwdriver/043_phillips_screwdriver_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/043_phillips_screwdriver/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/043_phillips_screwdriver/043_phillips_screwdriver.material</uri>
+            <name>043_phillips_screwdriver</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

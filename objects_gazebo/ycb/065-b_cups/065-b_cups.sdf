@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="065-b_cups">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.02781892155257012 -0.05621808025871685 0.03408918137815996 -3.1384869296314046 -0.002767136458032565 0.14019105788451636</pose> 
+        <mass>0.014971551122537652</mass>
+        <inertia>
+          <ixx>7.725374351780441e-06</ixx>
+          <ixy>2.5143312835212486e-22</ixy>
+          <ixz>-7.517082658171495e-23</ixz>
+          <iyy>7.723851098334352e-06</iyy>
+          <iyz>1.845640085333061e-21</iyz>
+          <izz>5.726432522162326e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/065-b_cups/065-b_cups_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/065-b_cups/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/065-b_cups/065-b_cups.material</uri>
+            <name>065-b_cups</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

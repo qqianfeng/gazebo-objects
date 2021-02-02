@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="clif_z_bar_chocolate_chip">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0016045971194758137 -0.00062129822119828 0.07028939086739333 1.5704547222711476 -0.029244836761392005 2.893551512799003</pose> 
+        <mass>0.10176843484130008</mass>
+        <inertia>
+          <ixx>0.0003794496444877141</ixx>
+          <ixy>-2.1292078549978704e-21</ixy>
+          <ixz>8.358645500277874e-21</ixz>
+          <iyy>0.00024260667552803336</iyy>
+          <iyz>-2.136261712992989e-21</iyz>
+          <izz>0.00017019081507378334</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/clif_z_bar_chocolate_chip/clif_z_bar_chocolate_chip_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/clif_z_bar_chocolate_chip/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/clif_z_bar_chocolate_chip/clif_z_bar_chocolate_chip.material</uri>
+            <name>clif_z_bar_chocolate_chip</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

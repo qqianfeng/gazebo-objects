@@ -1,0 +1,14 @@
+material 013_apple
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../013_apple/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material Peanuts2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Peanuts2/Peanuts2_25k_tex.png
+      }
+    }
+  }
+}

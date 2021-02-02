@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="detergent">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.030597965183778223 0.027153908123056045 0.10926471296366182 -3.074231243356056 -0.007639800546049588 -2.7344028888535385</pose> 
+        <mass>0.2321388257213138</mass>
+        <inertia>
+          <ixx>0.0013903271478094752</ixx>
+          <ixy>-2.3198743164327484e-19</ixy>
+          <ixz>8.020611593809545e-20</ixz>
+          <iyy>0.001199928383934168</iyy>
+          <iyz>-1.5380029209124894e-19</iyz>
+          <izz>0.0004038076563392816</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/detergent/detergent_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/detergent/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/detergent/detergent.material</uri>
+            <name>detergent</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

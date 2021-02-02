@@ -1,0 +1,14 @@
+material 021_bleach_cleanser
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../021_bleach_cleanser/texture_map.png
+      }
+    }
+  }
+}

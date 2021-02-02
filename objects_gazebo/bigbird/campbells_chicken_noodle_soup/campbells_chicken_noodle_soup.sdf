@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="campbells_chicken_noodle_soup">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0001533891445070027 0.0014228178194287372 0.04374293415039378 0.32944018432015865 -1.4725874625337805 -2.619978434751388</pose> 
+        <mass>0.06102797360476409</mass>
+        <inertia>
+          <ixx>7.31393110694604e-05</ixx>
+          <ixy>-1.3033669608414078e-20</ixy>
+          <ixz>2.1137788595121762e-20</ixz>
+          <iyy>6.884799881929034e-05</iyy>
+          <iyz>-2.9953816800111194e-20</iyz>
+          <izz>6.815834510192346e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/campbells_chicken_noodle_soup/campbells_chicken_noodle_soup_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/campbells_chicken_noodle_soup/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/campbells_chicken_noodle_soup/campbells_chicken_noodle_soup.material</uri>
+            <name>campbells_chicken_noodle_soup</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

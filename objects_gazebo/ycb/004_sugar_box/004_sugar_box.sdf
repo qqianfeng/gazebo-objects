@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="004_sugar_box">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.007826980030241027 -0.01666194277736016 0.08691282354966258 -3.126966418486167 0.03985546038753903 3.104146132035608</pose> 
+        <mass>0.06610743559742353</mass>
+        <inertia>
+          <ixx>0.00021015244106977222</ixx>
+          <ixy>1.28094814478947e-21</ixy>
+          <ixz>-2.0639614302739598e-20</ixz>
+          <iyy>0.00017552638370017448</iyy>
+          <iyz>-3.9806955507332005e-20</iyz>
+          <izz>5.362326254393528e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/004_sugar_box/004_sugar_box_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/004_sugar_box/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/004_sugar_box/004_sugar_box.material</uri>
+            <name>004_sugar_box</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

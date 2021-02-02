@@ -1,0 +1,14 @@
+material Heart1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Heart1/Heart1_25k_tex.png
+      }
+    }
+  }
+}

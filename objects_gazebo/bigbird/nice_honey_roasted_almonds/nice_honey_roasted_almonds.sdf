@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nice_honey_roasted_almonds">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.006858374875399725 0.003888679852740306 0.0422664221676638 -1.7922866443399292 -1.18197935819147 2.465106638875901</pose> 
+        <mass>0.064672725240256</mass>
+        <inertia>
+          <ixx>7.746052173980423e-05</ixx>
+          <ixy>1.3075282800943284e-20</ixy>
+          <ixz>-9.674969074833901e-21</ixz>
+          <iyy>7.665892942220978e-05</iyy>
+          <iyz>-9.38988790064574e-21</iyz>
+          <izz>7.581330305133171e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nice_honey_roasted_almonds/nice_honey_roasted_almonds_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nice_honey_roasted_almonds/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nice_honey_roasted_almonds/nice_honey_roasted_almonds.material</uri>
+            <name>nice_honey_roasted_almonds</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

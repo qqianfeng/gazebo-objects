@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_soft_baked_oatmeal_squares_peanut_butter">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.015803890845678955 -0.007176931645344528 0.07304374827341466 0.6389442854473516 0.014167905826133084 -2.2889895744775437</pose> 
+        <mass>0.1407124881793254</mass>
+        <inertia>
+          <ixx>0.0004628210059706813</ixx>
+          <ixy>1.1839701291720193e-19</ixy>
+          <ixz>-4.733307276089811e-20</ixz>
+          <iyy>0.00029006347810389926</iyy>
+          <iyz>-7.335474722512572e-20</iyz>
+          <izz>0.0002833506389078219</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_peanut_butter/nature_valley_soft_baked_oatmeal_squares_peanut_butter_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_peanut_butter/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_peanut_butter/nature_valley_soft_baked_oatmeal_squares_peanut_butter.material</uri>
+            <name>nature_valley_soft_baked_oatmeal_squares_peanut_butter</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

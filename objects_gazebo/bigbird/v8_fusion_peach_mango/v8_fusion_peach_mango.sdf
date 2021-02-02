@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="v8_fusion_peach_mango">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.005032830669927494 0.009243335306774575 0.06310272110292311 3.137531281753654 0.0018774583275030319 -0.8370408725954158</pose> 
+        <mass>0.040856293044024605</mass>
+        <inertia>
+          <ixx>5.30797340355986e-05</ixx>
+          <ixy>5.110543491637823e-21</ixy>
+          <ixz>8.550388071836429e-21</ixz>
+          <iyy>5.299315442159015e-05</iyy>
+          <iyz>7.416308855046744e-21</iyz>
+          <izz>2.3224624946235983e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/v8_fusion_peach_mango/v8_fusion_peach_mango_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/v8_fusion_peach_mango/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/v8_fusion_peach_mango/v8_fusion_peach_mango.material</uri>
+            <name>v8_fusion_peach_mango</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

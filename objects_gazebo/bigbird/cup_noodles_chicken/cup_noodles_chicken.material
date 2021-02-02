@@ -1,0 +1,14 @@
+material cup_noodles_chicken
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../cup_noodles_chicken/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

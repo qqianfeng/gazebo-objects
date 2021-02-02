@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="south_beach_good_to_go_peanut_butter">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009645622963430234 -0.004435002041007403 0.07279180428576101 1.4636923791374363 -0.0025254917559832933 2.8692247696061868</pose> 
+        <mass>0.10623296352019816</mass>
+        <inertia>
+          <ixx>0.00036581394093255273</ixx>
+          <ixy>6.5449056923305085e-21</ixy>
+          <ixz>2.160736271512226e-20</ixz>
+          <iyy>0.00021085426975653776</iyy>
+          <iyz>3.312546807503215e-22</iyz>
+          <izz>0.00019808046237738971</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/south_beach_good_to_go_peanut_butter/south_beach_good_to_go_peanut_butter_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/south_beach_good_to_go_peanut_butter/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/south_beach_good_to_go_peanut_butter/south_beach_good_to_go_peanut_butter.material</uri>
+            <name>south_beach_good_to_go_peanut_butter</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

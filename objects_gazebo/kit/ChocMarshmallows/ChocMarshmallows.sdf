@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="ChocMarshmallows">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009164334173535682 -0.008605867469260321 0.003971313502921979 1.3455132746526381 -0.002221957103643204 -1.5769069366553488</pose> 
+        <mass>0.24901973860892884</mass>
+        <inertia>
+          <ixx>0.0015350940978353634</ixx>
+          <ixy>6.985038454955221e-20</ixy>
+          <ixz>1.5917001480471167e-20</ixz>
+          <iyy>0.0008613989669279689</iyy>
+          <iyz>-1.4089403174226685e-20</iyz>
+          <izz>0.0008531822933019297</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/ChocMarshmallows/ChocMarshmallows_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/ChocMarshmallows/ChocMarshmallows_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/ChocMarshmallows/ChocMarshmallows.material</uri>
+            <name>ChocMarshmallows</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="white_rain_sensations_apple_blossom_hydrating_body_wash">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.007779929602611686 -0.007490195646539357 0.11199216143191433 -3.134245561880366 0.010775993002999237 -0.024638559004855853</pose> 
+        <mass>0.049101301539697946</mass>
+        <inertia>
+          <ixx>0.0001769511343186842</ixx>
+          <ixy>3.4551770104263e-21</ixy>
+          <ixz>-6.428049765376589e-21</ixz>
+          <iyy>0.00016760794195451865</iyy>
+          <iyz>1.3475442003335531e-20</iyz>
+          <izz>2.06624233623049e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/white_rain_sensations_apple_blossom_hydrating_body_wash/white_rain_sensations_apple_blossom_hydrating_body_wash_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/white_rain_sensations_apple_blossom_hydrating_body_wash/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/white_rain_sensations_apple_blossom_hydrating_body_wash/white_rain_sensations_apple_blossom_hydrating_body_wash.material</uri>
+            <name>white_rain_sensations_apple_blossom_hydrating_body_wash</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

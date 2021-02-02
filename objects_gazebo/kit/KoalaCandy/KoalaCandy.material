@@ -1,0 +1,14 @@
+material KoalaCandy
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../KoalaCandy/KoalaCandy_25k_tex.png
+      }
+    }
+  }
+}

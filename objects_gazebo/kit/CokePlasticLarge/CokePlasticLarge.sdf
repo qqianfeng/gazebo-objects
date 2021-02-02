@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="CokePlasticLarge">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.00314920988236481 0.011856275411037936 0.007875166721003392 1.5606779434718654 0.23532143997916574 3.1392752121110687</pose> 
+        <mass>0.1242627082214215</mass>
+        <inertia>
+          <ixx>0.0007163058634797565</ixx>
+          <ixy>2.5128887917730382e-20</ixy>
+          <ixz>-1.2755904065864066e-20</ixz>
+          <iyy>0.0007161846187254631</iyy>
+          <iyz>6.898068477979735e-20</iyz>
+          <izz>9.298445566430796e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/CokePlasticLarge/CokePlasticLarge_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/CokePlasticLarge/CokePlasticLarge_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/CokePlasticLarge/CokePlasticLarge.material</uri>
+            <name>CokePlasticLarge</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

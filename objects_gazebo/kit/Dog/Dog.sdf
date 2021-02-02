@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Dog">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.00032316213028095485 0.027674268194997277 0.0030536202607504676 -1.6794054285157332 -0.6149795172320249 3.134334702332372</pose> 
+        <mass>0.2287790046566807</mass>
+        <inertia>
+          <ixx>0.0011027338288765206</ixx>
+          <ixy>3.240323604665755e-19</ixy>
+          <ixz>3.9148658026081924e-20</ixz>
+          <iyy>0.0010236772007582815</iyy>
+          <iyz>1.571714846198878e-20</iyz>
+          <izz>0.00041362230496310527</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Dog/Dog_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Dog/Dog_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Dog/Dog.material</uri>
+            <name>Dog</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

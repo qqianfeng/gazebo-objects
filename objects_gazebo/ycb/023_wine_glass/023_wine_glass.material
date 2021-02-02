@@ -1,0 +1,14 @@
+material 023_wine_glass
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../023_wine_glass/textured.png
+      }
+    }
+  }
+}

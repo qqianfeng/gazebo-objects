@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="pringles_bbq">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.005407080551334749 0.002997087700194006 0.12555744872789235 -0.008994905737422842 -0.001446572297229262 -1.6556341928942526</pose> 
+        <mass>0.10261414567566268</mass>
+        <inertia>
+          <ixx>0.0005239191438343858</ixx>
+          <ixy>1.9157489048978138e-20</ixy>
+          <ixz>-3.5145132074317e-20</ixz>
+          <iyy>0.0005236826728661113</iyy>
+          <iyz>-1.1034803449116085e-21</iyz>
+          <izz>6.870689881453302e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/pringles_bbq/pringles_bbq_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/pringles_bbq/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/pringles_bbq/pringles_bbq.material</uri>
+            <name>pringles_bbq</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

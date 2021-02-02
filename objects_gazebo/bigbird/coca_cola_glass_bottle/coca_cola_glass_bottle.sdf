@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="coca_cola_glass_bottle">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0024303560684575177 -0.0026477046777365737 0.15394739441498215 -3.1098905148456044 0.021512011345288597 1.0749495307931096</pose> 
+        <mass>0.026114920806037147</mass>
+        <inertia>
+          <ixx>4.1030454257942675e-05</ixx>
+          <ixy>-1.170374300051747e-21</ixy>
+          <ixz>7.763129984914791e-21</ixz>
+          <iyy>4.047516128010624e-05</iyy>
+          <iyz>-3.872274293593942e-21</iyz>
+          <izz>8.807159115816128e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/coca_cola_glass_bottle/coca_cola_glass_bottle_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/coca_cola_glass_bottle/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/coca_cola_glass_bottle/coca_cola_glass_bottle.material</uri>
+            <name>coca_cola_glass_bottle</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

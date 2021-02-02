@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="InstantDumplings">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0030736396183690604 0.044920677601643776 0.0027713080704981187 -1.5917842071751886 0.29621772549261166 3.1340324576561702</pose> 
+        <mass>0.10795506754469839</mass>
+        <inertia>
+          <ixx>0.00033732321447084337</ixx>
+          <ixy>2.60329892976699e-20</ixy>
+          <ixz>1.5335394342587343e-20</ixz>
+          <iyy>0.00025409281295158596</iyy>
+          <iyz>5.145391649928512e-20</iyz>
+          <izz>0.00014703836653836292</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/InstantDumplings/InstantDumplings_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/InstantDumplings/InstantDumplings_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/InstantDumplings/InstantDumplings.material</uri>
+            <name>InstantDumplings</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

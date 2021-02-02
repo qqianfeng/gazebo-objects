@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="KoalaCandy">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0008705687302822021 0.029990537165970034 -0.00035901767740377126 1.5843480369753729 0.10210879667476176 0.01751707407223316</pose> 
+        <mass>0.046940209344946485</mass>
+        <inertia>
+          <ixx>8.722072648094728e-05</ixx>
+          <ixy>7.206166278009784e-22</ixy>
+          <ixz>1.9304410637765206e-21</ixz>
+          <iyy>8.705637177386916e-05</iyy>
+          <iyz>-5.2339009101546923e-23</iyz>
+          <izz>2.5385433647770635e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/KoalaCandy/KoalaCandy_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/KoalaCandy/KoalaCandy_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/KoalaCandy/KoalaCandy.material</uri>
+            <name>KoalaCandy</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

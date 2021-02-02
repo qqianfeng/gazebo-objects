@@ -1,0 +1,14 @@
+material cinnamon_toast_crunch
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../cinnamon_toast_crunch/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

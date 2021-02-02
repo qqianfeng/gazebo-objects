@@ -1,0 +1,14 @@
+material expo_marker_red
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../expo_marker_red/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

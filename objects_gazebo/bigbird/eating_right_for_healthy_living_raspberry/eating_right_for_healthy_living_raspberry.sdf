@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="eating_right_for_healthy_living_raspberry">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.010291670707377028 0.001960302639852628 0.07769135624674076 1.5741321980877339 -0.02331976979583889 -2.5868648161771532</pose> 
+        <mass>0.1318697854579716</mass>
+        <inertia>
+          <ixx>0.0006707594208458203</ixx>
+          <ixy>1.7416291826069053e-21</ixy>
+          <ixz>-9.177787753974258e-21</ixz>
+          <iyy>0.0004486454944404403</iyy>
+          <iyz>-9.500388481811415e-22</iyz>
+          <izz>0.00026352150250006387</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/eating_right_for_healthy_living_raspberry/eating_right_for_healthy_living_raspberry_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/eating_right_for_healthy_living_raspberry/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/eating_right_for_healthy_living_raspberry/eating_right_for_healthy_living_raspberry.material</uri>
+            <name>eating_right_for_healthy_living_raspberry</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="tapatio_hot_sauce">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0048204516228253745 -0.007909772457706573 0.07634148207863459 0.01940570466874149 0.009869718055172009 0.47388896774564526</pose> 
+        <mass>0.019448310141589</mass>
+        <inertia>
+          <ixx>3.214634833949392e-05</ixx>
+          <ixy>2.8526760217626124e-22</ixy>
+          <ixz>-7.723355396787738e-22</ixz>
+          <iyy>3.197034568334976e-05</iyy>
+          <iyz>2.265894257628375e-21</iyz>
+          <izz>4.304029045342972e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/tapatio_hot_sauce/tapatio_hot_sauce_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/tapatio_hot_sauce/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/tapatio_hot_sauce/tapatio_hot_sauce.material</uri>
+            <name>tapatio_hot_sauce</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

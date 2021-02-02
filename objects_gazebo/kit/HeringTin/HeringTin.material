@@ -1,0 +1,14 @@
+material HeringTin
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../HeringTin/HeringTin_25k_tex.png
+      }
+    }
+  }
+}

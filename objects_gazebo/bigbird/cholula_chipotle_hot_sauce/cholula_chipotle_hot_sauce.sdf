@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="cholula_chipotle_hot_sauce">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.000566193190437784 0.0006818106363836024 0.08743778230441136 -0.0006293870342092057 0.04179634898742956 0.33353850694921355</pose> 
+        <mass>0.021361326709812386</mass>
+        <inertia>
+          <ixx>4.222912405253565e-05</ixx>
+          <ixy>-7.738069767964801e-21</ixy>
+          <ixz>-3.771576340723164e-21</ixz>
+          <iyy>4.2125725773804534e-05</iyy>
+          <iyz>-9.129004459807849e-21</iyz>
+          <izz>4.697300792127478e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/cholula_chipotle_hot_sauce/cholula_chipotle_hot_sauce_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/cholula_chipotle_hot_sauce/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/cholula_chipotle_hot_sauce/cholula_chipotle_hot_sauce.material</uri>
+            <name>cholula_chipotle_hot_sauce</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

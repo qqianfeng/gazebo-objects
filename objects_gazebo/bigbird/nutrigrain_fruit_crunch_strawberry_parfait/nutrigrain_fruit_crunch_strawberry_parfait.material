@@ -1,0 +1,14 @@
+material nutrigrain_fruit_crunch_strawberry_parfait
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../nutrigrain_fruit_crunch_strawberry_parfait/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

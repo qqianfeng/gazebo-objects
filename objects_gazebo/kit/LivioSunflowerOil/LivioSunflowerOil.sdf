@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="LivioSunflowerOil">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0016398409312321 0.02854897074926363 0.004043259259757957 -1.5287051919735049 0.45964109202892195 -3.1328524288877633</pose> 
+        <mass>0.06705016152751292</mass>
+        <inertia>
+          <ixx>0.00014240175902217558</ixx>
+          <ixy>-2.055757418417499e-20</ixy>
+          <ixz>5.526230387967879e-22</ixz>
+          <iyy>0.00011491547156853358</iyy>
+          <iyz>3.369752098637317e-21</iyz>
+          <izz>6.128245583171005e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/LivioSunflowerOil/LivioSunflowerOil_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/LivioSunflowerOil/LivioSunflowerOil_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/LivioSunflowerOil/LivioSunflowerOil.material</uri>
+            <name>LivioSunflowerOil</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

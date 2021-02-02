@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="061_foam_brick">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.018622082349490456 0.01697343503688655 0.025103592332034876 -1.8923531226503747 -1.508121869760107 0.3065780518591834</pose> 
+        <mass>0.01974071417816017</mass>
+        <inertia>
+          <ixx>1.3782117990871366e-05</ixx>
+          <ixy>-1.7306261981629353e-22</ixy>
+          <ixz>-8.0424095986196315e-22</ixz>
+          <iyy>1.3642174427853515e-05</iyy>
+          <iyz>-5.230545361838832e-23</iyz>
+          <izz>8.51613488977335e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/061_foam_brick/061_foam_brick_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/061_foam_brick/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/061_foam_brick/061_foam_brick.material</uri>
+            <name>061_foam_brick</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

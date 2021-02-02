@@ -1,0 +1,14 @@
+material ikea_table_leg_blue
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../ikea_table_leg_blue/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material 065-d_cups
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../065-d_cups/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="crayola_yellow_green">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.001098545807380951 0.00500695461166454 0.05001835036576055 0.022510317060324175 0.13542341710511055 2.2747717180439846</pose> 
+        <mass>0.0008699948921505831</mass>
+        <inertia>
+          <ixx>1.0811388961225581e-07</ixx>
+          <ixy>2.584423698300585e-23</ixy>
+          <ixz>3.183499471929052e-23</ixz>
+          <iyy>1.0456238384552688e-07</iyy>
+          <iyz>-3.1885961330532596e-23</iyz>
+          <izz>3.2221358782445596e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/crayola_yellow_green/crayola_yellow_green_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/crayola_yellow_green/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/crayola_yellow_green/crayola_yellow_green.material</uri>
+            <name>crayola_yellow_green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

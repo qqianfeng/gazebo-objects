@@ -1,0 +1,14 @@
+material quaker_chewy_dipps_peanut_butter_chocolate
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../quaker_chewy_dipps_peanut_butter_chocolate/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material NutellaGo
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../NutellaGo/NutellaGo_25k_tex.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material campbells_soup_at_hand_creamy_tomato
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../campbells_soup_at_hand_creamy_tomato/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

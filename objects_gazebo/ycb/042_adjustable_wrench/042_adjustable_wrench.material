@@ -1,0 +1,14 @@
+material 042_adjustable_wrench
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../042_adjustable_wrench/texture_map.png
+      }
+    }
+  }
+}

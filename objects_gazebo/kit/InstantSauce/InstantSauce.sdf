@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="InstantSauce">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0037863500223923206 0.03598698080022428 0.0014957955075199502 1.5423185919335465 0.2579258074365327 3.140187223890506</pose> 
+        <mass>0.05440972910619637</mass>
+        <inertia>
+          <ixx>0.00012930930787154727</ixx>
+          <ixy>6.24471302990936e-21</ixy>
+          <ixz>-1.0981219491647207e-20</ixz>
+          <iyy>0.00010540486376754297</iyy>
+          <iyz>3.872620721333597e-20</iyz>
+          <izz>4.083859102360769e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/InstantSauce/InstantSauce_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/InstantSauce/InstantSauce_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/InstantSauce/InstantSauce.material</uri>
+            <name>InstantSauce</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

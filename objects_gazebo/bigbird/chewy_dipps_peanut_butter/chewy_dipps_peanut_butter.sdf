@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="chewy_dipps_peanut_butter">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.016367668734604785 0.004622603089059257 0.07504374460695486 1.6087113071850223 -0.02091836283090442 -2.440501230536767</pose> 
+        <mass>0.09857832003734616</mass>
+        <inertia>
+          <ixx>0.00034121388974281766</ixx>
+          <ixy>1.4071960963564723e-21</ixy>
+          <ixz>2.789149666749086e-21</ixz>
+          <iyy>0.00019406380839014233</iyy>
+          <iyz>-9.313907717099325e-22</iyz>
+          <izz>0.0001811545238293828</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/chewy_dipps_peanut_butter/chewy_dipps_peanut_butter_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/chewy_dipps_peanut_butter/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/chewy_dipps_peanut_butter/chewy_dipps_peanut_butter.material</uri>
+            <name>chewy_dipps_peanut_butter</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

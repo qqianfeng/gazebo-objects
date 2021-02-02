@@ -1,0 +1,14 @@
+material mom_to_mom_sweet_potato_corn_apple
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../mom_to_mom_sweet_potato_corn_apple/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

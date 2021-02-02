@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Pitcher">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.011806032686027845 0.049754096342083595 0.005107489319147154 -0.5800178262814759 0.9944518849108365 -3.1378806227586336</pose> 
+        <mass>0.17670457686245836</mass>
+        <inertia>
+          <ixx>0.0005691130980064594</ixx>
+          <ixy>4.97164722631581e-21</ixy>
+          <ixz>-6.868506997265271e-20</ixz>
+          <iyy>0.0004099629599174141</iyy>
+          <iyz>3.6703240966522716e-20</iyz>
+          <izz>0.00038877083549987337</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Pitcher/Pitcher_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Pitcher/Pitcher_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Pitcher/Pitcher.material</uri>
+            <name>Pitcher</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

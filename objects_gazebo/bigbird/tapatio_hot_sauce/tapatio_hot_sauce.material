@@ -1,0 +1,14 @@
+material tapatio_hot_sauce
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../tapatio_hot_sauce/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

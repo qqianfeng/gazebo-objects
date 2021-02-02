@@ -1,0 +1,14 @@
+material krylon_low_odor_clear_finish
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../krylon_low_odor_clear_finish/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

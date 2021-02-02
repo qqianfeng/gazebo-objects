@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="009_gelatin_box">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.022409813928578694 -0.008079108240722253 0.014002303492209317 0.5838201435945433 -1.5640325790247613 -1.9200241432512575</pose> 
+        <mass>0.017920177426489162</mass>
+        <inertia>
+          <ixx>1.898960050437139e-05</ixx>
+          <ixy>-4.504925988772381e-25</ixy>
+          <ixz>5.653601194334231e-23</ixz>
+          <iyy>1.2448612181572567e-05</iyy>
+          <iyz>-1.1322285337690308e-21</iyz>
+          <izz>8.899458783237341e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/009_gelatin_box/009_gelatin_box_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/009_gelatin_box/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/009_gelatin_box/009_gelatin_box.material</uri>
+            <name>009_gelatin_box</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

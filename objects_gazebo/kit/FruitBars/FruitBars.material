@@ -1,0 +1,14 @@
+material FruitBars
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../FruitBars/FruitBars_25k_tex.png
+      }
+    }
+  }
+}

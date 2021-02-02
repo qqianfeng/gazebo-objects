@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nutrigrain_chotolatey_crunch">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003854102546086957 0.004741003101524391 0.07592909787203339 1.5731009283545745 -0.013343990030042238 -2.2177115636016924</pose> 
+        <mass>0.13009946266990235</mass>
+        <inertia>
+          <ixx>0.0005209308065173865</ixx>
+          <ixy>-3.8795726409503073e-22</ixy>
+          <ixz>-2.609603430784825e-20</ixz>
+          <iyy>0.00032118822739534813</iyy>
+          <iyz>1.4544562320352573e-22</iyz>
+          <izz>0.0002595535958503539</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nutrigrain_chotolatey_crunch/nutrigrain_chotolatey_crunch_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nutrigrain_chotolatey_crunch/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nutrigrain_chotolatey_crunch/nutrigrain_chotolatey_crunch.material</uri>
+            <name>nutrigrain_chotolatey_crunch</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

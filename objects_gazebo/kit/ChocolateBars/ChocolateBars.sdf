@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="ChocolateBars">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009732552470615472 0.030750376480863758 0.002406583294770082 1.5485813383221072 0.34550560476249625 3.136635390379149</pose> 
+        <mass>0.046919470417349805</mass>
+        <inertia>
+          <ixx>0.00010272477317332602</ixx>
+          <ixy>-7.847610885002994e-22</ixy>
+          <ixz>5.797031603906999e-21</ixz>
+          <iyy>7.844548616064338e-05</iyy>
+          <iyz>-2.5498055083463842e-20</iyz>
+          <izz>3.562274525821355e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/ChocolateBars/ChocolateBars_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/ChocolateBars/ChocolateBars_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/ChocolateBars/ChocolateBars.material</uri>
+            <name>ChocolateBars</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

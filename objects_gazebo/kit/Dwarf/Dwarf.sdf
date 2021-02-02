@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Dwarf">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009495696838584972 -0.002722091746617974 0.018831442475912657 1.7900313438045312 -1.0836590672908464 -0.22331098346365316</pose> 
+        <mass>0.22858902751507645</mass>
+        <inertia>
+          <ixx>0.0011996313805177272</ixx>
+          <ixy>-8.305094774229082e-20</ixy>
+          <ixz>1.8859077031505574e-19</ixz>
+          <iyy>0.0011466954001085625</iyy>
+          <iyz>3.5825152302591434e-20</iyz>
+          <izz>0.0003672664298389981</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Dwarf/Dwarf_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Dwarf/Dwarf_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Dwarf/Dwarf.material</uri>
+            <name>Dwarf</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

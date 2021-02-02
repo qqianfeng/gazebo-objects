@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Fish">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.01339241880685972 0.0014422295135665065 -0.013144897994626972 -2.6528830559132515 -0.008126450413740768 1.516999774836089</pose> 
+        <mass>0.05499235159266257</mass>
+        <inertia>
+          <ixx>8.41033875152408e-05</ixx>
+          <ixy>9.960426267982735e-22</ixy>
+          <ixz>1.5877650558765146e-20</ixz>
+          <iyy>8.090086030725575e-05</iyy>
+          <iyz>7.63382840529515e-21</iyz>
+          <izz>4.1692130890481084e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Fish/Fish_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Fish/Fish_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Fish/Fish.material</uri>
+            <name>Fish</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

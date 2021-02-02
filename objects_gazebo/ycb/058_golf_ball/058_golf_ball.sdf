@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="058_golf_ball">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.006527870138967517 -0.030417871146629655 0.020919760302993185 1.4213084432642404 -1.4739727578753072 -1.1494744095253178</pose> 
+        <mass>0.0040390786747539365</mass>
+        <inertia>
+          <ixx>7.335273886652802e-07</ixx>
+          <ixy>-1.5328966710345608e-22</ixy>
+          <ixz>-1.0322499959507604e-23</ixz>
+          <iyy>7.314451912570301e-07</iyy>
+          <iyz>5.157880863316209e-23</iyz>
+          <izz>7.308785067591711e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/058_golf_ball/058_golf_ball_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/058_golf_ball/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/058_golf_ball/058_golf_ball.material</uri>
+            <name>058_golf_ball</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

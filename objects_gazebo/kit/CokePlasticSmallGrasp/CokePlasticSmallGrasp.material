@@ -1,0 +1,14 @@
+material CokePlasticSmallGrasp
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../CokePlasticSmallGrasp/CokePlasticSmallGrasp_25k_tex.png
+      }
+    }
+  }
+}

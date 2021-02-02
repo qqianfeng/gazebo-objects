@@ -1,0 +1,14 @@
+material coffee_mate_french_vanilla
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../coffee_mate_french_vanilla/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

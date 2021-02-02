@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Rusk">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0041423375763338195 0.0369574876212466 -0.003252728532380386 -1.5953250873858253 0.07603784985983979 3.1205196479699255</pose> 
+        <mass>0.17603922025157276</mass>
+        <inertia>
+          <ixx>0.0006190330258662489</ixx>
+          <ixy>4.526861546107179e-21</ixy>
+          <ixz>9.046961137844025e-21</ixz>
+          <iyy>0.0004075788106418477</iyy>
+          <iyz>6.522610480527336e-20</iyz>
+          <izz>0.00040650492665742004</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Rusk/Rusk_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Rusk/Rusk_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Rusk/Rusk.material</uri>
+            <name>Rusk</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

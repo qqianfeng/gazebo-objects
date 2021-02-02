@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Sprayflask">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.002785468236156705 0.005715618704983147 0.00011881294039560163 1.586941892146241 0.7445810928953375 -3.127850877782315</pose> 
+        <mass>0.08620390353525628</mass>
+        <inertia>
+          <ixx>0.00039236136567193265</ixx>
+          <ixy>1.6806471033118872e-19</ixy>
+          <ixz>3.832518279714788e-20</ixz>
+          <iyy>0.00035824673823893884</iyy>
+          <iyz>-5.587349462776231e-20</iyz>
+          <izz>6.50844446270391e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Sprayflask/Sprayflask_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Sprayflask/Sprayflask_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Sprayflask/Sprayflask.material</uri>
+            <name>Sprayflask</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

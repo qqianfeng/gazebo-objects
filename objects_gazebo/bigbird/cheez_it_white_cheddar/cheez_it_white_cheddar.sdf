@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="cheez_it_white_cheddar">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.013347331794560444 -0.0003761486220948052 0.0999816896976768 3.1391113913374147 0.009804664628259104 -2.1146825371087403</pose> 
+        <mass>0.15553848154545702</mass>
+        <inertia>
+          <ixx>0.0007740676195554303</ixx>
+          <ixy>5.64152730542776e-20</ixy>
+          <ixz>-3.2488188008860967e-22</ixz>
+          <iyy>0.0005084166116492113</iyy>
+          <iyz>3.1397146315331146e-23</iyz>
+          <izz>0.0003348589171816964</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/cheez_it_white_cheddar/cheez_it_white_cheddar_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/cheez_it_white_cheddar/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/cheez_it_white_cheddar/cheez_it_white_cheddar.material</uri>
+            <name>cheez_it_white_cheddar</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

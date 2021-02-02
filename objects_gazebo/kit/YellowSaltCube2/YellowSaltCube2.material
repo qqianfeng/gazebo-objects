@@ -1,0 +1,14 @@
+material YellowSaltCube2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../YellowSaltCube2/YellowSaltCube2_25k_tex.png
+      }
+    }
+  }
+}

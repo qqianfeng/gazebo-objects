@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Waterglass">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-3.620430561631394e-05 0.040894233096431 -0.0026288669961415517 -1.583989302745913 -1.1177980369373048 0.01580442845208337</pose> 
+        <mass>0.06333412974872774</mass>
+        <inertia>
+          <ixx>0.00011912920940080607</ixx>
+          <ixy>9.416812444076421e-21</ixy>
+          <ixz>-3.2208250297331804e-21</ixz>
+          <iyy>0.00011888672240362036</iyy>
+          <iyz>-3.3581853269180014e-21</iyz>
+          <izz>4.8189277533802955e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Waterglass/Waterglass_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Waterglass/Waterglass_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Waterglass/Waterglass.material</uri>
+            <name>Waterglass</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Shampoo">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0013952765484334165 0.051958998727382195 -0.0018108260608439507 1.5538299741710024 0.3984106696958092 3.1403803166827062</pose> 
+        <mass>0.03857680151762805</mass>
+        <inertia>
+          <ixx>0.00010798802244758554</ixx>
+          <ixy>-6.943082506205243e-21</ixy>
+          <ixz>-7.345705307849507e-21</ixz>
+          <iyy>0.00010122405364985622</iyy>
+          <iyz>2.6095156694892013e-20</iyz>
+          <izz>1.4820134243253202e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Shampoo/Shampoo_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Shampoo/Shampoo_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Shampoo/Shampoo.material</uri>
+            <name>Shampoo</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

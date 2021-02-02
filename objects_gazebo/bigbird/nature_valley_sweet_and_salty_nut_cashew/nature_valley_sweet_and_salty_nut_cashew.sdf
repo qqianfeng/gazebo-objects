@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_sweet_and_salty_nut_cashew">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.015085474606907935 -0.0037654028848160587 0.07343392497750717 1.5674368675387074 -0.0166696728493068 -2.1293415477093567</pose> 
+        <mass>0.09800453415012259</mass>
+        <inertia>
+          <ixx>0.0003441741965161078</ixx>
+          <ixy>-5.610133499018634e-22</ixy>
+          <ixz>3.9168631827617646e-21</ixz>
+          <iyy>0.00019982858782389293</iyy>
+          <iyz>1.0725024536050864e-23</iyz>
+          <izz>0.0001770501869892024</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/nature_valley_sweet_and_salty_nut_cashew_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/nature_valley_sweet_and_salty_nut_cashew.material</uri>
+            <name>nature_valley_sweet_and_salty_nut_cashew</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

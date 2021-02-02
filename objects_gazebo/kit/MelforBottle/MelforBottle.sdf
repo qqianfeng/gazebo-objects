@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="MelforBottle">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.010327261505477229 0.03844051920782342 0.00035716683819857626 -1.5596564897062875 -1.5032672177830204 -0.013851712488132899</pose> 
+        <mass>0.08807965010652434</mass>
+        <inertia>
+          <ixx>0.00035940461555090616</ixx>
+          <ixy>9.34041459844933e-21</ixy>
+          <ixz>2.0830122246603422e-22</ixz>
+          <iyy>0.0003592585707856258</iyy>
+          <iyz>-8.584959692855851e-23</iyz>
+          <izz>5.622785746368892e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/MelforBottle/MelforBottle_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/MelforBottle/MelforBottle_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/MelforBottle/MelforBottle.material</uri>
+            <name>MelforBottle</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

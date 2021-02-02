@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="003_cracker_box">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.013657872174251878 -0.013876332723113357 0.10302055916279186 0.0024353486253942853 0.006732277738193318 -3.1411020291557405</pose> 
+        <mass>0.23097137532988093</mass>
+        <inertia>
+          <ixx>0.0013397983428475447</ixx>
+          <ixy>1.4755914549846708e-22</ixy>
+          <ixz>1.0724526365204072e-21</ixz>
+          <iyy>0.0009377121713481873</iyy>
+          <iyz>8.959697670204539e-20</iyz>
+          <izz>0.000577176074294215</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/003_cracker_box/003_cracker_box_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/003_cracker_box/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/003_cracker_box/003_cracker_box.material</uri>
+            <name>003_cracker_box</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

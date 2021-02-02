@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="honey_bunches_of_oats_honey_roasted">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0005915945629479579 -0.0130035689647546 0.1374858587204896 3.1349338871773105 -0.007694793833726419 2.676050098238747</pose> 
+        <mass>0.31575941691615844</mass>
+        <inertia>
+          <ixx>0.0028247984734953977</ixx>
+          <ixy>8.180152650216769e-19</ixy>
+          <ixz>-1.0575486117658926e-21</ixz>
+          <iyy>0.001997214726489463</iyy>
+          <iyz>-4.717481526393773e-22</iyz>
+          <izz>0.001018013442348721</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/honey_bunches_of_oats_honey_roasted/honey_bunches_of_oats_honey_roasted_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/honey_bunches_of_oats_honey_roasted/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/honey_bunches_of_oats_honey_roasted/honey_bunches_of_oats_honey_roasted.material</uri>
+            <name>honey_bunches_of_oats_honey_roasted</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

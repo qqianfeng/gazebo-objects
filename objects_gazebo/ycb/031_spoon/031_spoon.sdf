@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="031_spoon">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.03685764651402424 -0.003809997196939414 0.008894857924024035 -0.4724546448891708 -1.5543969379332983 0.1286894228348995</pose> 
+        <mass>0.007688344093587778</mass>
+        <inertia>
+          <ixx>1.9087449471544153e-05</ixx>
+          <ixy>1.4418877958849702e-22</ixy>
+          <ixz>1.8931685376691785e-22</ixz>
+          <iyy>1.8746958755464454e-05</iyy>
+          <iyz>6.840428343071304e-21</iyz>
+          <izz>6.661787699816911e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/031_spoon/031_spoon_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/031_spoon/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/031_spoon/031_spoon.material</uri>
+            <name>031_spoon</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

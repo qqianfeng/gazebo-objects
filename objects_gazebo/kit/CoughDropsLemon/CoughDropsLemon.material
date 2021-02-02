@@ -1,0 +1,14 @@
+material CoughDropsLemon
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../CoughDropsLemon/CoughDropsLemon_25k_tex.png
+      }
+    }
+  }
+}

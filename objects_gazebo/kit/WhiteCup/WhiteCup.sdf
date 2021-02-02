@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="WhiteCup">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.007130803144278097 0.028015014479061722 -0.003431033077104351 -3.0556399407374952 1.2673767271953111 0.043410507356483684</pose> 
+        <mass>0.047444223037796426</mass>
+        <inertia>
+          <ixx>5.151940965634997e-05</ixx>
+          <ixy>-9.830903515155126e-21</ixy>
+          <ixz>2.0281533069518832e-21</ixz>
+          <iyy>4.6520145944818434e-05</iyy>
+          <iyz>-2.3881026027804943e-22</iyz>
+          <izz>4.2945423581632175e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/WhiteCup/WhiteCup_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/WhiteCup/WhiteCup_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/WhiteCup/WhiteCup.material</uri>
+            <name>WhiteCup</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

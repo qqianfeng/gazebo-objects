@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="GreenSaltCylinder">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002456093154577073 0.010846495040392666 0.0013715017323726506 -1.226877847426299 -1.5125096044968975 -0.3591795954168261</pose> 
+        <mass>0.014397683106845267</mass>
+        <inertia>
+          <ixx>1.3675724864400546e-05</ixx>
+          <ixy>4.032165735959415e-23</ixy>
+          <ixz>-3.389165811514445e-22</ixz>
+          <iyy>1.365758304341e-05</iyy>
+          <iyz>5.484250113924021e-23</iyz>
+          <izz>3.2778640794177247e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/GreenSaltCylinder/GreenSaltCylinder_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/GreenSaltCylinder/GreenSaltCylinder_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/GreenSaltCylinder/GreenSaltCylinder.material</uri>
+            <name>GreenSaltCylinder</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

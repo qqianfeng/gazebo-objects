@@ -1,0 +1,14 @@
+material suave_sweet_guava_nectar_body_wash
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../suave_sweet_guava_nectar_body_wash/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

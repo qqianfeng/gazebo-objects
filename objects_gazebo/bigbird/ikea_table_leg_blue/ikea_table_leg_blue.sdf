@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="ikea_table_leg_blue">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.00638421998552492 0.0008192614679801163 0.1311879866077519 3.1166947983158217 -0.0280360710010576 1.2576720348420893</pose> 
+        <mass>0.07636095341611744</mass>
+        <inertia>
+          <ixx>0.0003786739199106469</ixx>
+          <ixy>-5.2564212889071084e-20</ixy>
+          <ixz>-1.364365964960562e-19</ixz>
+          <iyy>0.00037828750560201527</iyy>
+          <iyz>2.328423482833371e-20</iyz>
+          <izz>3.729053584883245e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/ikea_table_leg_blue/ikea_table_leg_blue_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/ikea_table_leg_blue/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/ikea_table_leg_blue/ikea_table_leg_blue.material</uri>
+            <name>ikea_table_leg_blue</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

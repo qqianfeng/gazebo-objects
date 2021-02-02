@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="ritz_crackers">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.016873832484215773 -0.01580632191989252 0.10228350018614815 3.1399582994938737 0.0028198536914508703 2.8082222819927365</pose> 
+        <mass>0.17166255270729616</mass>
+        <inertia>
+          <ixx>0.0009273496280206701</ixx>
+          <ixy>4.332572364811276e-20</ixy>
+          <ixz>-1.1546867520374013e-21</ixz>
+          <iyy>0.0006028613865100441</iyy>
+          <iyz>4.0815776599331666e-23</iyz>
+          <izz>0.0004036699844421937</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/ritz_crackers/ritz_crackers_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/ritz_crackers/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/ritz_crackers/ritz_crackers.material</uri>
+            <name>ritz_crackers</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

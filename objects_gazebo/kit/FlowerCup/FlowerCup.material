@@ -1,0 +1,14 @@
+material FlowerCup
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../FlowerCup/FlowerCup_25k_tex.png
+      }
+    }
+  }
+}

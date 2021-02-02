@@ -1,0 +1,14 @@
+material cholula_chipotle_hot_sauce
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../cholula_chipotle_hot_sauce/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

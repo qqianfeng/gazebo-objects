@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="cinnamon_toast_crunch">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.01235715511142086 -0.01145476146022697 0.13139090153048288 3.1316533581859307 0.006321185956182102 -2.1141433605888618</pose> 
+        <mass>0.297035904993947</mass>
+        <inertia>
+          <ixx>0.002540872962800538</ixx>
+          <ixy>-1.0723528834338485e-18</ixy>
+          <ixz>-2.699348768287646e-20</ixz>
+          <iyy>0.0017159062856850272</iyy>
+          <iyz>2.1205763746644722e-20</iyz>
+          <izz>0.0009929521992814024</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/cinnamon_toast_crunch/cinnamon_toast_crunch_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/cinnamon_toast_crunch/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/cinnamon_toast_crunch/cinnamon_toast_crunch.material</uri>
+            <name>cinnamon_toast_crunch</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

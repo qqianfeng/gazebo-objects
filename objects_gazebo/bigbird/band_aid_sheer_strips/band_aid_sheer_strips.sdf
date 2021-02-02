@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="band_aid_sheer_strips">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.006650568320180823 -0.006569262262022039 0.055335215333905716 -0.011155871981681111 0.04351473497342279 -3.0251980257937268</pose> 
+        <mass>0.03231946186707989</mass>
+        <inertia>
+          <ixx>4.029847232742283e-05</ixx>
+          <ixy>2.555271858414758e-21</ixy>
+          <ixz>1.3036687832548687e-21</ixz>
+          <iyy>3.324144468272018e-05</iyy>
+          <iyz>8.418199963238798e-22</iyz>
+          <izz>1.7547522029195496e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/band_aid_sheer_strips/band_aid_sheer_strips_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/band_aid_sheer_strips/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/band_aid_sheer_strips/band_aid_sheer_strips.material</uri>
+            <name>band_aid_sheer_strips</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

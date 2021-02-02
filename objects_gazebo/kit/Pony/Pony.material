@@ -1,0 +1,14 @@
+material Pony
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Pony/Pony_25k_tex.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="038_padlock">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.01905967108940058 0.005557251915537089 0.013349696405974 0.8364650784966955 -1.4726561636282611 3.066749333029551</pose> 
+        <mass>0.006292381731508567</mass>
+        <inertia>
+          <ixx>2.719094046947672e-06</ixx>
+          <ixy>1.9524430098051522e-22</ixy>
+          <ixz>-4.0271059424928856e-23</ixz>
+          <iyy>1.8730369356004379e-06</iyy>
+          <iyz>-2.94816516170067e-22</iyz>
+          <izz>1.4438139639570604e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/038_padlock/038_padlock_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/038_padlock/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/038_padlock/038_padlock.material</uri>
+            <name>038_padlock</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

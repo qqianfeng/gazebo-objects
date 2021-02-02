@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="023_wine_glass">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.18652878599953 0.16650929075335338 0.05110064046905654 2.033386829574061 -0.024776589272834614 0.5348382447429206</pose> 
+        <mass>0.002978223385575014</mass>
+        <inertia>
+          <ixx>6.167607861359133e-06</ixx>
+          <ixy>1.4430257909664988e-22</ixy>
+          <ixz>1.9398776163404666e-22</ixz>
+          <iyy>6.0533334353274676e-06</iyy>
+          <iyz>-1.3052293103591762e-21</iyz>
+          <izz>1.612892280504661e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/023_wine_glass/023_wine_glass_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/023_wine_glass/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/023_wine_glass/023_wine_glass.material</uri>
+            <name>023_wine_glass</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

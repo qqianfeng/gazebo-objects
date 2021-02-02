@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="WhippedCream">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003286376598352091 0.06928322198793337 -0.0009390282743420685 1.552197510622499 1.0172719525475882 3.1290578327985688</pose> 
+        <mass>0.05668368822553335</mass>
+        <inertia>
+          <ixx>0.00022642411675227403</ixx>
+          <ixy>1.0075046896460913e-19</ixy>
+          <ixz>2.5168913071323434e-21</ixz>
+          <iyy>0.00022635271375574968</iyy>
+          <iyz>-7.792178009207934e-21</iyz>
+          <izz>2.362140022286727e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/WhippedCream/WhippedCream_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/WhippedCream/WhippedCream_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/WhippedCream/WhippedCream.material</uri>
+            <name>WhippedCream</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

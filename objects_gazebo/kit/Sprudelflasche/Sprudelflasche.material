@@ -1,0 +1,14 @@
+material Sprudelflasche
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Sprudelflasche/Sprudelflasche_25k_tex.png
+      }
+    }
+  }
+}

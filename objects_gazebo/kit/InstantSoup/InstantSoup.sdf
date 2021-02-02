@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="InstantSoup">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002262303474573912 0.007827669887932829 0.0005553403807920626 3.123432932334786 0.2650503402565182 3.1413414240105837</pose> 
+        <mass>0.058125263347199904</mass>
+        <inertia>
+          <ixx>0.00010156097894523286</ixx>
+          <ixy>-9.786332022872248e-22</ixy>
+          <ixz>-7.406284086733273e-21</ixz>
+          <iyy>8.070216564222836e-05</iyy>
+          <iyz>1.5610959664757772e-20</iyz>
+          <izz>5.131501112832332e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/InstantSoup/InstantSoup_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/InstantSoup/InstantSoup_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/InstantSoup/InstantSoup.material</uri>
+            <name>InstantSoup</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

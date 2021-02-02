@@ -1,0 +1,14 @@
+material hersheys_bar
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../hersheys_bar/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

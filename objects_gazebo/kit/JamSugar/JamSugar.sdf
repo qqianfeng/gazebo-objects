@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="JamSugar">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002435960221607512 0.020388271507560958 -0.0011037698622965674 -1.5479303892973872 0.3786654035856033 3.1182998895038856</pose> 
+        <mass>0.04935075820191681</mass>
+        <inertia>
+          <ixx>8.433870734461068e-05</ixx>
+          <ixy>-7.722578197729678e-21</ixy>
+          <ixz>2.6056571325432447e-21</ixz>
+          <iyy>6.640748023451659e-05</iyy>
+          <iyz>5.358277370780002e-21</iyz>
+          <izz>3.7680320584356016e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/JamSugar/JamSugar_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/JamSugar/JamSugar_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/JamSugar/JamSugar.material</uri>
+            <name>JamSugar</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

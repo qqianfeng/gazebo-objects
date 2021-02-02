@@ -1,0 +1,14 @@
+material nature_valley_crunchy_variety_pack
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../nature_valley_crunchy_variety_pack/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

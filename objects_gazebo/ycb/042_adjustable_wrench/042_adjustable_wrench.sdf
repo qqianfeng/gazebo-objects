@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="042_adjustable_wrench">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004394122473984437 -0.029187795827845253 0.0038120580855018904 -2.211833229968163 -1.5407010512443815 1.1765798595886838</pose> 
+        <mass>0.007743069666928448</mass>
+        <inertia>
+          <ixx>1.9202770269636296e-05</ixx>
+          <ixy>-1.9566481283651962e-23</ixy>
+          <ixz>-2.5243844885959843e-22</ixz>
+          <iyy>1.786149257831683e-05</iyy>
+          <iyz>3.5678722605670416e-23</iyz>
+          <izz>1.474912373496289e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/042_adjustable_wrench/042_adjustable_wrench_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/042_adjustable_wrench/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/042_adjustable_wrench/042_adjustable_wrench.material</uri>
+            <name>042_adjustable_wrench</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

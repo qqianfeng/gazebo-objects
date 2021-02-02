@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="krylon_low_odor_clear_finish">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.008622876646969528 0.007033854926137385 0.09899689485889442 3.1393912309406846 -0.0004924566900125172 -2.587377800924591</pose> 
+        <mass>0.07068594978207797</mass>
+        <inertia>
+          <ixx>0.0002334791777533578</ixx>
+          <ixy>-3.4006112332594595e-20</ixy>
+          <ixz>-1.1454925671143141e-20</ixz>
+          <iyy>0.0002329352926766674</iyy>
+          <iyz>5.44016077186538e-22</iyz>
+          <izz>4.073030345424259e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/krylon_low_odor_clear_finish/krylon_low_odor_clear_finish_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/krylon_low_odor_clear_finish/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/krylon_low_odor_clear_finish/krylon_low_odor_clear_finish.material</uri>
+            <name>krylon_low_odor_clear_finish</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

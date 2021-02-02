@@ -1,0 +1,14 @@
+material paper_plate
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../paper_plate/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

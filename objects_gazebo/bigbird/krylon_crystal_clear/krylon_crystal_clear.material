@@ -1,0 +1,14 @@
+material krylon_crystal_clear
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../krylon_crystal_clear/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

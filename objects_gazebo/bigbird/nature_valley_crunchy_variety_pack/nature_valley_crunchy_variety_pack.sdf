@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_crunchy_variety_pack">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0009812314454488947 0.0023305881366095915 0.07487752988913773 1.5801884901189416 -0.0013202735292826117 -2.132202215159058</pose> 
+        <mass>0.12353245241990486</mass>
+        <inertia>
+          <ixx>0.0004854877582836771</ixx>
+          <ixy>-3.328047794616913e-22</ixy>
+          <ixz>-7.182660255945382e-20</ixz>
+          <iyy>0.00029806369317640874</iyy>
+          <iyz>-4.601368494575293e-22</iyz>
+          <izz>0.00024046397509788317</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_crunchy_variety_pack/nature_valley_crunchy_variety_pack_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_crunchy_variety_pack/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_crunchy_variety_pack/nature_valley_crunchy_variety_pack.material</uri>
+            <name>nature_valley_crunchy_variety_pack</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="cup_noodles_chicken">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0002924467172719368 0.013535226249683998 0.06392903495177354 -3.129777746931857 0.04242551839767781 1.2964390274488833</pose> 
+        <mass>0.072829597285108</mass>
+        <inertia>
+          <ixx>0.0001113074401863607</ixx>
+          <ixy>-9.404620323343545e-21</ixy>
+          <ixz>-6.211479614008735e-21</ixz>
+          <iyy>0.00011057806656888595</iyy>
+          <iyz>4.252169169262346e-21</iyz>
+          <izz>7.820721890077701e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/cup_noodles_chicken/cup_noodles_chicken_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/cup_noodles_chicken/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/cup_noodles_chicken/cup_noodles_chicken.material</uri>
+            <name>cup_noodles_chicken</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

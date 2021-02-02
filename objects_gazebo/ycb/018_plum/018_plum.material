@@ -1,0 +1,14 @@
+material 018_plum
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../018_plum/texture_map.png
+      }
+    }
+  }
+}

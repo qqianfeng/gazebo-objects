@@ -1,0 +1,14 @@
+material Moon
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Moon/Moon_25k_tex.png
+      }
+    }
+  }
+}

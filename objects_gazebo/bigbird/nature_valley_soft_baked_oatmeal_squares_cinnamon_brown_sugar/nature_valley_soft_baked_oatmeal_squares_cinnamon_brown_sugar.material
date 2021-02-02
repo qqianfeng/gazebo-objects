@@ -1,0 +1,14 @@
+material nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

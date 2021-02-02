@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="campbells_soup_at_hand_creamy_tomato">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0049931100534965 -0.002787818687302103 0.06352442685548987 -0.012420788789577645 -0.01161270907404868 -2.055229614367877</pose> 
+        <mass>0.03644121703861219</mass>
+        <inertia>
+          <ixx>4.7202729775306205e-05</ixx>
+          <ixy>8.402163515583247e-21</ixy>
+          <ixz>-1.7874994760434338e-20</ixz>
+          <iyy>4.718884397494287e-05</iyy>
+          <iyz>-8.614074910263698e-21</iyz>
+          <izz>1.8528314002969323e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/campbells_soup_at_hand_creamy_tomato/campbells_soup_at_hand_creamy_tomato_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/campbells_soup_at_hand_creamy_tomato/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/campbells_soup_at_hand_creamy_tomato/campbells_soup_at_hand_creamy_tomato.material</uri>
+            <name>campbells_soup_at_hand_creamy_tomato</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

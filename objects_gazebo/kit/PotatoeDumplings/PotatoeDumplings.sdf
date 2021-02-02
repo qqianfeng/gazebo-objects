@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="PotatoeDumplings">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.007087887820919505 0.033069889211639274 2.0030098319845913e-05 -1.5886825345700504 0.3860017786801247 3.110777148528571</pose> 
+        <mass>0.047636239855076166</mass>
+        <inertia>
+          <ixx>0.00012148658552463558</ixx>
+          <ixy>1.857037057417994e-21</ixy>
+          <ixz>6.961158288996518e-21</ixz>
+          <iyy>8.285992204200063e-05</iyy>
+          <iyz>1.0006811107405281e-20</iyz>
+          <izz>4.650748182015466e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/PotatoeDumplings/PotatoeDumplings_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/PotatoeDumplings/PotatoeDumplings_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/PotatoeDumplings/PotatoeDumplings.material</uri>
+            <name>PotatoeDumplings</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

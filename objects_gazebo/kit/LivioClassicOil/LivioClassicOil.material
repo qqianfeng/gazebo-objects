@@ -1,0 +1,14 @@
+material LivioClassicOil
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../LivioClassicOil/LivioClassicOil_25k_tex.png
+      }
+    }
+  }
+}

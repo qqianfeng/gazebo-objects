@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="InstantMousse">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004550910864114584 0.03710081049408401 0.0031228984162853376 1.571570186471586 0.19367537743403423 -3.1230658178798882</pose> 
+        <mass>0.04428899102380882</mass>
+        <inertia>
+          <ixx>0.00012896098085775665</ixx>
+          <ixy>1.6124392570818837e-21</ixy>
+          <ixz>-6.2923461424779416e-21</ixz>
+          <iyy>8.498307920757466e-05</iyy>
+          <iyz>1.5363746566337104e-20</iyz>
+          <izz>4.892211986967649e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/InstantMousse/InstantMousse_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/InstantMousse/InstantMousse_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/InstantMousse/InstantMousse.material</uri>
+            <name>InstantMousse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

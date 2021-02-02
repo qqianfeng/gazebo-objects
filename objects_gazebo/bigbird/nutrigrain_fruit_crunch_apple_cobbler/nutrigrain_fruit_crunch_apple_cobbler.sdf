@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nutrigrain_fruit_crunch_apple_cobbler">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009505008371804473 0.0033123809064876356 0.07590365384101663 1.589713323030901 -0.015790246416944383 -2.2842767814586917</pose> 
+        <mass>0.13045358947346017</mass>
+        <inertia>
+          <ixx>0.0005265166472310062</ixx>
+          <ixy>1.2382602994151412e-21</ixy>
+          <ixz>-6.709731162443794e-20</ixz>
+          <iyy>0.0003246983564464138</iyy>
+          <iyz>3.809974555491186e-22</iyz>
+          <izz>0.0002613111471233468</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/nutrigrain_fruit_crunch_apple_cobbler_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/nutrigrain_fruit_crunch_apple_cobbler.material</uri>
+            <name>nutrigrain_fruit_crunch_apple_cobbler</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

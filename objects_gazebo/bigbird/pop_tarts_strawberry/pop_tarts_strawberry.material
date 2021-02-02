@@ -1,0 +1,14 @@
+material pop_tarts_strawberry
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../pop_tarts_strawberry/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

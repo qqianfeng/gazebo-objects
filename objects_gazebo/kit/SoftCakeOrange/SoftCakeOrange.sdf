@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="SoftCakeOrange">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0010199055021157613 0.027397621443982407 0.0012586658250225357 0.0048432806492740045 0.20822221152012937 -3.139436434364712</pose> 
+        <mass>0.13910506650065055</mass>
+        <inertia>
+          <ixx>0.0006006196692942602</ixx>
+          <ixy>-7.163907161462961e-20</ixy>
+          <ixz>-7.53224420521993e-20</ixz>
+          <iyy>0.0004491719221521715</iyy>
+          <iyz>-3.0199083302102297e-19</iyz>
+          <izz>0.00022651756509566135</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/SoftCakeOrange/SoftCakeOrange_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/SoftCakeOrange/SoftCakeOrange_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/SoftCakeOrange/SoftCakeOrange.material</uri>
+            <name>SoftCakeOrange</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,14 @@
+material v8_fusion_peach_mango
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../v8_fusion_peach_mango/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

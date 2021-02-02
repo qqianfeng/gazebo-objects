@@ -1,0 +1,14 @@
+material krylon_short_cuts
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../krylon_short_cuts/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

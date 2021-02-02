@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Peas">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0019040249491114579 0.016141512484331506 0.0019533799145786566 1.5790128529128336 -0.452398663949469 3.137763966053014</pose> 
+        <mass>0.04687300397490212</mass>
+        <inertia>
+          <ixx>6.156968243240549e-05</ixx>
+          <ixy>-3.0744426450019917e-21</ixy>
+          <ixz>8.35713890869977e-21</ixz>
+          <iyy>6.152728386323662e-05</iyy>
+          <iyz>1.4721148104476636e-20</iyz>
+          <izz>3.235344618746236e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Peas/Peas_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Peas/Peas_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Peas/Peas.material</uri>
+            <name>Peas</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

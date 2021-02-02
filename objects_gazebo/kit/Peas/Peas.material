@@ -1,0 +1,14 @@
+material Peas
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Peas/Peas_25k_tex.png
+      }
+    }
+  }
+}

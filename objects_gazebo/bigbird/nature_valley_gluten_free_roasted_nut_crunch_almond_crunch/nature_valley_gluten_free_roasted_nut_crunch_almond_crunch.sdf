@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_gluten_free_roasted_nut_crunch_almond_crunch">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.01201352354238675 -0.004895055190754219 0.07180433111521257 1.545205649745845 -0.012797832935276563 -2.5426108236239426</pose> 
+        <mass>0.09588978696164191</mass>
+        <inertia>
+          <ixx>0.0003395638797502571</ixx>
+          <ixy>-8.624337686156768e-22</ixy>
+          <ixz>1.1052005771758087e-20</ixz>
+          <iyy>0.0002066700868451491</iyy>
+          <iyz>1.183379898094259e-22</iyz>
+          <izz>0.00016337137799020025</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch/nature_valley_gluten_free_roasted_nut_crunch_almond_crunch.material</uri>
+            <name>nature_valley_gluten_free_roasted_nut_crunch_almond_crunch</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

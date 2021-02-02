@@ -1,0 +1,14 @@
+material 056_tennis_ball
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../056_tennis_ball/texture_map.png
+      }
+    }
+  }
+}

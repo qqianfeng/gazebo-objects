@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="mom_to_mom_butternut_squash_pear">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009193967508567229 0.0009397423058965414 0.07132815570068361 3.1396317557638134 -0.03818993318268155 -2.5967604492295284</pose> 
+        <mass>0.025308469210482083</mass>
+        <inertia>
+          <ixx>4.854181580857487e-05</ixx>
+          <ixy>2.2905891365742013e-21</ixy>
+          <ixz>7.258810167254433e-21</ixz>
+          <iyy>4.5562986998836544e-05</iyy>
+          <iyz>-1.277201701813967e-20</iyz>
+          <izz>7.626590737056486e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/mom_to_mom_butternut_squash_pear_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/mom_to_mom_butternut_squash_pear.material</uri>
+            <name>mom_to_mom_butternut_squash_pear</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

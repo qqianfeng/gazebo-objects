@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="suave_sweet_guava_nectar_body_wash">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00502211319216603 -0.005800137674100224 0.11191421879606978 3.1392546025169215 -0.0014909984570776087 -2.8936068302861404</pose> 
+        <mass>0.042927303379737165</mass>
+        <inertia>
+          <ixx>0.00015280488801448376</ixx>
+          <ixy>1.4531792702001626e-20</ixy>
+          <ixz>3.431360687291457e-21</ixz>
+          <iyy>0.00014525041555434886</iyy>
+          <iyz>-1.2542995555233914e-20</iyz>
+          <izz>1.6265765541624417e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/suave_sweet_guava_nectar_body_wash/suave_sweet_guava_nectar_body_wash_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/suave_sweet_guava_nectar_body_wash/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/suave_sweet_guava_nectar_body_wash/suave_sweet_guava_nectar_body_wash.material</uri>
+            <name>suave_sweet_guava_nectar_body_wash</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

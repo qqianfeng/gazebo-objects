@@ -1,0 +1,14 @@
+material vo5_tea_therapy_healthful_green_tea_smoothing_shampoo
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../vo5_tea_therapy_healthful_green_tea_smoothing_shampoo/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

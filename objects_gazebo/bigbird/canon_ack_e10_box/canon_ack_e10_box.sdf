@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="canon_ack_e10_box">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004262864319416597 -0.002377661712173268 0.09292297835331405 3.135340258176682 -0.02406702320389953 2.6790442186745613</pose> 
+        <mass>0.0820341630032533</mass>
+        <inertia>
+          <ixx>0.00025975744916536696</ixx>
+          <ixy>-4.010388301143758e-20</ixy>
+          <ixz>5.764406362430453e-21</ixz>
+          <iyy>0.0002349082639078589</iyy>
+          <iyz>6.699140411459414e-21</iyz>
+          <izz>6.556597033717185e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/canon_ack_e10_box/canon_ack_e10_box_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/canon_ack_e10_box/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/canon_ack_e10_box/canon_ack_e10_box.material</uri>
+            <name>canon_ack_e10_box</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

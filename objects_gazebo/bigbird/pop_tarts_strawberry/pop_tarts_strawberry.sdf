@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="pop_tarts_strawberry">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0008035322179718295 -0.001964785497005087 0.07253934562969941 -3.141143199126361 -0.005743913100910832 2.637274350389028</pose> 
+        <mass>0.12018347490923409</mass>
+        <inertia>
+          <ixx>0.0002808969479552032</ixx>
+          <ixy>-1.0731052375945373e-21</ixy>
+          <ixz>-2.0227894358365816e-21</ixz>
+          <iyy>0.00027061815972212477</iyy>
+          <iyz>-1.760952367527092e-21</iyz>
+          <izz>0.00016760605674420525</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/pop_tarts_strawberry/pop_tarts_strawberry_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/pop_tarts_strawberry/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/pop_tarts_strawberry/pop_tarts_strawberry.material</uri>
+            <name>pop_tarts_strawberry</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

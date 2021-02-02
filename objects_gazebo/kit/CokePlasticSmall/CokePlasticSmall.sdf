@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="CokePlasticSmall">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0027119956435517952 0.014591514109732273 -0.0044578128687308045 1.5519541934540864 0.6302292043284919 -0.0005750205955492567</pose> 
+        <mass>0.06493714148360473</mass>
+        <inertia>
+          <ixx>0.00024070453068599315</ixx>
+          <ixy>3.975963889916119e-20</ixy>
+          <ixz>-6.014065844765042e-22</ixz>
+          <iyy>0.00024062378717284484</iyy>
+          <iyz>8.51415922315177e-22</iyz>
+          <izz>3.1606811196621115e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/CokePlasticSmall/CokePlasticSmall_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/CokePlasticSmall/CokePlasticSmall_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/CokePlasticSmall/CokePlasticSmall.material</uri>
+            <name>CokePlasticSmall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

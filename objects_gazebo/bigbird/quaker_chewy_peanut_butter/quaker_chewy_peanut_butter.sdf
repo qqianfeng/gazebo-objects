@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="quaker_chewy_peanut_butter">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.014223864889131481 -0.001099190052330782 0.08672985662363382 3.1362411676805513 -0.01491793397280476 -2.0697719693656023</pose> 
+        <mass>0.10931903072064224</mass>
+        <inertia>
+          <ixx>0.00043904713098547743</ixx>
+          <ixy>6.870899502078779e-20</ixy>
+          <ixz>6.81721029294373e-23</ixz>
+          <iyy>0.00026563211231633627</iyy>
+          <iyz>-4.260176284544931e-22</iyz>
+          <izz>0.00020852803847422804</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/quaker_chewy_peanut_butter/quaker_chewy_peanut_butter_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/quaker_chewy_peanut_butter/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/quaker_chewy_peanut_butter/quaker_chewy_peanut_butter.material</uri>
+            <name>quaker_chewy_peanut_butter</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

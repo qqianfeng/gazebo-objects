@@ -1,0 +1,14 @@
+material nutrigrain_chotolatey_crunch
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../nutrigrain_chotolatey_crunch/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

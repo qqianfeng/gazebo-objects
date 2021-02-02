@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="clif_crunch_chocolate_chip">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.010361795075225827 -0.0038289431538944367 0.07684438354088387 1.5199876684036542 0.00075154152230923 -2.5279925164585983</pose> 
+        <mass>0.11290864724255883</mass>
+        <inertia>
+          <ixx>0.0004349472437640626</ixx>
+          <ixy>-5.135984870434319e-21</ixy>
+          <ixz>4.5108161135583065e-20</ixz>
+          <iyy>0.0002548971933641863</iyy>
+          <iyz>1.8203325715868244e-21</iyz>
+          <izz>0.00022203636747010862</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/clif_crunch_chocolate_chip/clif_crunch_chocolate_chip_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/clif_crunch_chocolate_chip/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/clif_crunch_chocolate_chip/clif_crunch_chocolate_chip.material</uri>
+            <name>clif_crunch_chocolate_chip</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

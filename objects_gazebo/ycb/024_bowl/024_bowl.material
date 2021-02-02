@@ -1,0 +1,14 @@
+material 024_bowl
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../024_bowl/texture_map.png
+      }
+    }
+  }
+}

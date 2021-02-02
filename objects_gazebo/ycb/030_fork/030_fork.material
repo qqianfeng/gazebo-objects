@@ -1,0 +1,14 @@
+material 030_fork
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../030_fork/texture_map.png
+      }
+    }
+  }
+}

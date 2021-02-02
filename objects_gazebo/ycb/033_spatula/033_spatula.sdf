@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="033_spatula">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.008352602890534829 -0.08832170851450706 0.013440513088427301 -0.07449395781809266 -1.5451096399353763 -0.18642886911703527</pose> 
+        <mass>0.03505022777143209</mass>
+        <inertia>
+          <ixx>0.0001798275466446638</ixx>
+          <ixy>7.390060206403037e-21</ixy>
+          <ixz>1.6355219713347561e-21</ixz>
+          <iyy>0.0001714687119448401</iyy>
+          <iyz>3.9907688139670406e-20</iyz>
+          <izz>1.2324693357613316e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/033_spatula/033_spatula_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/033_spatula/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/033_spatula/033_spatula.material</uri>
+            <name>033_spatula</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

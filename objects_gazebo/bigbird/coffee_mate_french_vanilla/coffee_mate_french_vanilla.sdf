@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="coffee_mate_french_vanilla">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00278934555002847 -0.014412411915357946 0.08969472795622703 3.13145976380018 -0.0050990748395633575 -2.1454222479375615</pose> 
+        <mass>0.07109648666110904</mass>
+        <inertia>
+          <ixx>0.00018886427609807042</ixx>
+          <ixy>7.734930577407636e-20</ixy>
+          <ixz>-9.826329672362556e-21</ixz>
+          <iyy>0.00018804878863029327</iyy>
+          <iyz>3.1882552332862105e-21</iyz>
+          <izz>4.6763536555100134e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/coffee_mate_french_vanilla/coffee_mate_french_vanilla_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/coffee_mate_french_vanilla/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/coffee_mate_french_vanilla/coffee_mate_french_vanilla.material</uri>
+            <name>coffee_mate_french_vanilla</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

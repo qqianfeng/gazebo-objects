@@ -1,0 +1,14 @@
+material gushers_tropical_flavors
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../gushers_tropical_flavors/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

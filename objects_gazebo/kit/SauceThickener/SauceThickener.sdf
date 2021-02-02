@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="SauceThickener">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00184346054530757 0.022973922657665905 0.0005899117512432368 1.5888454738061517 0.1371672363413781 0.009603604532684886</pose> 
+        <mass>0.03714403302862563</mass>
+        <inertia>
+          <ixx>5.3710003206688874e-05</ixx>
+          <ixy>-1.8192117574777992e-21</ixy>
+          <ixz>-9.807024822387246e-22</ixz>
+          <iyy>5.3665865117478816e-05</iyy>
+          <iyz>9.303735480574095e-22</iyz>
+          <izz>1.8248291489596405e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/SauceThickener/SauceThickener_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/SauceThickener/SauceThickener_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/SauceThickener/SauceThickener.material</uri>
+            <name>SauceThickener</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

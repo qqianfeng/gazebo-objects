@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_sweet_and_salty_nut_peanut">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.012143932437952953 -0.005799494127920065 0.07345979356594436 1.6104970849596032 -0.008429857126350842 -2.4364748981267366</pose> 
+        <mass>0.1017367629295027</mass>
+        <inertia>
+          <ixx>0.0003557889563212621</ixx>
+          <ixy>-1.7338674995189293e-22</ixy>
+          <ixz>2.805633481516583e-20</ixz>
+          <iyy>0.00021112600331382224</iyy>
+          <iyz>-3.58353434031783e-22</iyz>
+          <izz>0.0001815650918647604</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_peanut/nature_valley_sweet_and_salty_nut_peanut_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_peanut/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_peanut/nature_valley_sweet_and_salty_nut_peanut.material</uri>
+            <name>nature_valley_sweet_and_salty_nut_peanut</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

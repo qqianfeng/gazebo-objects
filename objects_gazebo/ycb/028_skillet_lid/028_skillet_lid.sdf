@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="028_skillet_lid">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.008456467787328226 0.023817368027399123 0.019355483458278575 0.39159029037341236 -1.5600120609626897 -0.7434944303958975</pose> 
+        <mass>0.21443481989413782</mass>
+        <inertia>
+          <ixx>0.0014194293706084867</ixx>
+          <ixy>-1.5123025426036836e-19</ixy>
+          <ixz>-1.6028914634978795e-21</ixz>
+          <iyy>0.0007876849303351525</iyy>
+          <iyz>-5.056355354057055e-21</iyz>
+          <izz>0.0007454402414364815</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/028_skillet_lid/028_skillet_lid_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/028_skillet_lid/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/028_skillet_lid/028_skillet_lid.material</uri>
+            <name>028_skillet_lid</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

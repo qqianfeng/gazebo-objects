@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="002_master_chef_can">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.01710841454070783 -0.009808595718284425 0.07006329320532795 0.0012148628926763516 -0.0014059643711658294 3.062002966131569</pose> 
+        <mass>0.11415636362349622</mass>
+        <inertia>
+          <ixx>0.00026022386072310257</ixx>
+          <ixy>-1.596905860005242e-20</ixy>
+          <ixz>-1.364622627579756e-20</ixz>
+          <iyy>0.00026007459655267136</iyy>
+          <iyz>-2.4255450622035555e-20</iyz>
+          <izz>0.0001481777086922891</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/002_master_chef_can/002_master_chef_can_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/002_master_chef_can/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/002_master_chef_can/002_master_chef_can.material</uri>
+            <name>002_master_chef_can</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

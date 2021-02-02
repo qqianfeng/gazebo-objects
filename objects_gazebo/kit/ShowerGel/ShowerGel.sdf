@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="ShowerGel">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0025139871602055507 0.05296177242964802 0.00011936635206849237 1.5553725890392078 0.30001924623337917 3.138032350426531</pose> 
+        <mass>0.04121742717983794</mass>
+        <inertia>
+          <ixx>0.0001327894005259999</ixx>
+          <ixy>-2.521172256457065e-20</ixy>
+          <ixz>-3.438058790493695e-21</ixz>
+          <iyy>0.00012389823953700386</iyy>
+          <iyz>1.0725803550383743e-20</iyz>
+          <izz>1.68666991637808e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/ShowerGel/ShowerGel_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/ShowerGel/ShowerGel_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/ShowerGel/ShowerGel.material</uri>
+            <name>ShowerGel</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

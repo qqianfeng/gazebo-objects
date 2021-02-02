@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="zilla_night_black_heat">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0005700940785470085 -0.0003057285363595028 0.07382662871791096 -0.04406247252464148 -0.004716587280040398 -1.9461780945151752</pose> 
+        <mass>0.07456911220341648</mass>
+        <inertia>
+          <ixx>0.00016292585641702762</ixx>
+          <ixy>-2.049763459129019e-20</ixy>
+          <ixz>-3.7943048071273945e-20</ixz>
+          <iyy>0.00016219836721189726</iyy>
+          <iyz>-1.7988121925579584e-20</iyz>
+          <izz>6.07180169549185e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/zilla_night_black_heat/zilla_night_black_heat_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/zilla_night_black_heat/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/zilla_night_black_heat/zilla_night_black_heat.material</uri>
+            <name>zilla_night_black_heat</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

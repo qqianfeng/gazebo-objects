@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Wafflerolls">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002944914955947364 0.03696510123365316 0.0008495530054181134 -1.5902268325704516 0.1893587497290282 3.136025626051874</pose> 
+        <mass>0.06866073425296798</mass>
+        <inertia>
+          <ixx>0.00013900266229666838</ixx>
+          <ixy>4.818309468864228e-22</ixy>
+          <ixz>-6.768277632525682e-23</ixz>
+          <iyy>0.0001380260211751598</iyy>
+          <iyz>-1.1612300013634929e-20</iyz>
+          <izz>5.381700762210136e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Wafflerolls/Wafflerolls_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Wafflerolls/Wafflerolls_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Wafflerolls/Wafflerolls.material</uri>
+            <name>Wafflerolls</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

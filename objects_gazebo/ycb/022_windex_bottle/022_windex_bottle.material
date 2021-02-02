@@ -1,0 +1,14 @@
+material 022_windex_bottle
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../022_windex_bottle/texture_map.png
+      }
+    }
+  }
+}

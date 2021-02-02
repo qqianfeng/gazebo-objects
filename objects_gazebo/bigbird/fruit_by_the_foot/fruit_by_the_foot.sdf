@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="fruit_by_the_foot">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0068395143174480545 0.002298687349800761 0.08849746740746306 -3.13652068750569 0.006343359770506734 -2.5580225402909473</pose> 
+        <mass>0.15947210436924883</mass>
+        <inertia>
+          <ixx>0.0006021357454037909</ixx>
+          <ixy>-3.986833797006518e-20</ixy>
+          <ixz>5.058619666899653e-21</ixz>
+          <iyy>0.0004488604892928815</iyy>
+          <iyz>-3.6702032891658524e-21</iyz>
+          <izz>0.0002847286389224411</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/fruit_by_the_foot/fruit_by_the_foot_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/fruit_by_the_foot/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/fruit_by_the_foot/fruit_by_the_foot.material</uri>
+            <name>fruit_by_the_foot</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

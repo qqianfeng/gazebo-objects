@@ -1,0 +1,14 @@
+material YellowSaltCylinderSmall
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../YellowSaltCylinderSmall/YellowSaltCylinderSmall_25k_tex.png
+      }
+    }
+  }
+}

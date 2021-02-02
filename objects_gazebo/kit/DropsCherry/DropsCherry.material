@@ -1,0 +1,14 @@
+material DropsCherry
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../DropsCherry/DropsCherry_25k_tex.png
+      }
+    }
+  }
+}

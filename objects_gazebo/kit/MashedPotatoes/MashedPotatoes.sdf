@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="MashedPotatoes">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009462983862668127 0.05314504568776784 0.005662128306822926 -1.5753843587637475 0.5542654013661611 3.109142364789925</pose> 
+        <mass>0.13397348700649955</mass>
+        <inertia>
+          <ixx>0.0005888734103681854</ixx>
+          <ixy>8.262440380848648e-20</ixy>
+          <ixz>5.516476512303088e-20</ixz>
+          <iyy>0.00041219444846706806</iyy>
+          <iyz>9.397394788892797e-20</iyz>
+          <izz>0.00023793136299812652</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/MashedPotatoes/MashedPotatoes_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/MashedPotatoes/MashedPotatoes_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/MashedPotatoes/MashedPotatoes.material</uri>
+            <name>MashedPotatoes</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

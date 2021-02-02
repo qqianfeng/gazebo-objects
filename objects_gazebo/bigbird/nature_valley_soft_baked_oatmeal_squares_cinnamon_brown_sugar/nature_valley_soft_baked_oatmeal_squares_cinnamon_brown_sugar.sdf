@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00041051545467500676 0.0034925889842563986 0.07307962135269347 -0.5774654838555224 -0.002824739461612927 -2.2187004879568266</pose> 
+        <mass>0.14216704678264086</mass>
+        <inertia>
+          <ixx>0.0004715889461617224</ixx>
+          <ixy>6.868508950064358e-20</ixy>
+          <ixz>2.8967605114212006e-20</ixz>
+          <iyy>0.0002933087565559814</iyy>
+          <iyz>3.0223393608482327e-21</iyz>
+          <izz>0.0002902828886815369</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar.material</uri>
+            <name>nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

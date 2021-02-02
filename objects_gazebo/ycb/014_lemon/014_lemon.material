@@ -1,0 +1,14 @@
+material 014_lemon
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../014_lemon/texture_map.png
+      }
+    }
+  }
+}

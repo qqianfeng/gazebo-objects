@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="036_wood_block">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.023524506215178445 -0.010402908048746952 0.10290508338553672 0.0037331157482622178 0.008881159137067643 -2.0180261030905955</pose> 
+        <mass>0.16051915447476514</mass>
+        <inertia>
+          <ixx>0.0006690621453483418</ixx>
+          <ixy>5.683590283641935e-20</ixy>
+          <ixz>-7.306775624616407e-20</ixz>
+          <iyy>0.0006658857038068514</iyy>
+          <iyz>4.696525250593354e-21</iyz>
+          <izz>0.00020806348318364287</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/036_wood_block/036_wood_block_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/036_wood_block/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/036_wood_block/036_wood_block.material</uri>
+            <name>036_wood_block</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

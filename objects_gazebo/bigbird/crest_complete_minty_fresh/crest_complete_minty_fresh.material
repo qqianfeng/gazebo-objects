@@ -1,0 +1,14 @@
+material crest_complete_minty_fresh
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../crest_complete_minty_fresh/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

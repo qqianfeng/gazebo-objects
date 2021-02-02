@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="040_large_marker">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0357443956198035 -0.006432725371718517 0.009023244684053461 -1.5716521051490457 1.2309745141154484 -3.1206595098325494</pose> 
+        <mass>0.003271032064138165</mass>
+        <inertia>
+          <ixx>3.852228537111086e-06</ixx>
+          <ixy>-4.0412518073457263e-22</ixy>
+          <ixz>3.052244290573703e-23</ixz>
+          <iyy>3.850818564062045e-06</iyy>
+          <iyz>1.9413732904641425e-23</iyz>
+          <izz>1.4310335006664345e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/040_large_marker/040_large_marker_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/040_large_marker/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/040_large_marker/040_large_marker.material</uri>
+            <name>040_large_marker</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

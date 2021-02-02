@@ -1,0 +1,14 @@
+material nutrigrain_harvest_blueberry_bliss
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../nutrigrain_harvest_blueberry_bliss/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

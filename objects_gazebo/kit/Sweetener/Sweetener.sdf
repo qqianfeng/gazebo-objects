@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Sweetener">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0037725589852760882 0.021685656280570332 -0.002188672719079712 -1.5932735767063833 -0.5381858207858259 -3.1299292884879137</pose> 
+        <mass>0.017025097904897275</mass>
+        <inertia>
+          <ixx>2.2323621453954665e-05</ixx>
+          <ixy>3.772722660403516e-21</ixy>
+          <ixz>2.8208426284879155e-21</ixz>
+          <iyy>2.2283961939460856e-05</iyy>
+          <iyz>-4.4251596429964394e-21</iyz>
+          <izz>3.822098636656232e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Sweetener/Sweetener_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Sweetener/Sweetener_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Sweetener/Sweetener.material</uri>
+            <name>Sweetener</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

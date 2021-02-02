@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="white_rain_sensations_ocean_mist_hydrating_conditioner">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0026194139552581596 -0.005532521107963029 0.11036670059734714 -3.139322388808202 0.013997103692212663 -0.034511927360753154</pose> 
+        <mass>0.04945111931796846</mass>
+        <inertia>
+          <ixx>0.00017781079834368143</ixx>
+          <ixy>5.544241000203519e-22</ixy>
+          <ixz>-1.6154804271656477e-20</ixz>
+          <iyy>0.0001689939827385725</iyy>
+          <iyz>-7.691378270427667e-20</iyz>
+          <izz>2.069063056241359e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/white_rain_sensations_ocean_mist_hydrating_conditioner_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/white_rain_sensations_ocean_mist_hydrating_conditioner.material</uri>
+            <name>white_rain_sensations_ocean_mist_hydrating_conditioner</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

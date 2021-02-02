@@ -1,0 +1,14 @@
+material 070-a_colored_wood_blocks
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../070-a_colored_wood_blocks/texture_map.png
+      }
+    }
+  }
+}

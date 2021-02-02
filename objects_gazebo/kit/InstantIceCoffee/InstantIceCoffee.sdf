@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="InstantIceCoffee">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0030780269277153934 0.025858443043919616 -0.0008674771393142644 -1.6043465425072034 -1.298463546024604 -3.1137615740359466</pose> 
+        <mass>0.08028412693172876</mass>
+        <inertia>
+          <ixx>0.00016259416593539992</ixx>
+          <ixy>-2.9722670644490732e-21</ixy>
+          <ixz>1.8064138581778238e-20</ixz>
+          <iyy>0.00016211235993015692</iyy>
+          <iyz>4.350111977931527e-21</iyz>
+          <izz>7.486368165142346e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/InstantIceCoffee/InstantIceCoffee_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/InstantIceCoffee/InstantIceCoffee_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/InstantIceCoffee/InstantIceCoffee.material</uri>
+            <name>InstantIceCoffee</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="krylon_crystal_clear">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00031845967113836547 0.003299739155621474 0.09701756769434251 -3.1407331158568432 -0.0012772599309301329 -2.9409062052355646</pose> 
+        <mass>0.07166571470429639</mass>
+        <inertia>
+          <ixx>0.000232275386998043</ixx>
+          <ixy>1.50220181472184e-20</ixy>
+          <ixz>1.3725916396403527e-21</ixz>
+          <iyy>0.00023044450488413974</iyy>
+          <iyz>8.213036489625828e-22</iyz>
+          <izz>4.2118837752325585e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/krylon_crystal_clear/krylon_crystal_clear_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/krylon_crystal_clear/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/krylon_crystal_clear/krylon_crystal_clear.material</uri>
+            <name>krylon_crystal_clear</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,14 @@
+material CoffeeFilters2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../CoffeeFilters2/CoffeeFilters2_25k_tex.png
+      }
+    }
+  }
+}

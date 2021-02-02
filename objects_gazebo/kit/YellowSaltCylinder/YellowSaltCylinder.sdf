@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="YellowSaltCylinder">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.001936663464371831 0.034176264339621065 0.0008906241520847457 1.564165916192673 0.2481148578939768 3.1336570576867797</pose> 
+        <mass>0.049759310610133944</mass>
+        <inertia>
+          <ixx>0.00010562459656722226</ixx>
+          <ixy>-5.716504013107129e-21</ixy>
+          <ixz>-1.0806601792770737e-21</ixz>
+          <iyy>0.00010536309426664565</iyy>
+          <iyz>-4.21641374386864e-21</iyz>
+          <izz>2.6330646223467635e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/YellowSaltCylinder/YellowSaltCylinder_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/YellowSaltCylinder/YellowSaltCylinder_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/YellowSaltCylinder/YellowSaltCylinder.material</uri>
+            <name>YellowSaltCylinder</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

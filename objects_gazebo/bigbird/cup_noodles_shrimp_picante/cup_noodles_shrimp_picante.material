@@ -1,0 +1,14 @@
+material cup_noodles_shrimp_picante
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../cup_noodles_shrimp_picante/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

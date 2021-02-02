@@ -1,0 +1,14 @@
+material ShowerGel
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../ShowerGel/ShowerGel_25k_tex.png
+      }
+    }
+  }
+}

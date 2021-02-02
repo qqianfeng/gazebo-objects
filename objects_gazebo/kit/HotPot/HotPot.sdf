@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="HotPot">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.001006646922158121 0.027005017023187517 -0.003011688704816528 1.5650910660913597 0.12318807966667504 -3.1099717339475563</pose> 
+        <mass>0.044198293714344236</mass>
+        <inertia>
+          <ixx>9.232377015670653e-05</ixx>
+          <ixy>6.107555339416902e-22</ixy>
+          <ixz>3.055863851166074e-21</ixz>
+          <iyy>6.485961028436677e-05</iyy>
+          <iyz>-1.7166330479131486e-20</iyz>
+          <izz>3.700998244251698e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/HotPot/HotPot_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/HotPot/HotPot_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/HotPot/HotPot.material</uri>
+            <name>HotPot</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

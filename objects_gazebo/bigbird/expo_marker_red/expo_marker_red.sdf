@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="expo_marker_red">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.001775778936679498 0.003838688609840936 0.05770663458891548 3.103047637410402 -0.0013350131213408617 2.905013122997293</pose> 
+        <mass>0.0035072476156688833</mass>
+        <inertia>
+          <ixx>3.349656472991725e-06</ixx>
+          <ixy>-5.49709028041182e-23</ixy>
+          <ixz>-3.8695204790622244e-22</ixz>
+          <iyy>3.346857366856381e-06</iyy>
+          <iyz>-6.152330452934721e-22</iyz>
+          <izz>1.8022185309797453e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/expo_marker_red/expo_marker_red_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/expo_marker_red/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/expo_marker_red/expo_marker_red.material</uri>
+            <name>expo_marker_red</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

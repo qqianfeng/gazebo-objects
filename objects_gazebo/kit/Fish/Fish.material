@@ -1,0 +1,14 @@
+material Fish
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Fish/Fish_25k_tex.png
+      }
+    }
+  }
+}

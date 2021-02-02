@@ -1,0 +1,14 @@
+material clif_crunch_white_chocolate_macademia_nut
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../clif_crunch_white_chocolate_macademia_nut/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

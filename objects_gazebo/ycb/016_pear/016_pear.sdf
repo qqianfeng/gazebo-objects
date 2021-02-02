@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="016_pear">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.032354501278973116 0.01225328264212693 0.029566376344435756 -1.0841587438782516 -0.7691692853647002 2.7134318601485177</pose> 
+        <mass>0.02021454564780203</mass>
+        <inertia>
+          <ixx>1.4077689927397321e-05</ixx>
+          <ixy>4.6540802418938984e-21</ixy>
+          <ixz>-3.7338286507304677e-22</ixz>
+          <iyy>1.3833451017541076e-05</iyy>
+          <iyz>4.93094352804036e-22</iyz>
+          <izz>8.217648269409947e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/016_pear/016_pear_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/016_pear/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/016_pear/016_pear.material</uri>
+            <name>016_pear</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

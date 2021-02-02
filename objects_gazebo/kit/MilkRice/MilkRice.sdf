@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="MilkRice">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0015118640227290698 0.04845509862694058 0.002097646400448336 1.5736903257287758 0.30245417664091445 -3.1116060798424856</pose> 
+        <mass>0.07252729269302781</mass>
+        <inertia>
+          <ixx>0.00024080491870081178</ixx>
+          <ixy>-3.2887852098958083e-20</ixy>
+          <ixz>1.1931500095115482e-21</ixz>
+          <iyy>0.00018922228450032473</iyy>
+          <iyz>-1.4170023190385613e-20</iyz>
+          <izz>7.137904585309787e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/MilkRice/MilkRice_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/MilkRice/MilkRice_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/MilkRice/MilkRice.material</uri>
+            <name>MilkRice</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

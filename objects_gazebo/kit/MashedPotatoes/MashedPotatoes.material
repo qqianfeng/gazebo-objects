@@ -1,0 +1,14 @@
+material MashedPotatoes
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../MashedPotatoes/MashedPotatoes_25k_tex.png
+      }
+    }
+  }
+}

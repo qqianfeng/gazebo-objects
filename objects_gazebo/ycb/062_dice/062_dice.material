@@ -1,0 +1,14 @@
+material 062_dice
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../062_dice/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material 031_spoon
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../031_spoon/texture_map.png
+      }
+    }
+  }
+}

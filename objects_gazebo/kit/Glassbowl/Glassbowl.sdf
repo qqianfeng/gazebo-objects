@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Glassbowl">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0026705575923592637 0.055577060270732816 -0.004432965573078246 0.30186319705683834 0.03453381592570333 -1.5750299908888412</pose> 
+        <mass>0.05462026418801259</mass>
+        <inertia>
+          <ixx>0.00010699065147448946</ixx>
+          <ixy>9.295744596410319e-22</ixy>
+          <ixz>-8.727698249628494e-21</ixz>
+          <iyy>6.312873016469866e-05</iyy>
+          <iyz>1.998264580203553e-22</iyz>
+          <izz>6.222348628911975e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Glassbowl/Glassbowl_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Glassbowl/Glassbowl_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Glassbowl/Glassbowl.material</uri>
+            <name>Glassbowl</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

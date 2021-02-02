@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="057_racquetball">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.009070968518695172 -0.1222165731742254 0.027571224308321422 1.001297874700398 -1.144079135275561 -2.4803368498364917</pose> 
+        <mass>0.00910625656947882</mass>
+        <inertia>
+          <ixx>2.8448037299201676e-06</ixx>
+          <ixy>-2.117839760328428e-22</ixy>
+          <ixz>1.5777325038090438e-24</ixz>
+          <iyy>2.842799075012142e-06</iyy>
+          <iyz>6.042160871009089e-24</iyz>
+          <izz>2.8244779860206293e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/057_racquetball/057_racquetball_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/057_racquetball/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/057_racquetball/057_racquetball.material</uri>
+            <name>057_racquetball</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

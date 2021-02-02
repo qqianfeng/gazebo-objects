@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Amicelli">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002543426821759137 0.03461137946001218 0.0009470589444772823 1.5657729379571061 0.2675840617322982 0.015844915279402915</pose> 
+        <mass>0.06547265347096803</mass>
+        <inertia>
+          <ixx>0.00013454642596078402</ixx>
+          <ixy>8.818719088815555e-22</ixy>
+          <ixz>1.1669128294266622e-20</ixz>
+          <iyy>0.00013331419707670962</iyy>
+          <iyz>-4.232097816971193e-21</iyz>
+          <izz>4.809825128752694e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Amicelli/Amicelli_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Amicelli/Amicelli_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Amicelli/Amicelli.material</uri>
+            <name>Amicelli</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

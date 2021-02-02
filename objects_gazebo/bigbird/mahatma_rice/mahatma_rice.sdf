@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="mahatma_rice">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.009045058334751188 -0.010861805662346284 0.01127344079293908 1.4226020109457584 -1.478179286436839 -2.6065692783331382</pose> 
+        <mass>0.17805561572011191</mass>
+        <inertia>
+          <ixx>0.0008126444376049979</ixx>
+          <ixy>4.1963628912675347e-22</ixy>
+          <ixz>3.530446325637777e-20</ixz>
+          <iyy>0.0006860320584122569</iyy>
+          <iyz>9.478507344375646e-20</iyz>
+          <izz>0.00027390090282580266</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/mahatma_rice/mahatma_rice_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/mahatma_rice/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/mahatma_rice/mahatma_rice.material</uri>
+            <name>mahatma_rice</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

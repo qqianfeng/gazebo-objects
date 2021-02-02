@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="StrawberryPorridge">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003145295556155414 0.06221771365454175 0.003041503280838601 1.5717793396680397 0.24759156455192155 -3.105907051842958</pose> 
+        <mass>0.0839120016592681</mass>
+        <inertia>
+          <ixx>0.00035828071865640966</ixx>
+          <ixy>-2.1452066868928324e-20</ixy>
+          <ixz>-4.170158078027543e-22</ixz>
+          <iyy>0.0002753108248126377</iyy>
+          <iyz>3.829209501086688e-22</iyz>
+          <izz>0.00010126948549414419</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/StrawberryPorridge/StrawberryPorridge_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/StrawberryPorridge/StrawberryPorridge_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/StrawberryPorridge/StrawberryPorridge.material</uri>
+            <name>StrawberryPorridge</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="red_bull">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.002197256036552105 4.229203763934287e-06 0.07068269467074423 -3.1388345350061884 0.012426486705132304 -1.2738688908815192</pose> 
+        <mass>0.02668434287429773</mass>
+        <inertia>
+          <ixx>3.887580560238082e-05</ixx>
+          <ixy>-6.702124533191737e-21</ixy>
+          <ixz>1.0623695016545586e-21</ixz>
+          <iyy>3.884629912098034e-05</iyy>
+          <iyz>9.472236659878289e-21</iyz>
+          <izz>8.777367418313502e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/red_bull/red_bull_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/red_bull/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/red_bull/red_bull.material</uri>
+            <name>red_bull</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

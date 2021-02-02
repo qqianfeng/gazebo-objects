@@ -1,0 +1,14 @@
+material haagen_dazs_cookie_dough
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../haagen_dazs_cookie_dough/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

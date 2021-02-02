@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="CoffeeFilters2">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0011287064627269812 0.04489255886727133 0.009449321773509005 1.57279493428838 0.17996032978132812 -3.124037755123273</pose> 
+        <mass>0.11409031492479876</mass>
+        <inertia>
+          <ixx>0.0004504118466812173</ixx>
+          <ixy>-3.264476665755707e-20</ixy>
+          <ixz>1.9812171744286923e-20</ixz>
+          <iyy>0.00026682705275197057</iyy>
+          <iyz>-1.0483166472165181e-19</iyz>
+          <izz>0.00022590244048478953</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/CoffeeFilters2/CoffeeFilters2_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/CoffeeFilters2/CoffeeFilters2_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/CoffeeFilters2/CoffeeFilters2.material</uri>
+            <name>CoffeeFilters2</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

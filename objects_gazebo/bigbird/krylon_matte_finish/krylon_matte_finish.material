@@ -1,0 +1,14 @@
+material krylon_matte_finish
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../krylon_matte_finish/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material zilla_night_black_heat
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../zilla_night_black_heat/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

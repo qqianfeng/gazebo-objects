@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="hunts_sauce">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.007834500665550624 0.004449231359472343 0.0581202295188703 3.1413075079241937 -0.0020259853863636283 -1.4111218356988677</pose> 
+        <mass>0.04308586424193876</mass>
+        <inertia>
+          <ixx>5.507784088230035e-05</ixx>
+          <ixy>2.402548646721214e-22</ixy>
+          <ixz>1.7078318558523558e-22</ixz>
+          <iyy>5.4329137017413374e-05</iyy>
+          <iyz>2.671915277751566e-23</iyz>
+          <izz>2.680818225431124e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/hunts_sauce/hunts_sauce_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/hunts_sauce/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/hunts_sauce/hunts_sauce.material</uri>
+            <name>hunts_sauce</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

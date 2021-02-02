@@ -1,0 +1,14 @@
+material 058_golf_ball
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../058_golf_ball/texture_map.png
+      }
+    }
+  }
+}

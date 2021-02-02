@@ -1,0 +1,14 @@
+material 076_timer
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../076_timer/textured.png
+      }
+    }
+  }
+}

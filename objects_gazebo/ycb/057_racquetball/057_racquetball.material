@@ -1,0 +1,14 @@
+material 057_racquetball
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../057_racquetball/texture_map.png
+      }
+    }
+  }
+}

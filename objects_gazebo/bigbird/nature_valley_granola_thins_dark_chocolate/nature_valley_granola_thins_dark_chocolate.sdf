@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="nature_valley_granola_thins_dark_chocolate">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00762231518275238 0.008502795037917158 0.07321788612216061 1.4928841957230874 -0.020495821785211116 2.8734260957055477</pose> 
+        <mass>0.10126607255128713</mass>
+        <inertia>
+          <ixx>0.0003522958835334444</ixx>
+          <ixy>5.743033804991383e-22</ixy>
+          <ixz>1.8708916644855307e-20</ixz>
+          <iyy>0.0002052593264041615</iyy>
+          <iyz>-2.505878517970871e-21</iyz>
+          <izz>0.00018341945842937051</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/nature_valley_granola_thins_dark_chocolate/nature_valley_granola_thins_dark_chocolate_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/nature_valley_granola_thins_dark_chocolate/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/nature_valley_granola_thins_dark_chocolate/nature_valley_granola_thins_dark_chocolate.material</uri>
+            <name>nature_valley_granola_thins_dark_chocolate</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

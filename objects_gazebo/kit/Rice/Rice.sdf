@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Rice">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003936014852451706 0.029754874753524913 -0.001985612241240157 -0.042901338909306225 0.30670691386149396 -3.134726989925941</pose> 
+        <mass>0.09874855707384828</mass>
+        <inertia>
+          <ixx>0.00030329245948661963</ixx>
+          <ixy>2.5942726394193094e-20</ixy>
+          <ixz>2.6262201190897666e-20</ixz>
+          <iyy>0.00018462930855996692</iyy>
+          <iyz>3.364931599102729e-20</iyz>
+          <izz>0.00016438468097548716</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Rice/Rice_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Rice/Rice_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Rice/Rice.material</uri>
+            <name>Rice</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

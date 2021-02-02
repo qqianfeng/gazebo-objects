@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="PowderedSugarMill">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.00204149840624539 0.059539781375831886 -0.0003878793526017699 1.5575197246590546 0.05138434034944516 3.1414615027312456</pose> 
+        <mass>0.06516295915697615</mass>
+        <inertia>
+          <ixx>0.00021897417673035497</ixx>
+          <ixy>-2.251299131001115e-21</ixy>
+          <ixz>1.1235634989841531e-21</ixz>
+          <iyy>0.00021877389247868168</iyy>
+          <iyz>-9.92095415346767e-21</iyz>
+          <izz>3.503095095791792e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/PowderedSugarMill/PowderedSugarMill_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/PowderedSugarMill/PowderedSugarMill_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/PowderedSugarMill/PowderedSugarMill.material</uri>
+            <name>PowderedSugarMill</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

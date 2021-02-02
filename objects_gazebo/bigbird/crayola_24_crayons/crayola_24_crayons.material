@@ -1,0 +1,14 @@
+material crayola_24_crayons
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../crayola_24_crayons/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

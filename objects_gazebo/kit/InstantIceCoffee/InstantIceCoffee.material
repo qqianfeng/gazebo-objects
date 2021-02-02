@@ -1,0 +1,14 @@
+material InstantIceCoffee
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../InstantIceCoffee/InstantIceCoffee_25k_tex.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="CatSitting">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0009728945315921285 0.03181450013029984 -0.004391437521029802 -1.851910478372341 -1.1692584882270327 0.1069612892093312</pose> 
+        <mass>0.06343312391194168</mass>
+        <inertia>
+          <ixx>0.00011736955307926345</ixx>
+          <ixy>-9.669997072902595e-21</ixy>
+          <ixz>-6.962922810420107e-21</ixz>
+          <iyy>0.00011094214811899272</iyy>
+          <iyz>-3.4278294095411354e-22</iyz>
+          <izz>4.9760479851454996e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/CatSitting/CatSitting_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/CatSitting/CatSitting_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/CatSitting/CatSitting.material</uri>
+            <name>CatSitting</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Moon">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0038985028775875602 0.06061292632284993 0.010845329626040354 -0.18544882382415329 1.071200316341737 2.8616546261251887</pose> 
+        <mass>0.09289325944474491</mass>
+        <inertia>
+          <ixx>0.00048060267295451503</ixx>
+          <ixy>1.9161966392047908e-20</ixy>
+          <ixz>-1.1328450549174592e-19</ixz>
+          <iyy>0.0003129324071175729</iyy>
+          <iyz>6.26945007661091e-20</iyz>
+          <izz>0.000181213467615386</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Moon/Moon_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Moon/Moon_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Moon/Moon.material</uri>
+            <name>Moon</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

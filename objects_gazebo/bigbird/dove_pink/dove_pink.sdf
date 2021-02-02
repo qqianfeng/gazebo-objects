@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="dove_pink">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004078375137028639 -0.0030659247021819526 0.03709112020040065 1.559851362313029 -0.0037404256221149922 -3.058591515501509</pose> 
+        <mass>0.023841141879515762</mass>
+        <inertia>
+          <ixx>2.5857858963291228e-05</ixx>
+          <ixy>1.378841264239735e-23</ixy>
+          <ixz>3.9159574659197464e-22</ixz>
+          <iyy>1.9038487474513378e-05</iyy>
+          <iyz>1.1749899551609762e-22</iyz>
+          <izz>1.189485178465183e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/dove_pink/dove_pink_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/dove_pink/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/dove_pink/dove_pink.material</uri>
+            <name>dove_pink</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

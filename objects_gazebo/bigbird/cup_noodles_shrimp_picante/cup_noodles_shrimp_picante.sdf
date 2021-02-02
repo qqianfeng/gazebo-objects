@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="cup_noodles_shrimp_picante">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.002656674611734501 0.012128976140516263 0.06371424362092137 3.118100683310808 -0.09540978157410139 -1.158074580385388</pose> 
+        <mass>0.0713278044632968</mass>
+        <inertia>
+          <ixx>0.00010508792577623504</ixx>
+          <ixy>1.6441035273233702e-21</ixy>
+          <ixz>3.4112301466619655e-21</ixz>
+          <iyy>0.0001030156640481508</iyy>
+          <iyz>1.8329430459194925e-21</iyz>
+          <izz>7.793747125727589e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/cup_noodles_shrimp_picante/cup_noodles_shrimp_picante_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/cup_noodles_shrimp_picante/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/cup_noodles_shrimp_picante/cup_noodles_shrimp_picante.material</uri>
+            <name>cup_noodles_shrimp_picante</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

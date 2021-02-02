@@ -1,0 +1,14 @@
+material Seal
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Seal/Seal_25k_tex.png
+      }
+    }
+  }
+}

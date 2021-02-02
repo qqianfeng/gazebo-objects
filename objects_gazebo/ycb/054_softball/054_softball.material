@@ -1,0 +1,14 @@
+material 054_softball
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../054_softball/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material CoughDropsBerries
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../CoughDropsBerries/CoughDropsBerries_25k_tex.png
+      }
+    }
+  }
+}

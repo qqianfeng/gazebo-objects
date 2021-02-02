@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="softsoap_clear">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.033912665838046266 -0.0035350588906865256 0.08242608280609928 2.610103772978075 -0.10177385875792784 -3.085971809984353</pose> 
+        <mass>0.11511866031996419</mass>
+        <inertia>
+          <ixx>0.0002845851481482805</ixx>
+          <ixy>6.051238039574094e-21</ixy>
+          <ixz>-4.19299193577458e-21</ixz>
+          <iyy>0.00023374697868893594</iyy>
+          <iyz>-4.0407237479102554e-20</iyz>
+          <izz>0.0001609607106867223</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/softsoap_clear/softsoap_clear_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/softsoap_clear/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/softsoap_clear/softsoap_clear.material</uri>
+            <name>softsoap_clear</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

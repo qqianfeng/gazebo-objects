@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="RuskWholemeal">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.002493199532948293 0.037213752175918546 -0.0014106372377856605 1.7821405634549343 0.21103213811398835 -3.1331429330221106</pose> 
+        <mass>0.1706525658724</mass>
+        <inertia>
+          <ixx>0.0005920685567920946</ixx>
+          <ixy>5.2468612084446604e-20</ixy>
+          <ixz>-6.1486396155555776e-21</ixz>
+          <iyy>0.0003893715548763159</iyy>
+          <iyz>5.019667139011338e-20</iyz>
+          <izz>0.00038603554901892577</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/RuskWholemeal/RuskWholemeal_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/RuskWholemeal/RuskWholemeal_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/RuskWholemeal/RuskWholemeal.material</uri>
+            <name>RuskWholemeal</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

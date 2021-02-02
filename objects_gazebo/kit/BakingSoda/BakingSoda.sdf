@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="BakingSoda">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0027099565171531045 0.0027755811523128998 -0.0015889658955983365 1.8832984986874663 -1.4736408466521835 -0.31297684662091896</pose> 
+        <mass>0.01938647788283832</mass>
+        <inertia>
+          <ixx>1.5801446830785785e-05</ixx>
+          <ixy>-6.930737337012726e-22</ixy>
+          <ixz>8.080019162314613e-22</ixz>
+          <iyy>1.574775886232238e-05</iyy>
+          <iyz>1.2656285092204117e-21</iyz>
+          <izz>6.76449049226176e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/BakingSoda/BakingSoda_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/BakingSoda/BakingSoda_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/BakingSoda/BakingSoda.material</uri>
+            <name>BakingSoda</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

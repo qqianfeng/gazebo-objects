@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="012_strawberry">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.0014726018056413993 0.015500708812185378 0.021103926945295108 1.8026468272094376 -0.20849560819513246 -0.8585248014464476</pose> 
+        <mass>0.004983596340134968</mass>
+        <inertia>
+          <ixx>1.1681786223221699e-06</ixx>
+          <ixy>-4.225884287465863e-22</ixy>
+          <ixz>-2.0869982900770656e-22</ixz>
+          <iyy>1.062307480430602e-06</iyy>
+          <iyz>2.06782125190025e-23</iyz>
+          <izz>9.568664244850808e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/012_strawberry/012_strawberry_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/012_strawberry/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/012_strawberry/012_strawberry.material</uri>
+            <name>012_strawberry</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

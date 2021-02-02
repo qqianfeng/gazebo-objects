@@ -1,0 +1,14 @@
+material blue_clover_baby_toy
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../blue_clover_baby_toy/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

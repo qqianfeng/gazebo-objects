@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="quaker_chewy_chocolate_chip">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.008484224545672218 -0.00866686975295488 0.08699399108004649 -3.1363034870960256 -0.029583783864847165 2.8774089116441735</pose> 
+        <mass>0.11103183876627529</mass>
+        <inertia>
+          <ixx>0.00044690855758348084</ixx>
+          <ixy>-5.65345135027404e-20</ixy>
+          <ixz>2.487824413253575e-21</ixz>
+          <iyy>0.0002712186509401011</iyy>
+          <iyz>2.87665891860669e-20</iyz>
+          <izz>0.0002121554271326879</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/quaker_chewy_chocolate_chip/quaker_chewy_chocolate_chip_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/quaker_chewy_chocolate_chip/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/quaker_chewy_chocolate_chip/quaker_chewy_chocolate_chip.material</uri>
+            <name>quaker_chewy_chocolate_chip</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

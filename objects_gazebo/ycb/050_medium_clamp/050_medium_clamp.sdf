@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="050_medium_clamp">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.02200465998721188 -0.013849002196178161 0.01258853543009111 -1.958341479247255 -1.5595980694883018 2.0920614531686796</pose> 
+        <mass>0.007566651591888768</mass>
+        <inertia>
+          <ixx>5.100157797019725e-06</ixx>
+          <ixy>1.0072071776322403e-22</ixy>
+          <ixz>-3.722324069004751e-23</ixz>
+          <iyy>3.4552068736840886e-06</iyy>
+          <iyz>-2.6229976637928483e-22</iyz>
+          <izz>2.1423305014474594e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/050_medium_clamp/050_medium_clamp_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/050_medium_clamp/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/050_medium_clamp/050_medium_clamp.material</uri>
+            <name>050_medium_clamp</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

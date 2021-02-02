@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="vo5_extra_body_volumizing_shampoo">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.004718196205142294 0.0006474922831164035 0.10940177183094266 -3.135238145440358 0.008164762168394997 -0.02750096021455174</pose> 
+        <mass>0.03646752112596942</mass>
+        <inertia>
+          <ixx>0.00010820169565100729</ixx>
+          <ixy>4.1124017496465213e-22</ixy>
+          <ixz>9.289868876381285e-21</ixz>
+          <iyy>0.00010182526753815395</iyy>
+          <iyz>3.109731833176648e-20</iyz>
+          <izz>1.2920808551975836e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/vo5_extra_body_volumizing_shampoo/vo5_extra_body_volumizing_shampoo_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/vo5_extra_body_volumizing_shampoo/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/vo5_extra_body_volumizing_shampoo/vo5_extra_body_volumizing_shampoo.material</uri>
+            <name>vo5_extra_body_volumizing_shampoo</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

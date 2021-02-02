@@ -1,0 +1,14 @@
+material BakingVanilla
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../BakingVanilla/BakingVanilla_25k_tex.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="advil_liqui_gels">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0023813451939043244 0.004913916051533549 0.026782671211732247 1.5702530141022308 0.2544664554472195 0.5175524214798636</pose> 
+        <mass>0.03244907538420937</mass>
+        <inertia>
+          <ixx>3.6586242421868344e-05</ixx>
+          <ixy>-6.768554147089477e-21</ixy>
+          <ixz>6.5316891219337534e-21</ixz>
+          <iyy>3.586146440552121e-05</iyy>
+          <iyz>2.5227723991376347e-21</iyz>
+          <izz>1.614694135031966e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/advil_liqui_gels/advil_liqui_gels_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/advil_liqui_gels/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/advil_liqui_gels/advil_liqui_gels.material</uri>
+            <name>advil_liqui_gels</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

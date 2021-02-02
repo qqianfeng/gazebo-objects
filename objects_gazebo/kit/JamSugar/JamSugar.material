@@ -1,0 +1,14 @@
+material JamSugar
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../JamSugar/JamSugar_25k_tex.png
+      }
+    }
+  }
+}

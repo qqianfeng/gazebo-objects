@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="krylon_short_cuts">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003763412095042938 0.0034457161810896985 0.053441773416057575 3.1375146471068565 0.008727551160387162 -1.7571406553101492</pose> 
+        <mass>0.023133955696110813</mass>
+        <inertia>
+          <ixx>2.2532900403386365e-05</ixx>
+          <ixy>-2.3414005903362884e-21</ixy>
+          <ixz>-1.0150717423123044e-21</ixz>
+          <iyy>2.230636812262933e-05</iyy>
+          <iyz>1.0963438236193214e-22</iyz>
+          <izz>8.466170731748082e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/krylon_short_cuts/krylon_short_cuts_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/krylon_short_cuts/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/krylon_short_cuts/krylon_short_cuts.material</uri>
+            <name>krylon_short_cuts</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

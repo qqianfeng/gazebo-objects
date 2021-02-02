@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="hersheys_cocoa">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.012556680510405824 0.012694875411231772 0.055793579120599214 3.0668000895404504 -0.014188588209363783 -2.6546602378625757</pose> 
+        <mass>0.06881931760042428</mass>
+        <inertia>
+          <ixx>0.00011134242982849968</ixx>
+          <ixy>2.049824031773809e-21</ixy>
+          <ixz>7.74507520115368e-22</ixz>
+          <iyy>8.960047587008126e-05</iyy>
+          <iyz>-2.7521896056466947e-21</iyz>
+          <izz>7.453266834834083e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/hersheys_cocoa/hersheys_cocoa_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/hersheys_cocoa/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/hersheys_cocoa/hersheys_cocoa.material</uri>
+            <name>hersheys_cocoa</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

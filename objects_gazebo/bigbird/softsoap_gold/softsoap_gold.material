@@ -1,0 +1,14 @@
+material softsoap_gold
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../softsoap_gold/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

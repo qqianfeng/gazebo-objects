@@ -1,0 +1,14 @@
+material colgate_cool_mint
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../colgate_cool_mint/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="softsoap_green">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.036892161526085036 0.0047615489706296 0.08604640582647127 0.28920374372432095 0.06773301664979481 -3.1334103908906425</pose> 
+        <mass>0.12373372040792516</mass>
+        <inertia>
+          <ixx>0.0003183202631143317</ixx>
+          <ixy>4.330105243957603e-21</ixy>
+          <ixz>1.2639140487383504e-21</ixz>
+          <iyy>0.0002516926037282104</iyy>
+          <iyz>-3.547821482527517e-20</iyz>
+          <izz>0.0001953962598919981</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/softsoap_green/softsoap_green_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/softsoap_green/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/softsoap_green/softsoap_green.material</uri>
+            <name>softsoap_green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

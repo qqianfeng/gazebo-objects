@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="SoftCheese">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.003446876196049366 0.02074431659347415 -0.00345732572402762 -0.42833003260681324 0.19219711832205572 -3.1296640885625022</pose> 
+        <mass>0.029479929626665596</mass>
+        <inertia>
+          <ixx>4.5258414909664385e-05</ixx>
+          <ixy>1.1214849715805774e-21</ixy>
+          <ixz>1.757424682155233e-21</ixz>
+          <iyy>2.4889367453667112e-05</iyy>
+          <iyz>4.653419097591928e-21</iyz>
+          <izz>2.4777695218210915e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/SoftCheese/SoftCheese_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/SoftCheese/SoftCheese_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/SoftCheese/SoftCheese.material</uri>
+            <name>SoftCheese</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

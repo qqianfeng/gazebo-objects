@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="014_lemon">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.010807938000989007 0.020965891186476376 0.02621456020372423 -1.5467352526122833 0.6316008467291776 2.2944456751465836</pose> 
+        <mass>0.009764506065694756</mass>
+        <inertia>
+          <ixx>3.4774463553180732e-06</ixx>
+          <ixy>1.0264310488670595e-21</ixy>
+          <ixz>-5.188913416070808e-22</ixz>
+          <iyy>3.460616514444553e-06</iyy>
+          <iyz>2.530919147450806e-22</iyz>
+          <izz>2.8033751600439117e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/014_lemon/014_lemon_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/014_lemon/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/014_lemon/014_lemon.material</uri>
+            <name>014_lemon</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

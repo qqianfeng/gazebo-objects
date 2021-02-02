@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="gushers_tropical_flavors">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.007022039332629263 0.001556667335139993 0.09604021549492785 3.1368291069298246 0.007401411168092001 -2.237838570170407</pose> 
+        <mass>0.11687916324191182</mass>
+        <inertia>
+          <ixx>0.0005310415420480194</ixx>
+          <ixy>-3.851612372962002e-20</ixy>
+          <ixz>-2.284099000643529e-22</ixz>
+          <iyy>0.0003463307122887802</iyy>
+          <iyz>4.750987288710523e-22</iyz>
+          <izz>0.0002201066846739736</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/gushers_tropical_flavors/gushers_tropical_flavors_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/gushers_tropical_flavors/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/gushers_tropical_flavors/gushers_tropical_flavors.material</uri>
+            <name>gushers_tropical_flavors</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,14 @@
+material 011_banana
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../011_banana/texture_map.png
+      }
+    }
+  }
+}

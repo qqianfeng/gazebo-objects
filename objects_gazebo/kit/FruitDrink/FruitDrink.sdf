@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="FruitDrink">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>6.986348730538035e-05 0.029843001794670646 -0.0002491403859915639 1.583089495756309 -0.08980313328338368 -0.01282660364486789</pose> 
+        <mass>0.06531811299089883</mass>
+        <inertia>
+          <ixx>0.00012782583702386851</ixx>
+          <ixy>-3.908673597745252e-21</ixy>
+          <ixz>9.886921925423731e-21</ixz>
+          <iyy>0.0001239590482419994</iyy>
+          <iyz>-4.829170542742621e-21</iyz>
+          <izz>5.046095496631367e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/FruitDrink/FruitDrink_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/FruitDrink/FruitDrink_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/FruitDrink/FruitDrink.material</uri>
+            <name>FruitDrink</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="Knaeckebrot">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.003990260966899845 0.027053439856659357 -0.0007364709707590593 0.0025819239210227276 0.09649095161247667 -3.132555358623325</pose> 
+        <mass>0.1363734289927447</mass>
+        <inertia>
+          <ixx>0.0004987200051999311</ixx>
+          <ixy>-1.47038500570874e-22</ixy>
+          <ixz>7.835992865368013e-21</ixz>
+          <iyy>0.0003584313245909233</iyy>
+          <iyz>1.5176792369536686e-19</iyz>
+          <izz>0.00023162153785164015</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/Knaeckebrot/Knaeckebrot_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/Knaeckebrot/Knaeckebrot_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/Knaeckebrot/Knaeckebrot.material</uri>
+            <name>Knaeckebrot</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

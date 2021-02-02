@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="LivioClassicOil">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0022175006132347432 0.028617570196770525 0.003447221759026607 -1.5305696441308638 0.3872548811451159 -3.1328811225506104</pose> 
+        <mass>0.06704248541589654</mass>
+        <inertia>
+          <ixx>0.00014238587906133626</ixx>
+          <ixy>-1.3452887118824389e-20</ixy>
+          <ixz>1.156560462634287e-20</ixz>
+          <iyy>0.00011490000144209609</iyy>
+          <iyz>1.9353246416169348e-20</iyz>
+          <izz>6.127231424803432e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/LivioClassicOil/LivioClassicOil_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/LivioClassicOil/LivioClassicOil_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/LivioClassicOil/LivioClassicOil.material</uri>
+            <name>LivioClassicOil</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

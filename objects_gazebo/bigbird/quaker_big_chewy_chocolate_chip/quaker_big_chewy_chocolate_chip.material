@@ -1,0 +1,14 @@
+material quaker_big_chewy_chocolate_chip
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../quaker_big_chewy_chocolate_chip/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

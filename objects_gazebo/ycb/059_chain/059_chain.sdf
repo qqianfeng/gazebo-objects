@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="059_chain">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.032663324016315894 0.014719243183533175 0.010849180717544087 0.9932961677295202 -1.5570547845390008 -3.10886869605754</pose> 
+        <mass>0.12145138905942711</mass>
+        <inertia>
+          <ixx>0.001106759767553599</ixx>
+          <ixy>5.669206344187815e-21</ixy>
+          <ixz>1.0125180550354881e-21</ixz>
+          <iyy>0.0006260258783400269</iyy>
+          <iyz>-1.1728149624336182e-19</iyz>
+          <izz>0.0004901789251077868</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/059_chain/059_chain_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/059_chain/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/059_chain/059_chain.material</uri>
+            <name>059_chain</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

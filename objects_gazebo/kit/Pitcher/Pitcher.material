@@ -1,0 +1,14 @@
+material Pitcher
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Pitcher/Pitcher_25k_tex.png
+      }
+    }
+  }
+}

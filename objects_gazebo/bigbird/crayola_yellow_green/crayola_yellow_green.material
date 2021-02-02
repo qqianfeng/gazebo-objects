@@ -1,0 +1,14 @@
+material crayola_yellow_green
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../crayola_yellow_green/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

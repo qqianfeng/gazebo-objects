@@ -1,0 +1,14 @@
+material coca_cola_glass_bottle
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../coca_cola_glass_bottle/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

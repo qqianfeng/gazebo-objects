@@ -1,0 +1,14 @@
+material sunkist_fruit_snacks_mixed_fruit
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../sunkist_fruit_snacks_mixed_fruit/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

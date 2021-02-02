@@ -1,0 +1,14 @@
+material HotPot2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../HotPot2/HotPot2_25k_tex.png
+      }
+    }
+  }
+}

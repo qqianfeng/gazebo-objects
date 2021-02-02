@@ -1,0 +1,14 @@
+material InstantSauce2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../InstantSauce2/InstantSauce2_25k_tex.png
+      }
+    }
+  }
+}

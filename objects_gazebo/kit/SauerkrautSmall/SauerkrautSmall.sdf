@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="SauerkrautSmall">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-3.266970957095886e-05 0.0031385639820823248 0.0003862165114058325 1.560625510346934 -0.583040675863636 0.014316698862195163</pose> 
+        <mass>0.03498248549299291</mass>
+        <inertia>
+          <ixx>3.111860246197619e-05</ixx>
+          <ixy>5.331062389964729e-21</ixy>
+          <ixz>5.117897478073422e-21</ixz>
+          <iyy>3.104204416300293e-05</iyy>
+          <iyz>6.815690758258008e-21</iyz>
+          <izz>2.4048041117526045e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/SauerkrautSmall/SauerkrautSmall_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/SauerkrautSmall/SauerkrautSmall_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/SauerkrautSmall/SauerkrautSmall.material</uri>
+            <name>SauerkrautSmall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

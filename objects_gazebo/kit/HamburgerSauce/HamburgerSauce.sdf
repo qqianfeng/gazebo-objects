@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="HamburgerSauce">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0014328977776115852 0.03804396512162363 -0.0009534288615352629 -1.5831640535484774 0.408493862868591 3.130725688729994</pose> 
+        <mass>0.05656449178863788</mass>
+        <inertia>
+          <ixx>0.00014997692549632556</ixx>
+          <ixy>1.0596749682995877e-20</ixy>
+          <ixz>-1.846722637996047e-20</ixz>
+          <iyy>0.0001361439054247229</iyy>
+          <iyz>-3.283896134410328e-20</iyz>
+          <izz>3.327118890843596e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/HamburgerSauce/HamburgerSauce_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/HamburgerSauce/HamburgerSauce_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/HamburgerSauce/HamburgerSauce.material</uri>
+            <name>HamburgerSauce</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

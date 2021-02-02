@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="BathDetergent">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.00036675227833668077 0.05605095225250008 0.00020957060325030685 1.5661963209343925 -1.4828961002257302 -3.1284722633404587</pose> 
+        <mass>0.06702908137088558</mass>
+        <inertia>
+          <ixx>0.0002224717226962089</ixx>
+          <ixy>-1.246995415639826e-21</ixy>
+          <ixz>-1.882328320113094e-21</ixz>
+          <iyy>0.00022232367565218334</iyy>
+          <iyz>-3.213508950381842e-22</iyz>
+          <izz>3.6103440478832204e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/BathDetergent/BathDetergent_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/BathDetergent/BathDetergent_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/BathDetergent/BathDetergent.material</uri>
+            <name>BathDetergent</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

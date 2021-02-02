@@ -1,0 +1,14 @@
+material 032_knife
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../032_knife/texture_map.png
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="CoffeeBox">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.004247196748159944 0.030154488775427087 -0.002760691362603279 1.7402100486508405 -0.36606438983511547 -0.16533948384865169</pose> 
+        <mass>0.18837600820664613</mass>
+        <inertia>
+          <ixx>0.00047554492714730473</ixx>
+          <ixy>9.431749635258622e-20</ixy>
+          <ixz>-5.604777128439607e-20</ixz>
+          <iyy>0.00047552556893201296</iyy>
+          <iyz>-1.4738606432399752e-20</iyz>
+          <izz>0.0004704519599268548</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://kit/CoffeeBox/CoffeeBox_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://kit/CoffeeBox/CoffeeBox_25k_tex.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://kit/CoffeeBox/CoffeeBox.material</uri>
+            <name>CoffeeBox</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

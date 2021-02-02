@@ -1,0 +1,14 @@
+material 059_chain
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../059_chain/texture_map.png
+      }
+    }
+  }
+}

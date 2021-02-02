@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="band_aid_clear_strips">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.005687576669720027 0.0014201223346881888 0.05589680067786541 3.135106383748904 -0.004758259339940031 -2.8571123001690646</pose> 
+        <mass>0.026586554461728466</mass>
+        <inertia>
+          <ixx>3.281702799419699e-05</ixx>
+          <ixy>6.4681240136461396e-21</ixy>
+          <ixz>-1.6455864584677836e-22</ixz>
+          <iyy>2.5662611121017868e-05</iyy>
+          <iyz>4.839854956786e-22</iyz>
+          <izz>1.306483556759452e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/band_aid_clear_strips/band_aid_clear_strips_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/band_aid_clear_strips/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/band_aid_clear_strips/band_aid_clear_strips.material</uri>
+            <name>band_aid_clear_strips</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

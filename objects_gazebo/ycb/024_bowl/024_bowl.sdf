@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="024_bowl">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>-0.014741757681934628 -0.04373765486824201 0.0312927560881466 -1.4521905470269338 -1.5608455664878298 1.4652823072349552</pose> 
+        <mass>0.07490341764491669</mass>
+        <inertia>
+          <ixx>0.00017920898142460696</ixx>
+          <ixy>2.911121647522019e-20</ixy>
+          <ixz>-6.386784377724828e-22</ixz>
+          <iyy>0.00010619687716041731</iyy>
+          <iyz>3.1237213932856894e-22</iyz>
+          <izz>0.00010598344033937154</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://ycb/024_bowl/024_bowl_250_collision.stl</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ycb/024_bowl/textured.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ycb/024_bowl/024_bowl.material</uri>
+            <name>024_bowl</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

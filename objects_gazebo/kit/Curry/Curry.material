@@ -1,0 +1,14 @@
+material Curry
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Curry/Curry_25k_tex.png
+      }
+    }
+  }
+}

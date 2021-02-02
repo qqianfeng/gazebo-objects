@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="pepto_bismol">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.0010743122333620374 -0.003295839004396111 0.07394576575109943 0.03735676293631618 0.01166304245021198 0.39943757823770215</pose> 
+        <mass>0.035152756494620865</mass>
+        <inertia>
+          <ixx>6.750450366415896e-05</ixx>
+          <ixy>3.328326121462656e-21</ixy>
+          <ixz>-6.148149780903476e-22</ixz>
+          <iyy>6.738349985732411e-05</iyy>
+          <iyz>-4.4382704543629214e-21</iyz>
+          <izz>1.3232584873440296e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/pepto_bismol/pepto_bismol_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/pepto_bismol/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/pepto_bismol/pepto_bismol.material</uri>
+            <name>pepto_bismol</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

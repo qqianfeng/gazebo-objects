@@ -1,0 +1,14 @@
+material south_beach_good_to_go_peanut_butter
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../south_beach_good_to_go_peanut_butter/optimized_poisson_texture_mapped_mesh.png
+      }
+    }
+  }
+}

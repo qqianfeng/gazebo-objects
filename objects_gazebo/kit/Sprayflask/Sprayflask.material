@@ -1,0 +1,14 @@
+material Sprayflask
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../Sprayflask/Sprayflask_25k_tex.png
+      }
+    }
+  }
+}

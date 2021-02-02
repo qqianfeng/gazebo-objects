@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="aunt_jemima_original_syrup">
+    <static>false</static>
+    <link name="link">
+      <inertial>       
+        <pose>0.001073220205513487 -0.010894094361949505 0.09689678049621249 -0.024325550805520187 0.02436223221115223 -3.0094951834701824</pose> 
+        <mass>0.07284845617248474</mass>
+        <inertia>
+          <ixx>0.00025263369881805734</ixx>
+          <ixy>8.178326208128593e-21</ixy>
+          <ixz>-4.73926201772811e-20</ixz>
+          <iyy>0.00023735758796220594</iyy>
+          <iyz>6.54246763421184e-21</iyz>
+          <izz>4.799193400059009e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- Use a downsampled mesh for collisions -->
+            <uri>model://bigbird/aunt_jemima_original_syrup/aunt_jemima_original_syrup_250_collision.obj</uri>
+	        </mesh>
+        </geometry>
+        <surface>
+        <!--<friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+          </ode>
+        </friction>-->
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bigbird/aunt_jemima_original_syrup/optimized_poisson_texture_mapped_mesh.obj</uri>
+	        </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bigbird/aunt_jemima_original_syrup/aunt_jemima_original_syrup.material</uri>
+            <name>aunt_jemima_original_syrup</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
