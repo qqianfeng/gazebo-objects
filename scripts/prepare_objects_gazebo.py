@@ -21,7 +21,7 @@ if __name__ == "__main__":
         'Are you sure that you want to execute this? Only execute if you have all the necessary raw data from ycb, kit, bibird in a directory called objects_raw. Press y to continue n to abort'
     )
     if letter == 'y':
-        continue
+        pass
     elif letter == 'n':
         sys.exit('You decided to abort.')
     else:
