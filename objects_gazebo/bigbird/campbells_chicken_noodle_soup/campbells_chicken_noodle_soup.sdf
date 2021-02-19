@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/campbells_chicken_noodle_soup/campbells_chicken_noodle_soup_250_collision.obj</uri>
+            <uri>model:///campbells_chicken_noodle_soup/campbells_chicken_noodle_soup_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/campbells_chicken_noodle_soup/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///campbells_chicken_noodle_soup/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/campbells_chicken_noodle_soup/campbells_chicken_noodle_soup.material</uri>
+            <uri>model:///campbells_chicken_noodle_soup/campbells_chicken_noodle_soup.material</uri>
             <name>campbells_chicken_noodle_soup</name>
           </script>
         </material>

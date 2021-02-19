@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/BakingSoda/BakingSoda_250_collision.obj</uri>
+            <uri>model:///BakingSoda/BakingSoda_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/BakingSoda/BakingSoda_25k_tex.obj</uri>
+            <uri>model:///BakingSoda/BakingSoda_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/BakingSoda/BakingSoda.material</uri>
+            <uri>model:///BakingSoda/BakingSoda.material</uri>
             <name>BakingSoda</name>
           </script>
         </material>

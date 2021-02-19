@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/softsoap_green/softsoap_green_250_collision.obj</uri>
+            <uri>model:///softsoap_green/softsoap_green_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/softsoap_green/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///softsoap_green/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/softsoap_green/softsoap_green.material</uri>
+            <uri>model:///softsoap_green/softsoap_green.material</uri>
             <name>softsoap_green</name>
           </script>
         </material>

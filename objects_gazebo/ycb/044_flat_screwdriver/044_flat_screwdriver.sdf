@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/044_flat_screwdriver/044_flat_screwdriver_250_collision.stl</uri>
+            <uri>model:///044_flat_screwdriver/044_flat_screwdriver_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/044_flat_screwdriver/textured.obj</uri>
+            <uri>model:///044_flat_screwdriver/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/044_flat_screwdriver/044_flat_screwdriver.material</uri>
+            <uri>model:///044_flat_screwdriver/044_flat_screwdriver.material</uri>
             <name>044_flat_screwdriver</name>
           </script>
         </material>

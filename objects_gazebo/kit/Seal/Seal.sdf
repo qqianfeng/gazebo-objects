@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Seal/Seal_250_collision.obj</uri>
+            <uri>model:///Seal/Seal_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Seal/Seal_25k_tex.obj</uri>
+            <uri>model:///Seal/Seal_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Seal/Seal.material</uri>
+            <uri>model:///Seal/Seal.material</uri>
             <name>Seal</name>
           </script>
         </material>

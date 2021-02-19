@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/OrangeMarmelade/OrangeMarmelade_250_collision.obj</uri>
+            <uri>model:///OrangeMarmelade/OrangeMarmelade_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/OrangeMarmelade/OrangeMarmelade_25k_tex.obj</uri>
+            <uri>model:///OrangeMarmelade/OrangeMarmelade_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/OrangeMarmelade/OrangeMarmelade.material</uri>
+            <uri>model:///OrangeMarmelade/OrangeMarmelade.material</uri>
             <name>OrangeMarmelade</name>
           </script>
         </material>

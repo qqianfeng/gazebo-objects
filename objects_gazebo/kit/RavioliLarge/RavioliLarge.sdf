@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/RavioliLarge/RavioliLarge_250_collision.obj</uri>
+            <uri>model:///RavioliLarge/RavioliLarge_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/RavioliLarge/RavioliLarge_25k_tex.obj</uri>
+            <uri>model:///RavioliLarge/RavioliLarge_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/RavioliLarge/RavioliLarge.material</uri>
+            <uri>model:///RavioliLarge/RavioliLarge.material</uri>
             <name>RavioliLarge</name>
           </script>
         </material>

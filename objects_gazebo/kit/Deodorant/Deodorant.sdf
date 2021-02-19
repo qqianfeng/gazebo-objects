@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Deodorant/Deodorant_250_collision.obj</uri>
+            <uri>model:///Deodorant/Deodorant_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Deodorant/Deodorant_25k_tex.obj</uri>
+            <uri>model:///Deodorant/Deodorant_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Deodorant/Deodorant.material</uri>
+            <uri>model:///Deodorant/Deodorant.material</uri>
             <name>Deodorant</name>
           </script>
         </material>

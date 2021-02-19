@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/nature_valley_sweet_and_salty_nut_cashew_250_collision.obj</uri>
+            <uri>model:///nature_valley_sweet_and_salty_nut_cashew/nature_valley_sweet_and_salty_nut_cashew_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nature_valley_sweet_and_salty_nut_cashew/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nature_valley_sweet_and_salty_nut_cashew/nature_valley_sweet_and_salty_nut_cashew.material</uri>
+            <uri>model:///nature_valley_sweet_and_salty_nut_cashew/nature_valley_sweet_and_salty_nut_cashew.material</uri>
             <name>nature_valley_sweet_and_salty_nut_cashew</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/quaker_chewy_low_fat_chocolate_chunk/quaker_chewy_low_fat_chocolate_chunk_250_collision.obj</uri>
+            <uri>model:///quaker_chewy_low_fat_chocolate_chunk/quaker_chewy_low_fat_chocolate_chunk_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/quaker_chewy_low_fat_chocolate_chunk/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///quaker_chewy_low_fat_chocolate_chunk/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/quaker_chewy_low_fat_chocolate_chunk/quaker_chewy_low_fat_chocolate_chunk.material</uri>
+            <uri>model:///quaker_chewy_low_fat_chocolate_chunk/quaker_chewy_low_fat_chocolate_chunk.material</uri>
             <name>quaker_chewy_low_fat_chocolate_chunk</name>
           </script>
         </material>

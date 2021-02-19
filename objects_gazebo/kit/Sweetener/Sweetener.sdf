@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Sweetener/Sweetener_250_collision.obj</uri>
+            <uri>model:///Sweetener/Sweetener_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Sweetener/Sweetener_25k_tex.obj</uri>
+            <uri>model:///Sweetener/Sweetener_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Sweetener/Sweetener.material</uri>
+            <uri>model:///Sweetener/Sweetener.material</uri>
             <name>Sweetener</name>
           </script>
         </material>

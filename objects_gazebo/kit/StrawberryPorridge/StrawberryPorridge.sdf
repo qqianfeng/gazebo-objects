@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/StrawberryPorridge/StrawberryPorridge_250_collision.obj</uri>
+            <uri>model:///StrawberryPorridge/StrawberryPorridge_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/StrawberryPorridge/StrawberryPorridge_25k_tex.obj</uri>
+            <uri>model:///StrawberryPorridge/StrawberryPorridge_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/StrawberryPorridge/StrawberryPorridge.material</uri>
+            <uri>model:///StrawberryPorridge/StrawberryPorridge.material</uri>
             <name>StrawberryPorridge</name>
           </script>
         </material>

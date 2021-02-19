@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Amicelli/Amicelli_250_collision.obj</uri>
+            <uri>model:///Amicelli/Amicelli_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Amicelli/Amicelli_25k_tex.obj</uri>
+            <uri>model:///Amicelli/Amicelli_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Amicelli/Amicelli.material</uri>
+            <uri>model:///Amicelli/Amicelli.material</uri>
             <name>Amicelli</name>
           </script>
         </material>

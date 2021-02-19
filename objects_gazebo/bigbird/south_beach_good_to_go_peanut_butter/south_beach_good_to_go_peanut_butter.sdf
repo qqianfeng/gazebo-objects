@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/south_beach_good_to_go_peanut_butter/south_beach_good_to_go_peanut_butter_250_collision.obj</uri>
+            <uri>model:///south_beach_good_to_go_peanut_butter/south_beach_good_to_go_peanut_butter_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/south_beach_good_to_go_peanut_butter/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///south_beach_good_to_go_peanut_butter/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/south_beach_good_to_go_peanut_butter/south_beach_good_to_go_peanut_butter.material</uri>
+            <uri>model:///south_beach_good_to_go_peanut_butter/south_beach_good_to_go_peanut_butter.material</uri>
             <name>south_beach_good_to_go_peanut_butter</name>
           </script>
         </material>

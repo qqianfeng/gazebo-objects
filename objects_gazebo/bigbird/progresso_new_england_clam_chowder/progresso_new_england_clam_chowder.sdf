@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/progresso_new_england_clam_chowder/progresso_new_england_clam_chowder_250_collision.obj</uri>
+            <uri>model:///progresso_new_england_clam_chowder/progresso_new_england_clam_chowder_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/progresso_new_england_clam_chowder/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///progresso_new_england_clam_chowder/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/progresso_new_england_clam_chowder/progresso_new_england_clam_chowder.material</uri>
+            <uri>model:///progresso_new_england_clam_chowder/progresso_new_england_clam_chowder.material</uri>
             <name>progresso_new_england_clam_chowder</name>
           </script>
         </material>

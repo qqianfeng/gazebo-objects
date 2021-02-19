@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/ToyCarYelloq/ToyCarYelloq_250_collision.obj</uri>
+            <uri>model:///ToyCarYelloq/ToyCarYelloq_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/ToyCarYelloq/ToyCarYelloq_25k_tex.obj</uri>
+            <uri>model:///ToyCarYelloq/ToyCarYelloq_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/ToyCarYelloq/ToyCarYelloq.material</uri>
+            <uri>model:///ToyCarYelloq/ToyCarYelloq.material</uri>
             <name>ToyCarYelloq</name>
           </script>
         </material>

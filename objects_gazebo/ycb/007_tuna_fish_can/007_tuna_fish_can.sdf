@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/007_tuna_fish_can/007_tuna_fish_can_250_collision.stl</uri>
+            <uri>model:///007_tuna_fish_can/007_tuna_fish_can_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/007_tuna_fish_can/textured.obj</uri>
+            <uri>model:///007_tuna_fish_can/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/007_tuna_fish_can/007_tuna_fish_can.material</uri>
+            <uri>model:///007_tuna_fish_can/007_tuna_fish_can.material</uri>
             <name>007_tuna_fish_can</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/CoughDropsBerries/CoughDropsBerries_250_collision.obj</uri>
+            <uri>model:///CoughDropsBerries/CoughDropsBerries_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/CoughDropsBerries/CoughDropsBerries_25k_tex.obj</uri>
+            <uri>model:///CoughDropsBerries/CoughDropsBerries_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/CoughDropsBerries/CoughDropsBerries.material</uri>
+            <uri>model:///CoughDropsBerries/CoughDropsBerries.material</uri>
             <name>CoughDropsBerries</name>
           </script>
         </material>

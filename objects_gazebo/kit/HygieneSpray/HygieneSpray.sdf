@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/HygieneSpray/HygieneSpray_250_collision.obj</uri>
+            <uri>model:///HygieneSpray/HygieneSpray_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/HygieneSpray/HygieneSpray_25k_tex.obj</uri>
+            <uri>model:///HygieneSpray/HygieneSpray_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/HygieneSpray/HygieneSpray.material</uri>
+            <uri>model:///HygieneSpray/HygieneSpray.material</uri>
             <name>HygieneSpray</name>
           </script>
         </material>

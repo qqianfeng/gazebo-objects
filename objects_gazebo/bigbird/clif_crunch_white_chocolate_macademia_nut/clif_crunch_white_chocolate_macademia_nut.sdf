@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/clif_crunch_white_chocolate_macademia_nut/clif_crunch_white_chocolate_macademia_nut_250_collision.obj</uri>
+            <uri>model:///clif_crunch_white_chocolate_macademia_nut/clif_crunch_white_chocolate_macademia_nut_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/clif_crunch_white_chocolate_macademia_nut/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///clif_crunch_white_chocolate_macademia_nut/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/clif_crunch_white_chocolate_macademia_nut/clif_crunch_white_chocolate_macademia_nut.material</uri>
+            <uri>model:///clif_crunch_white_chocolate_macademia_nut/clif_crunch_white_chocolate_macademia_nut.material</uri>
             <name>clif_crunch_white_chocolate_macademia_nut</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/crest_complete_minty_fresh/crest_complete_minty_fresh_250_collision.obj</uri>
+            <uri>model:///crest_complete_minty_fresh/crest_complete_minty_fresh_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/crest_complete_minty_fresh/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///crest_complete_minty_fresh/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/crest_complete_minty_fresh/crest_complete_minty_fresh.material</uri>
+            <uri>model:///crest_complete_minty_fresh/crest_complete_minty_fresh.material</uri>
             <name>crest_complete_minty_fresh</name>
           </script>
         </material>

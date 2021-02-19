@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/paper_cup_holder/paper_cup_holder_250_collision.obj</uri>
+            <uri>model:///paper_cup_holder/paper_cup_holder_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/paper_cup_holder/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///paper_cup_holder/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/paper_cup_holder/paper_cup_holder.material</uri>
+            <uri>model:///paper_cup_holder/paper_cup_holder.material</uri>
             <name>paper_cup_holder</name>
           </script>
         </material>

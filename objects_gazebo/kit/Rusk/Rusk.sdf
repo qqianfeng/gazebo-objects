@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Rusk/Rusk_250_collision.obj</uri>
+            <uri>model:///Rusk/Rusk_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Rusk/Rusk_25k_tex.obj</uri>
+            <uri>model:///Rusk/Rusk_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Rusk/Rusk.material</uri>
+            <uri>model:///Rusk/Rusk.material</uri>
             <name>Rusk</name>
           </script>
         </material>

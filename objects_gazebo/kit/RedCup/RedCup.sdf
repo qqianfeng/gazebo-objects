@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/RedCup/RedCup_250_collision.obj</uri>
+            <uri>model:///RedCup/RedCup_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/RedCup/RedCup_25k_tex.obj</uri>
+            <uri>model:///RedCup/RedCup_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/RedCup/RedCup.material</uri>
+            <uri>model:///RedCup/RedCup.material</uri>
             <name>RedCup</name>
           </script>
         </material>

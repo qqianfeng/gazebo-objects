@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/YellowSaltCylinder/YellowSaltCylinder_250_collision.obj</uri>
+            <uri>model:///YellowSaltCylinder/YellowSaltCylinder_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/YellowSaltCylinder/YellowSaltCylinder_25k_tex.obj</uri>
+            <uri>model:///YellowSaltCylinder/YellowSaltCylinder_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/YellowSaltCylinder/YellowSaltCylinder.material</uri>
+            <uri>model:///YellowSaltCylinder/YellowSaltCylinder.material</uri>
             <name>YellowSaltCylinder</name>
           </script>
         </material>

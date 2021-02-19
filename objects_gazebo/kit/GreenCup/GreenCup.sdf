@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/GreenCup/GreenCup_250_collision.obj</uri>
+            <uri>model:///GreenCup/GreenCup_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/GreenCup/GreenCup_25k_tex.obj</uri>
+            <uri>model:///GreenCup/GreenCup_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/GreenCup/GreenCup.material</uri>
+            <uri>model:///GreenCup/GreenCup.material</uri>
             <name>GreenCup</name>
           </script>
         </material>

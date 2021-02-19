@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Heart1/Heart1_250_collision.obj</uri>
+            <uri>model:///Heart1/Heart1_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Heart1/Heart1_25k_tex.obj</uri>
+            <uri>model:///Heart1/Heart1_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Heart1/Heart1.material</uri>
+            <uri>model:///Heart1/Heart1.material</uri>
             <name>Heart1</name>
           </script>
         </material>

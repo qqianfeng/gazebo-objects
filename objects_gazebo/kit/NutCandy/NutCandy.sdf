@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/NutCandy/NutCandy_250_collision.obj</uri>
+            <uri>model:///NutCandy/NutCandy_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/NutCandy/NutCandy_25k_tex.obj</uri>
+            <uri>model:///NutCandy/NutCandy_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/NutCandy/NutCandy.material</uri>
+            <uri>model:///NutCandy/NutCandy.material</uri>
             <name>NutCandy</name>
           </script>
         </material>

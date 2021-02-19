@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/canon_ack_e10_box/canon_ack_e10_box_250_collision.obj</uri>
+            <uri>model:///canon_ack_e10_box/canon_ack_e10_box_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/canon_ack_e10_box/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///canon_ack_e10_box/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/canon_ack_e10_box/canon_ack_e10_box.material</uri>
+            <uri>model:///canon_ack_e10_box/canon_ack_e10_box.material</uri>
             <name>canon_ack_e10_box</name>
           </script>
         </material>

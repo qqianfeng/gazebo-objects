@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Pitcher/Pitcher_250_collision.obj</uri>
+            <uri>model:///Pitcher/Pitcher_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Pitcher/Pitcher_25k_tex.obj</uri>
+            <uri>model:///Pitcher/Pitcher_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Pitcher/Pitcher.material</uri>
+            <uri>model:///Pitcher/Pitcher.material</uri>
             <name>Pitcher</name>
           </script>
         </material>

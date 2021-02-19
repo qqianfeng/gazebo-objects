@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Sprayflask/Sprayflask_250_collision.obj</uri>
+            <uri>model:///Sprayflask/Sprayflask_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Sprayflask/Sprayflask_25k_tex.obj</uri>
+            <uri>model:///Sprayflask/Sprayflask_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Sprayflask/Sprayflask.material</uri>
+            <uri>model:///Sprayflask/Sprayflask.material</uri>
             <name>Sprayflask</name>
           </script>
         </material>

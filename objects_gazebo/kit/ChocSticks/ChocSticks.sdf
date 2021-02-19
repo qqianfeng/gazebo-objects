@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/ChocSticks/ChocSticks_250_collision.obj</uri>
+            <uri>model:///ChocSticks/ChocSticks_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/ChocSticks/ChocSticks_25k_tex.obj</uri>
+            <uri>model:///ChocSticks/ChocSticks_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/ChocSticks/ChocSticks.material</uri>
+            <uri>model:///ChocSticks/ChocSticks.material</uri>
             <name>ChocSticks</name>
           </script>
         </material>

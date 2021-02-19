@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nature_valley_crunchy_oats_n_honey/nature_valley_crunchy_oats_n_honey_250_collision.obj</uri>
+            <uri>model:///nature_valley_crunchy_oats_n_honey/nature_valley_crunchy_oats_n_honey_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nature_valley_crunchy_oats_n_honey/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nature_valley_crunchy_oats_n_honey/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nature_valley_crunchy_oats_n_honey/nature_valley_crunchy_oats_n_honey.material</uri>
+            <uri>model:///nature_valley_crunchy_oats_n_honey/nature_valley_crunchy_oats_n_honey.material</uri>
             <name>nature_valley_crunchy_oats_n_honey</name>
           </script>
         </material>

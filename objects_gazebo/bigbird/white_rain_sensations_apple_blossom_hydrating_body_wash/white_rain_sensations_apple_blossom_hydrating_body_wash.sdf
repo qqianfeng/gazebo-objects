@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/white_rain_sensations_apple_blossom_hydrating_body_wash/white_rain_sensations_apple_blossom_hydrating_body_wash_250_collision.obj</uri>
+            <uri>model:///white_rain_sensations_apple_blossom_hydrating_body_wash/white_rain_sensations_apple_blossom_hydrating_body_wash_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/white_rain_sensations_apple_blossom_hydrating_body_wash/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///white_rain_sensations_apple_blossom_hydrating_body_wash/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/white_rain_sensations_apple_blossom_hydrating_body_wash/white_rain_sensations_apple_blossom_hydrating_body_wash.material</uri>
+            <uri>model:///white_rain_sensations_apple_blossom_hydrating_body_wash/white_rain_sensations_apple_blossom_hydrating_body_wash.material</uri>
             <name>white_rain_sensations_apple_blossom_hydrating_body_wash</name>
           </script>
         </material>

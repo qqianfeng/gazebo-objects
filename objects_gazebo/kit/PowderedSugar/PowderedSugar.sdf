@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/PowderedSugar/PowderedSugar_250_collision.obj</uri>
+            <uri>model:///PowderedSugar/PowderedSugar_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/PowderedSugar/PowderedSugar_25k_tex.obj</uri>
+            <uri>model:///PowderedSugar/PowderedSugar_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/PowderedSugar/PowderedSugar.material</uri>
+            <uri>model:///PowderedSugar/PowderedSugar.material</uri>
             <name>PowderedSugar</name>
           </script>
         </material>

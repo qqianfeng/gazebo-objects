@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/SauceThickener/SauceThickener_250_collision.obj</uri>
+            <uri>model:///SauceThickener/SauceThickener_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/SauceThickener/SauceThickener_25k_tex.obj</uri>
+            <uri>model:///SauceThickener/SauceThickener_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/SauceThickener/SauceThickener.material</uri>
+            <uri>model:///SauceThickener/SauceThickener.material</uri>
             <name>SauceThickener</name>
           </script>
         </material>

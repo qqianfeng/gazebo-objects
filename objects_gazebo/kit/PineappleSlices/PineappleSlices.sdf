@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/PineappleSlices/PineappleSlices_250_collision.obj</uri>
+            <uri>model:///PineappleSlices/PineappleSlices_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/PineappleSlices/PineappleSlices_25k_tex.obj</uri>
+            <uri>model:///PineappleSlices/PineappleSlices_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/PineappleSlices/PineappleSlices.material</uri>
+            <uri>model:///PineappleSlices/PineappleSlices.material</uri>
             <name>PineappleSlices</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/SmacksCereals/SmacksCereals_250_collision.obj</uri>
+            <uri>model:///SmacksCereals/SmacksCereals_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/SmacksCereals/SmacksCereals_25k_tex.obj</uri>
+            <uri>model:///SmacksCereals/SmacksCereals_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/SmacksCereals/SmacksCereals.material</uri>
+            <uri>model:///SmacksCereals/SmacksCereals.material</uri>
             <name>SmacksCereals</name>
           </script>
         </material>

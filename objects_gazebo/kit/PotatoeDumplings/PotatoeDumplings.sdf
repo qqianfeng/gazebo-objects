@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/PotatoeDumplings/PotatoeDumplings_250_collision.obj</uri>
+            <uri>model:///PotatoeDumplings/PotatoeDumplings_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/PotatoeDumplings/PotatoeDumplings_25k_tex.obj</uri>
+            <uri>model:///PotatoeDumplings/PotatoeDumplings_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/PotatoeDumplings/PotatoeDumplings.material</uri>
+            <uri>model:///PotatoeDumplings/PotatoeDumplings.material</uri>
             <name>PotatoeDumplings</name>
           </script>
         </material>

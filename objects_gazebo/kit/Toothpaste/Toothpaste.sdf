@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Toothpaste/Toothpaste_250_collision.obj</uri>
+            <uri>model:///Toothpaste/Toothpaste_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Toothpaste/Toothpaste_25k_tex.obj</uri>
+            <uri>model:///Toothpaste/Toothpaste_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Toothpaste/Toothpaste.material</uri>
+            <uri>model:///Toothpaste/Toothpaste.material</uri>
             <name>Toothpaste</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/coffee_mate_french_vanilla/coffee_mate_french_vanilla_250_collision.obj</uri>
+            <uri>model:///coffee_mate_french_vanilla/coffee_mate_french_vanilla_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/coffee_mate_french_vanilla/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///coffee_mate_french_vanilla/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/coffee_mate_french_vanilla/coffee_mate_french_vanilla.material</uri>
+            <uri>model:///coffee_mate_french_vanilla/coffee_mate_french_vanilla.material</uri>
             <name>coffee_mate_french_vanilla</name>
           </script>
         </material>

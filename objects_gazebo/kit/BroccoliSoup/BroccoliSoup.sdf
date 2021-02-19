@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/BroccoliSoup/BroccoliSoup_250_collision.obj</uri>
+            <uri>model:///BroccoliSoup/BroccoliSoup_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/BroccoliSoup/BroccoliSoup_25k_tex.obj</uri>
+            <uri>model:///BroccoliSoup/BroccoliSoup_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/BroccoliSoup/BroccoliSoup.material</uri>
+            <uri>model:///BroccoliSoup/BroccoliSoup.material</uri>
             <name>BroccoliSoup</name>
           </script>
         </material>

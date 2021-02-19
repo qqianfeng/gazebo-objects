@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/HeringTin/HeringTin_250_collision.obj</uri>
+            <uri>model:///HeringTin/HeringTin_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/HeringTin/HeringTin_25k_tex.obj</uri>
+            <uri>model:///HeringTin/HeringTin_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/HeringTin/HeringTin.material</uri>
+            <uri>model:///HeringTin/HeringTin.material</uri>
             <name>HeringTin</name>
           </script>
         </material>

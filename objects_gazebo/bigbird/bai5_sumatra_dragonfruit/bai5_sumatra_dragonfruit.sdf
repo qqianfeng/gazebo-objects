@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/bai5_sumatra_dragonfruit/bai5_sumatra_dragonfruit_250_collision.obj</uri>
+            <uri>model:///bai5_sumatra_dragonfruit/bai5_sumatra_dragonfruit_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/bai5_sumatra_dragonfruit/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///bai5_sumatra_dragonfruit/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/bai5_sumatra_dragonfruit/bai5_sumatra_dragonfruit.material</uri>
+            <uri>model:///bai5_sumatra_dragonfruit/bai5_sumatra_dragonfruit.material</uri>
             <name>bai5_sumatra_dragonfruit</name>
           </script>
         </material>

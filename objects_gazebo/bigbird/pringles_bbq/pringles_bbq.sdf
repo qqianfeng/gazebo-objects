@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/pringles_bbq/pringles_bbq_250_collision.obj</uri>
+            <uri>model:///pringles_bbq/pringles_bbq_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/pringles_bbq/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///pringles_bbq/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/pringles_bbq/pringles_bbq.material</uri>
+            <uri>model:///pringles_bbq/pringles_bbq.material</uri>
             <name>pringles_bbq</name>
           </script>
         </material>

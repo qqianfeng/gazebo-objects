@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/fruit_by_the_foot/fruit_by_the_foot_250_collision.obj</uri>
+            <uri>model:///fruit_by_the_foot/fruit_by_the_foot_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/fruit_by_the_foot/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///fruit_by_the_foot/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/fruit_by_the_foot/fruit_by_the_foot.material</uri>
+            <uri>model:///fruit_by_the_foot/fruit_by_the_foot.material</uri>
             <name>fruit_by_the_foot</name>
           </script>
         </material>

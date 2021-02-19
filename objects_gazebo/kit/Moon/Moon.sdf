@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Moon/Moon_250_collision.obj</uri>
+            <uri>model:///Moon/Moon_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Moon/Moon_25k_tex.obj</uri>
+            <uri>model:///Moon/Moon_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Moon/Moon.material</uri>
+            <uri>model:///Moon/Moon.material</uri>
             <name>Moon</name>
           </script>
         </material>

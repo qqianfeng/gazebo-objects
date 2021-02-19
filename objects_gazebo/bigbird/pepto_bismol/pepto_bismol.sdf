@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/pepto_bismol/pepto_bismol_250_collision.obj</uri>
+            <uri>model:///pepto_bismol/pepto_bismol_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/pepto_bismol/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///pepto_bismol/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/pepto_bismol/pepto_bismol.material</uri>
+            <uri>model:///pepto_bismol/pepto_bismol.material</uri>
             <name>pepto_bismol</name>
           </script>
         </material>

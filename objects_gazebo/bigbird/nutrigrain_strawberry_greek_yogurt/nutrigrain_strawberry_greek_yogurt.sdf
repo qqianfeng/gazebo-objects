@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nutrigrain_strawberry_greek_yogurt/nutrigrain_strawberry_greek_yogurt_250_collision.obj</uri>
+            <uri>model:///nutrigrain_strawberry_greek_yogurt/nutrigrain_strawberry_greek_yogurt_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nutrigrain_strawberry_greek_yogurt/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nutrigrain_strawberry_greek_yogurt/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nutrigrain_strawberry_greek_yogurt/nutrigrain_strawberry_greek_yogurt.material</uri>
+            <uri>model:///nutrigrain_strawberry_greek_yogurt/nutrigrain_strawberry_greek_yogurt.material</uri>
             <name>nutrigrain_strawberry_greek_yogurt</name>
           </script>
         </material>

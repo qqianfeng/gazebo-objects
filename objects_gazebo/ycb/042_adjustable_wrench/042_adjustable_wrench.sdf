@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/042_adjustable_wrench/042_adjustable_wrench_250_collision.stl</uri>
+            <uri>model:///042_adjustable_wrench/042_adjustable_wrench_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/042_adjustable_wrench/textured.obj</uri>
+            <uri>model:///042_adjustable_wrench/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/042_adjustable_wrench/042_adjustable_wrench.material</uri>
+            <uri>model:///042_adjustable_wrench/042_adjustable_wrench.material</uri>
             <name>042_adjustable_wrench</name>
           </script>
         </material>

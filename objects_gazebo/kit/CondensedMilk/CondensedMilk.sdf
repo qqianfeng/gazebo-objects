@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/CondensedMilk/CondensedMilk_250_collision.obj</uri>
+            <uri>model:///CondensedMilk/CondensedMilk_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/CondensedMilk/CondensedMilk_25k_tex.obj</uri>
+            <uri>model:///CondensedMilk/CondensedMilk_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/CondensedMilk/CondensedMilk.material</uri>
+            <uri>model:///CondensedMilk/CondensedMilk.material</uri>
             <name>CondensedMilk</name>
           </script>
         </material>

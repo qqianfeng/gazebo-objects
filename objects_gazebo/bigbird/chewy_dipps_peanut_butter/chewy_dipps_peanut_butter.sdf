@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/chewy_dipps_peanut_butter/chewy_dipps_peanut_butter_250_collision.obj</uri>
+            <uri>model:///chewy_dipps_peanut_butter/chewy_dipps_peanut_butter_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/chewy_dipps_peanut_butter/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///chewy_dipps_peanut_butter/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/chewy_dipps_peanut_butter/chewy_dipps_peanut_butter.material</uri>
+            <uri>model:///chewy_dipps_peanut_butter/chewy_dipps_peanut_butter.material</uri>
             <name>chewy_dipps_peanut_butter</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Tortoise/Tortoise_250_collision.obj</uri>
+            <uri>model:///Tortoise/Tortoise_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Tortoise/Tortoise_25k_tex.obj</uri>
+            <uri>model:///Tortoise/Tortoise_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Tortoise/Tortoise.material</uri>
+            <uri>model:///Tortoise/Tortoise.material</uri>
             <name>Tortoise</name>
           </script>
         </material>

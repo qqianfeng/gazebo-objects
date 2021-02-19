@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/quaker_big_chewy_chocolate_chip/quaker_big_chewy_chocolate_chip_250_collision.obj</uri>
+            <uri>model:///quaker_big_chewy_chocolate_chip/quaker_big_chewy_chocolate_chip_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/quaker_big_chewy_chocolate_chip/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///quaker_big_chewy_chocolate_chip/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/quaker_big_chewy_chocolate_chip/quaker_big_chewy_chocolate_chip.material</uri>
+            <uri>model:///quaker_big_chewy_chocolate_chip/quaker_big_chewy_chocolate_chip.material</uri>
             <name>quaker_big_chewy_chocolate_chip</name>
           </script>
         </material>

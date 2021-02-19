@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/SoftCakeOrange/SoftCakeOrange_250_collision.obj</uri>
+            <uri>model:///SoftCakeOrange/SoftCakeOrange_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/SoftCakeOrange/SoftCakeOrange_25k_tex.obj</uri>
+            <uri>model:///SoftCakeOrange/SoftCakeOrange_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/SoftCakeOrange/SoftCakeOrange.material</uri>
+            <uri>model:///SoftCakeOrange/SoftCakeOrange.material</uri>
             <name>SoftCakeOrange</name>
           </script>
         </material>

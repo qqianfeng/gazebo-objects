@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/032_knife/032_knife_250_collision.stl</uri>
+            <uri>model:///032_knife/032_knife_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/032_knife/textured.obj</uri>
+            <uri>model:///032_knife/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/032_knife/032_knife.material</uri>
+            <uri>model:///032_knife/032_knife.material</uri>
             <name>032_knife</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/clif_crunch_peanut_butter/clif_crunch_peanut_butter_250_collision.obj</uri>
+            <uri>model:///clif_crunch_peanut_butter/clif_crunch_peanut_butter_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/clif_crunch_peanut_butter/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///clif_crunch_peanut_butter/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/clif_crunch_peanut_butter/clif_crunch_peanut_butter.material</uri>
+            <uri>model:///clif_crunch_peanut_butter/clif_crunch_peanut_butter.material</uri>
             <name>clif_crunch_peanut_butter</name>
           </script>
         </material>

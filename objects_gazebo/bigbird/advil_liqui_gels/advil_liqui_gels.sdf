@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/advil_liqui_gels/advil_liqui_gels_250_collision.obj</uri>
+            <uri>model:///advil_liqui_gels/advil_liqui_gels_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/advil_liqui_gels/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///advil_liqui_gels/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/advil_liqui_gels/advil_liqui_gels.material</uri>
+            <uri>model:///advil_liqui_gels/advil_liqui_gels.material</uri>
             <name>advil_liqui_gels</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Dog/Dog_250_collision.obj</uri>
+            <uri>model:///Dog/Dog_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Dog/Dog_25k_tex.obj</uri>
+            <uri>model:///Dog/Dog_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Dog/Dog.material</uri>
+            <uri>model:///Dog/Dog.material</uri>
             <name>Dog</name>
           </script>
         </material>

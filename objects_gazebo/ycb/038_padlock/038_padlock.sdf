@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/038_padlock/038_padlock_250_collision.stl</uri>
+            <uri>model:///038_padlock/038_padlock_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/038_padlock/textured.obj</uri>
+            <uri>model:///038_padlock/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/038_padlock/038_padlock.material</uri>
+            <uri>model:///038_padlock/038_padlock.material</uri>
             <name>038_padlock</name>
           </script>
         </material>

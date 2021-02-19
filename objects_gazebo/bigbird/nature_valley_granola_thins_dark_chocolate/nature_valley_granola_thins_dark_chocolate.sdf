@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nature_valley_granola_thins_dark_chocolate/nature_valley_granola_thins_dark_chocolate_250_collision.obj</uri>
+            <uri>model:///nature_valley_granola_thins_dark_chocolate/nature_valley_granola_thins_dark_chocolate_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nature_valley_granola_thins_dark_chocolate/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nature_valley_granola_thins_dark_chocolate/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nature_valley_granola_thins_dark_chocolate/nature_valley_granola_thins_dark_chocolate.material</uri>
+            <uri>model:///nature_valley_granola_thins_dark_chocolate/nature_valley_granola_thins_dark_chocolate.material</uri>
             <name>nature_valley_granola_thins_dark_chocolate</name>
           </script>
         </material>

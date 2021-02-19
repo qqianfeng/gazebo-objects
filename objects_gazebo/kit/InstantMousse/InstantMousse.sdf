@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/InstantMousse/InstantMousse_250_collision.obj</uri>
+            <uri>model:///InstantMousse/InstantMousse_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/InstantMousse/InstantMousse_25k_tex.obj</uri>
+            <uri>model:///InstantMousse/InstantMousse_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/InstantMousse/InstantMousse.material</uri>
+            <uri>model:///InstantMousse/InstantMousse.material</uri>
             <name>InstantMousse</name>
           </script>
         </material>
