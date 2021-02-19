@@ -1,13 +1,13 @@
 # Gazebo Objects
 
 This repo contains 350 household 3D objects from the YCB, KIT and BigBird datasets. Each object consists off:
-- visual mesh: from the original dataset
-- collision mesh: simplified version of the visual mesh (250 faces)
-- convex mesh: convex hull of visual mesh, used to compute inertia through trimesh
-- config: to import sdf into Gazebo
-- sdf: specifying everything needed to spawn objects including inertia.
-- texture file: image of the object surface
-- material file: to apply texture in Gazebo
+- **visual mesh**: from the original dataset
+- **collision mesh**: simplified version of the visual mesh (250 faces)
+- **convex mesh**: convex hull of visual mesh, used to compute inertia through trimesh
+- **config**: to import sdf into Gazebo
+- **sdf**: specifying everything needed to spawn objects including inertia.
+- **texture file**: image of the object surface
+- **material file**: to apply texture in Gazebo
 
 ## Disclaimer
 The bigbird collision meshes had to be manually cleaned up. This process is daunting and, therefore, has only been done for the bigbird objects currently in use. A list of the bigbird objects with clean collision meshes can be found under `scripts/bigbird_list_fixed_meshes.py`. The remaining bigbird objects use a convex hull of the visual mesh as their collision mesh. Therefore, for these objects (especially when having more complex shapes) the collision meshes can differ significantly from the visual meshes.
