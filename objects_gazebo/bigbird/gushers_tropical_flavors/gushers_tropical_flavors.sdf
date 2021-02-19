@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/gushers_tropical_flavors/gushers_tropical_flavors_250_collision.obj</uri>
+            <uri>model:///gushers_tropical_flavors/gushers_tropical_flavors_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/gushers_tropical_flavors/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///gushers_tropical_flavors/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/gushers_tropical_flavors/gushers_tropical_flavors.material</uri>
+            <uri>model:///gushers_tropical_flavors/gushers_tropical_flavors.material</uri>
             <name>gushers_tropical_flavors</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/cholula_chipotle_hot_sauce/cholula_chipotle_hot_sauce_250_collision.obj</uri>
+            <uri>model:///cholula_chipotle_hot_sauce/cholula_chipotle_hot_sauce_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/cholula_chipotle_hot_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///cholula_chipotle_hot_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/cholula_chipotle_hot_sauce/cholula_chipotle_hot_sauce.material</uri>
+            <uri>model:///cholula_chipotle_hot_sauce/cholula_chipotle_hot_sauce.material</uri>
             <name>cholula_chipotle_hot_sauce</name>
           </script>
         </material>

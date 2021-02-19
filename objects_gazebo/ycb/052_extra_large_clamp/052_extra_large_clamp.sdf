@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/052_extra_large_clamp/052_extra_large_clamp_250_collision.stl</uri>
+            <uri>model:///052_extra_large_clamp/052_extra_large_clamp_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/052_extra_large_clamp/textured.obj</uri>
+            <uri>model:///052_extra_large_clamp/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/052_extra_large_clamp/052_extra_large_clamp.material</uri>
+            <uri>model:///052_extra_large_clamp/052_extra_large_clamp.material</uri>
             <name>052_extra_large_clamp</name>
           </script>
         </material>

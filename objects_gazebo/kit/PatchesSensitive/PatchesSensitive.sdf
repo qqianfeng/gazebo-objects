@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/PatchesSensitive/PatchesSensitive_250_collision.obj</uri>
+            <uri>model:///PatchesSensitive/PatchesSensitive_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/PatchesSensitive/PatchesSensitive_25k_tex.obj</uri>
+            <uri>model:///PatchesSensitive/PatchesSensitive_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/PatchesSensitive/PatchesSensitive.material</uri>
+            <uri>model:///PatchesSensitive/PatchesSensitive.material</uri>
             <name>PatchesSensitive</name>
           </script>
         </material>

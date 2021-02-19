@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/crayola_yellow_green/crayola_yellow_green_250_collision.obj</uri>
+            <uri>model:///crayola_yellow_green/crayola_yellow_green_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/crayola_yellow_green/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///crayola_yellow_green/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/crayola_yellow_green/crayola_yellow_green.material</uri>
+            <uri>model:///crayola_yellow_green/crayola_yellow_green.material</uri>
             <name>crayola_yellow_green</name>
           </script>
         </material>

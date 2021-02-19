@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/049_small_clamp/049_small_clamp_250_collision.stl</uri>
+            <uri>model:///049_small_clamp/049_small_clamp_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/049_small_clamp/textured.obj</uri>
+            <uri>model:///049_small_clamp/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/049_small_clamp/049_small_clamp.material</uri>
+            <uri>model:///049_small_clamp/049_small_clamp.material</uri>
             <name>049_small_clamp</name>
           </script>
         </material>

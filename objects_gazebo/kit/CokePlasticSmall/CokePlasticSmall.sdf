@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/CokePlasticSmall/CokePlasticSmall_250_collision.obj</uri>
+            <uri>model:///CokePlasticSmall/CokePlasticSmall_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/CokePlasticSmall/CokePlasticSmall_25k_tex.obj</uri>
+            <uri>model:///CokePlasticSmall/CokePlasticSmall_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/CokePlasticSmall/CokePlasticSmall.material</uri>
+            <uri>model:///CokePlasticSmall/CokePlasticSmall.material</uri>
             <name>CokePlasticSmall</name>
           </script>
         </material>

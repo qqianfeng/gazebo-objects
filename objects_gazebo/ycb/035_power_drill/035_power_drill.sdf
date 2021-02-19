@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/035_power_drill/035_power_drill_250_collision.stl</uri>
+            <uri>model:///035_power_drill/035_power_drill_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/035_power_drill/textured.obj</uri>
+            <uri>model:///035_power_drill/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/035_power_drill/035_power_drill.material</uri>
+            <uri>model:///035_power_drill/035_power_drill.material</uri>
             <name>035_power_drill</name>
           </script>
         </material>

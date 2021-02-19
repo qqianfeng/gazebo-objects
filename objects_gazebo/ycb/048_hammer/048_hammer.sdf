@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/048_hammer/048_hammer_250_collision.stl</uri>
+            <uri>model:///048_hammer/048_hammer_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/048_hammer/textured.obj</uri>
+            <uri>model:///048_hammer/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/048_hammer/048_hammer.material</uri>
+            <uri>model:///048_hammer/048_hammer.material</uri>
             <name>048_hammer</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/krylon_low_odor_clear_finish/krylon_low_odor_clear_finish_250_collision.obj</uri>
+            <uri>model:///krylon_low_odor_clear_finish/krylon_low_odor_clear_finish_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/krylon_low_odor_clear_finish/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///krylon_low_odor_clear_finish/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/krylon_low_odor_clear_finish/krylon_low_odor_clear_finish.material</uri>
+            <uri>model:///krylon_low_odor_clear_finish/krylon_low_odor_clear_finish.material</uri>
             <name>krylon_low_odor_clear_finish</name>
           </script>
         </material>

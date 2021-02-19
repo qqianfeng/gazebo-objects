@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nutrigrain_chotolatey_crunch/nutrigrain_chotolatey_crunch_250_collision.obj</uri>
+            <uri>model:///nutrigrain_chotolatey_crunch/nutrigrain_chotolatey_crunch_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nutrigrain_chotolatey_crunch/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nutrigrain_chotolatey_crunch/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nutrigrain_chotolatey_crunch/nutrigrain_chotolatey_crunch.material</uri>
+            <uri>model:///nutrigrain_chotolatey_crunch/nutrigrain_chotolatey_crunch.material</uri>
             <name>nutrigrain_chotolatey_crunch</name>
           </script>
         </material>

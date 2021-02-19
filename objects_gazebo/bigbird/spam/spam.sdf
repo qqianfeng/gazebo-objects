@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/spam/spam_250_collision.obj</uri>
+            <uri>model:///spam/spam_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/spam/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///spam/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/spam/spam.material</uri>
+            <uri>model:///spam/spam.material</uri>
             <name>spam</name>
           </script>
         </material>

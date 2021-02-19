@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/CleaningCloths/CleaningCloths_250_collision.obj</uri>
+            <uri>model:///CleaningCloths/CleaningCloths_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/CleaningCloths/CleaningCloths_25k_tex.obj</uri>
+            <uri>model:///CleaningCloths/CleaningCloths_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/CleaningCloths/CleaningCloths.material</uri>
+            <uri>model:///CleaningCloths/CleaningCloths.material</uri>
             <name>CleaningCloths</name>
           </script>
         </material>

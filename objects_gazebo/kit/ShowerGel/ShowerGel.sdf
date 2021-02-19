@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/ShowerGel/ShowerGel_250_collision.obj</uri>
+            <uri>model:///ShowerGel/ShowerGel_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/ShowerGel/ShowerGel_25k_tex.obj</uri>
+            <uri>model:///ShowerGel/ShowerGel_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/ShowerGel/ShowerGel.material</uri>
+            <uri>model:///ShowerGel/ShowerGel.material</uri>
             <name>ShowerGel</name>
           </script>
         </material>

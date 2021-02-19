@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/ChocolateBars/ChocolateBars_250_collision.obj</uri>
+            <uri>model:///ChocolateBars/ChocolateBars_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/ChocolateBars/ChocolateBars_25k_tex.obj</uri>
+            <uri>model:///ChocolateBars/ChocolateBars_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/ChocolateBars/ChocolateBars.material</uri>
+            <uri>model:///ChocolateBars/ChocolateBars.material</uri>
             <name>ChocolateBars</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Wafflerolls/Wafflerolls_250_collision.obj</uri>
+            <uri>model:///Wafflerolls/Wafflerolls_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Wafflerolls/Wafflerolls_25k_tex.obj</uri>
+            <uri>model:///Wafflerolls/Wafflerolls_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Wafflerolls/Wafflerolls.material</uri>
+            <uri>model:///Wafflerolls/Wafflerolls.material</uri>
             <name>Wafflerolls</name>
           </script>
         </material>

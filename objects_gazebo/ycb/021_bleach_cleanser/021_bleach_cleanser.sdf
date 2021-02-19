@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/021_bleach_cleanser/021_bleach_cleanser_250_collision.stl</uri>
+            <uri>model:///021_bleach_cleanser/021_bleach_cleanser_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/021_bleach_cleanser/textured.obj</uri>
+            <uri>model:///021_bleach_cleanser/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/021_bleach_cleanser/021_bleach_cleanser.material</uri>
+            <uri>model:///021_bleach_cleanser/021_bleach_cleanser.material</uri>
             <name>021_bleach_cleanser</name>
           </script>
         </material>

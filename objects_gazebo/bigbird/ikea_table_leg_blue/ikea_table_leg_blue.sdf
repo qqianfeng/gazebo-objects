@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/ikea_table_leg_blue/ikea_table_leg_blue_250_collision.obj</uri>
+            <uri>model:///ikea_table_leg_blue/ikea_table_leg_blue_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/ikea_table_leg_blue/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///ikea_table_leg_blue/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/ikea_table_leg_blue/ikea_table_leg_blue.material</uri>
+            <uri>model:///ikea_table_leg_blue/ikea_table_leg_blue.material</uri>
             <name>ikea_table_leg_blue</name>
           </script>
         </material>

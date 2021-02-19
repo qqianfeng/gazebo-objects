@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/tapatio_hot_sauce/tapatio_hot_sauce_250_collision.obj</uri>
+            <uri>model:///tapatio_hot_sauce/tapatio_hot_sauce_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/tapatio_hot_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///tapatio_hot_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/tapatio_hot_sauce/tapatio_hot_sauce.material</uri>
+            <uri>model:///tapatio_hot_sauce/tapatio_hot_sauce.material</uri>
             <name>tapatio_hot_sauce</name>
           </script>
         </material>

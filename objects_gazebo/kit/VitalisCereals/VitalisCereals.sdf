@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/VitalisCereals/VitalisCereals_250_collision.obj</uri>
+            <uri>model:///VitalisCereals/VitalisCereals_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/VitalisCereals/VitalisCereals_25k_tex.obj</uri>
+            <uri>model:///VitalisCereals/VitalisCereals_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/VitalisCereals/VitalisCereals.material</uri>
+            <uri>model:///VitalisCereals/VitalisCereals.material</uri>
             <name>VitalisCereals</name>
           </script>
         </material>

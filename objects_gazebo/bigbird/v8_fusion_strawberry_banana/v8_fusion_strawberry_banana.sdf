@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/v8_fusion_strawberry_banana/v8_fusion_strawberry_banana_250_collision.obj</uri>
+            <uri>model:///v8_fusion_strawberry_banana/v8_fusion_strawberry_banana_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/v8_fusion_strawberry_banana/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///v8_fusion_strawberry_banana/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/v8_fusion_strawberry_banana/v8_fusion_strawberry_banana.material</uri>
+            <uri>model:///v8_fusion_strawberry_banana/v8_fusion_strawberry_banana.material</uri>
             <name>v8_fusion_strawberry_banana</name>
           </script>
         </material>

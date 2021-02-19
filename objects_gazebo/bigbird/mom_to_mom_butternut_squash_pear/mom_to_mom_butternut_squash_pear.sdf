@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/mom_to_mom_butternut_squash_pear_250_collision.obj</uri>
+            <uri>model:///mom_to_mom_butternut_squash_pear/mom_to_mom_butternut_squash_pear_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///mom_to_mom_butternut_squash_pear/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/mom_to_mom_butternut_squash_pear/mom_to_mom_butternut_squash_pear.material</uri>
+            <uri>model:///mom_to_mom_butternut_squash_pear/mom_to_mom_butternut_squash_pear.material</uri>
             <name>mom_to_mom_butternut_squash_pear</name>
           </script>
         </material>

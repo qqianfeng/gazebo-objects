@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/033_spatula/033_spatula_250_collision.stl</uri>
+            <uri>model:///033_spatula/033_spatula_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/033_spatula/textured.obj</uri>
+            <uri>model:///033_spatula/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/033_spatula/033_spatula.material</uri>
+            <uri>model:///033_spatula/033_spatula.material</uri>
             <name>033_spatula</name>
           </script>
         </material>

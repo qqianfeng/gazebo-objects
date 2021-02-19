@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/076_timer/076_timer_250_collision.stl</uri>
+            <uri>model:///076_timer/076_timer_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/076_timer/textured.obj</uri>
+            <uri>model:///076_timer/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/076_timer/076_timer.material</uri>
+            <uri>model:///076_timer/076_timer.material</uri>
             <name>076_timer</name>
           </script>
         </material>

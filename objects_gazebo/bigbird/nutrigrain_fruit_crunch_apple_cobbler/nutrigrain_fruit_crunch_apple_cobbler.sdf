@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/nutrigrain_fruit_crunch_apple_cobbler_250_collision.obj</uri>
+            <uri>model:///nutrigrain_fruit_crunch_apple_cobbler/nutrigrain_fruit_crunch_apple_cobbler_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nutrigrain_fruit_crunch_apple_cobbler/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nutrigrain_fruit_crunch_apple_cobbler/nutrigrain_fruit_crunch_apple_cobbler.material</uri>
+            <uri>model:///nutrigrain_fruit_crunch_apple_cobbler/nutrigrain_fruit_crunch_apple_cobbler.material</uri>
             <name>nutrigrain_fruit_crunch_apple_cobbler</name>
           </script>
         </material>

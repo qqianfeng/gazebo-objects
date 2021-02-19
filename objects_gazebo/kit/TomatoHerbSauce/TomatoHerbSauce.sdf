@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/TomatoHerbSauce/TomatoHerbSauce_250_collision.obj</uri>
+            <uri>model:///TomatoHerbSauce/TomatoHerbSauce_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/TomatoHerbSauce/TomatoHerbSauce_25k_tex.obj</uri>
+            <uri>model:///TomatoHerbSauce/TomatoHerbSauce_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/TomatoHerbSauce/TomatoHerbSauce.material</uri>
+            <uri>model:///TomatoHerbSauce/TomatoHerbSauce.material</uri>
             <name>TomatoHerbSauce</name>
           </script>
         </material>

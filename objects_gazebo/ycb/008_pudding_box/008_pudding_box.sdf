@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/008_pudding_box/008_pudding_box_250_collision.stl</uri>
+            <uri>model:///008_pudding_box/008_pudding_box_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/008_pudding_box/textured.obj</uri>
+            <uri>model:///008_pudding_box/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/008_pudding_box/008_pudding_box.material</uri>
+            <uri>model:///008_pudding_box/008_pudding_box.material</uri>
             <name>008_pudding_box</name>
           </script>
         </material>

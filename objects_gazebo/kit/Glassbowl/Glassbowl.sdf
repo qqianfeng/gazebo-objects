@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Glassbowl/Glassbowl_250_collision.obj</uri>
+            <uri>model:///Glassbowl/Glassbowl_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Glassbowl/Glassbowl_25k_tex.obj</uri>
+            <uri>model:///Glassbowl/Glassbowl_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Glassbowl/Glassbowl.material</uri>
+            <uri>model:///Glassbowl/Glassbowl.material</uri>
             <name>Glassbowl</name>
           </script>
         </material>

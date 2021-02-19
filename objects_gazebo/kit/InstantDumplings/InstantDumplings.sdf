@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/InstantDumplings/InstantDumplings_250_collision.obj</uri>
+            <uri>model:///InstantDumplings/InstantDumplings_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/InstantDumplings/InstantDumplings_25k_tex.obj</uri>
+            <uri>model:///InstantDumplings/InstantDumplings_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/InstantDumplings/InstantDumplings.material</uri>
+            <uri>model:///InstantDumplings/InstantDumplings.material</uri>
             <name>InstantDumplings</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/motts_original_assorted_fruit/motts_original_assorted_fruit_250_collision.obj</uri>
+            <uri>model:///motts_original_assorted_fruit/motts_original_assorted_fruit_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/motts_original_assorted_fruit/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///motts_original_assorted_fruit/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/motts_original_assorted_fruit/motts_original_assorted_fruit.material</uri>
+            <uri>model:///motts_original_assorted_fruit/motts_original_assorted_fruit.material</uri>
             <name>motts_original_assorted_fruit</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/haagen_dazs_butter_pecan/haagen_dazs_butter_pecan_250_collision.obj</uri>
+            <uri>model:///haagen_dazs_butter_pecan/haagen_dazs_butter_pecan_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/haagen_dazs_butter_pecan/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///haagen_dazs_butter_pecan/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/haagen_dazs_butter_pecan/haagen_dazs_butter_pecan.material</uri>
+            <uri>model:///haagen_dazs_butter_pecan/haagen_dazs_butter_pecan.material</uri>
             <name>haagen_dazs_butter_pecan</name>
           </script>
         </material>

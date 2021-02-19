@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/065-g_cups/065-g_cups_250_collision.stl</uri>
+            <uri>model:///065-g_cups/065-g_cups_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/065-g_cups/textured.obj</uri>
+            <uri>model:///065-g_cups/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/065-g_cups/065-g_cups.material</uri>
+            <uri>model:///065-g_cups/065-g_cups.material</uri>
             <name>065-g_cups</name>
           </script>
         </material>

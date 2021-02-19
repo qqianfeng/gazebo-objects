@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/028_skillet_lid/028_skillet_lid_250_collision.stl</uri>
+            <uri>model:///028_skillet_lid/028_skillet_lid_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/028_skillet_lid/textured.obj</uri>
+            <uri>model:///028_skillet_lid/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/028_skillet_lid/028_skillet_lid.material</uri>
+            <uri>model:///028_skillet_lid/028_skillet_lid.material</uri>
             <name>028_skillet_lid</name>
           </script>
         </material>

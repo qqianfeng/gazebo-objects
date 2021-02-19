@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/colgate_cool_mint/colgate_cool_mint_250_collision.obj</uri>
+            <uri>model:///colgate_cool_mint/colgate_cool_mint_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/colgate_cool_mint/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///colgate_cool_mint/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/colgate_cool_mint/colgate_cool_mint.material</uri>
+            <uri>model:///colgate_cool_mint/colgate_cool_mint.material</uri>
             <name>colgate_cool_mint</name>
           </script>
         </material>

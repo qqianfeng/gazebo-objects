@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/zilla_night_black_heat/zilla_night_black_heat_250_collision.obj</uri>
+            <uri>model:///zilla_night_black_heat/zilla_night_black_heat_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/zilla_night_black_heat/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///zilla_night_black_heat/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/zilla_night_black_heat/zilla_night_black_heat.material</uri>
+            <uri>model:///zilla_night_black_heat/zilla_night_black_heat.material</uri>
             <name>zilla_night_black_heat</name>
           </script>
         </material>

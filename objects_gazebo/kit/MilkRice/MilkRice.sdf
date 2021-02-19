@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/MilkRice/MilkRice_250_collision.obj</uri>
+            <uri>model:///MilkRice/MilkRice_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/MilkRice/MilkRice_25k_tex.obj</uri>
+            <uri>model:///MilkRice/MilkRice_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/MilkRice/MilkRice.material</uri>
+            <uri>model:///MilkRice/MilkRice.material</uri>
             <name>MilkRice</name>
           </script>
         </material>

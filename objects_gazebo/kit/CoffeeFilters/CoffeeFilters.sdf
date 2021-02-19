@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/CoffeeFilters/CoffeeFilters_250_collision.obj</uri>
+            <uri>model:///CoffeeFilters/CoffeeFilters_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/CoffeeFilters/CoffeeFilters_25k_tex.obj</uri>
+            <uri>model:///CoffeeFilters/CoffeeFilters_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/CoffeeFilters/CoffeeFilters.material</uri>
+            <uri>model:///CoffeeFilters/CoffeeFilters.material</uri>
             <name>CoffeeFilters</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/honey_bunches_of_oats_honey_roasted/honey_bunches_of_oats_honey_roasted_250_collision.obj</uri>
+            <uri>model:///honey_bunches_of_oats_honey_roasted/honey_bunches_of_oats_honey_roasted_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/honey_bunches_of_oats_honey_roasted/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///honey_bunches_of_oats_honey_roasted/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/honey_bunches_of_oats_honey_roasted/honey_bunches_of_oats_honey_roasted.material</uri>
+            <uri>model:///honey_bunches_of_oats_honey_roasted/honey_bunches_of_oats_honey_roasted.material</uri>
             <name>honey_bunches_of_oats_honey_roasted</name>
           </script>
         </material>

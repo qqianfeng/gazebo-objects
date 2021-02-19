@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/018_plum/018_plum_250_collision.stl</uri>
+            <uri>model:///018_plum/018_plum_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/018_plum/textured.obj</uri>
+            <uri>model:///018_plum/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/018_plum/018_plum.material</uri>
+            <uri>model:///018_plum/018_plum.material</uri>
             <name>018_plum</name>
           </script>
         </material>

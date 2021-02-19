@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/dove_go_fresh_burst/dove_go_fresh_burst_250_collision.obj</uri>
+            <uri>model:///dove_go_fresh_burst/dove_go_fresh_burst_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/dove_go_fresh_burst/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///dove_go_fresh_burst/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/dove_go_fresh_burst/dove_go_fresh_burst.material</uri>
+            <uri>model:///dove_go_fresh_burst/dove_go_fresh_burst.material</uri>
             <name>dove_go_fresh_burst</name>
           </script>
         </material>

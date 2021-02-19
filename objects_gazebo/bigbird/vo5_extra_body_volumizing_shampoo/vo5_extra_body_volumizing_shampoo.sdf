@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/vo5_extra_body_volumizing_shampoo/vo5_extra_body_volumizing_shampoo_250_collision.obj</uri>
+            <uri>model:///vo5_extra_body_volumizing_shampoo/vo5_extra_body_volumizing_shampoo_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/vo5_extra_body_volumizing_shampoo/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///vo5_extra_body_volumizing_shampoo/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/vo5_extra_body_volumizing_shampoo/vo5_extra_body_volumizing_shampoo.material</uri>
+            <uri>model:///vo5_extra_body_volumizing_shampoo/vo5_extra_body_volumizing_shampoo.material</uri>
             <name>vo5_extra_body_volumizing_shampoo</name>
           </script>
         </material>

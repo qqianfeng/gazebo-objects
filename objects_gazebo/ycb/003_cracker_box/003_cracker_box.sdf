@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/003_cracker_box/003_cracker_box_250_collision.stl</uri>
+            <uri>model:///003_cracker_box/003_cracker_box_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/003_cracker_box/textured.obj</uri>
+            <uri>model:///003_cracker_box/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/003_cracker_box/003_cracker_box.material</uri>
+            <uri>model:///003_cracker_box/003_cracker_box.material</uri>
             <name>003_cracker_box</name>
           </script>
         </material>

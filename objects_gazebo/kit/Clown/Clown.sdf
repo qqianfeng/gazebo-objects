@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Clown/Clown_250_collision.obj</uri>
+            <uri>model:///Clown/Clown_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Clown/Clown_25k_tex.obj</uri>
+            <uri>model:///Clown/Clown_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Clown/Clown.material</uri>
+            <uri>model:///Clown/Clown.material</uri>
             <name>Clown</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/WhiteCup/WhiteCup_250_collision.obj</uri>
+            <uri>model:///WhiteCup/WhiteCup_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/WhiteCup/WhiteCup_25k_tex.obj</uri>
+            <uri>model:///WhiteCup/WhiteCup_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/WhiteCup/WhiteCup.material</uri>
+            <uri>model:///WhiteCup/WhiteCup.material</uri>
             <name>WhiteCup</name>
           </script>
         </material>

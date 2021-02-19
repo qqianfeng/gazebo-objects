@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/FizzyTabletsCalcium/FizzyTabletsCalcium_250_collision.obj</uri>
+            <uri>model:///FizzyTabletsCalcium/FizzyTabletsCalcium_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/FizzyTabletsCalcium/FizzyTabletsCalcium_25k_tex.obj</uri>
+            <uri>model:///FizzyTabletsCalcium/FizzyTabletsCalcium_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/FizzyTabletsCalcium/FizzyTabletsCalcium.material</uri>
+            <uri>model:///FizzyTabletsCalcium/FizzyTabletsCalcium.material</uri>
             <name>FizzyTabletsCalcium</name>
           </script>
         </material>

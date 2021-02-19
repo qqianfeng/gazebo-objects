@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/hunts_sauce/hunts_sauce_250_collision.obj</uri>
+            <uri>model:///hunts_sauce/hunts_sauce_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/hunts_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///hunts_sauce/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/hunts_sauce/hunts_sauce.material</uri>
+            <uri>model:///hunts_sauce/hunts_sauce.material</uri>
             <name>hunts_sauce</name>
           </script>
         </material>

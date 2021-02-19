@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nice_honey_roasted_almonds/nice_honey_roasted_almonds_250_collision.obj</uri>
+            <uri>model:///nice_honey_roasted_almonds/nice_honey_roasted_almonds_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nice_honey_roasted_almonds/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nice_honey_roasted_almonds/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nice_honey_roasted_almonds/nice_honey_roasted_almonds.material</uri>
+            <uri>model:///nice_honey_roasted_almonds/nice_honey_roasted_almonds.material</uri>
             <name>nice_honey_roasted_almonds</name>
           </script>
         </material>

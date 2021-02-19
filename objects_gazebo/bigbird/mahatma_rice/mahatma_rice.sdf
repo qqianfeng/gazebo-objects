@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/mahatma_rice/mahatma_rice_250_collision.obj</uri>
+            <uri>model:///mahatma_rice/mahatma_rice_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/mahatma_rice/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///mahatma_rice/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/mahatma_rice/mahatma_rice.material</uri>
+            <uri>model:///mahatma_rice/mahatma_rice.material</uri>
             <name>mahatma_rice</name>
           </script>
         </material>

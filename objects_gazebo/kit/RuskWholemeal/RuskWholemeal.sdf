@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/RuskWholemeal/RuskWholemeal_250_collision.obj</uri>
+            <uri>model:///RuskWholemeal/RuskWholemeal_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/RuskWholemeal/RuskWholemeal_25k_tex.obj</uri>
+            <uri>model:///RuskWholemeal/RuskWholemeal_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/RuskWholemeal/RuskWholemeal.material</uri>
+            <uri>model:///RuskWholemeal/RuskWholemeal.material</uri>
             <name>RuskWholemeal</name>
           </script>
         </material>

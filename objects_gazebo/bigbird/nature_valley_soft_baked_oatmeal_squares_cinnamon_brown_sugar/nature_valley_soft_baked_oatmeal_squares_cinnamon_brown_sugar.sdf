@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar_250_collision.obj</uri>
+            <uri>model:///nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar.material</uri>
+            <uri>model:///nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar/nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar.material</uri>
             <name>nature_valley_soft_baked_oatmeal_squares_cinnamon_brown_sugar</name>
           </script>
         </material>

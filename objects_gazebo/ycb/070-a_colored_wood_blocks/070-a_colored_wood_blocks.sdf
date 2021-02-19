@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/070-a_colored_wood_blocks/070-a_colored_wood_blocks_250_collision.stl</uri>
+            <uri>model:///070-a_colored_wood_blocks/070-a_colored_wood_blocks_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/070-a_colored_wood_blocks/textured.obj</uri>
+            <uri>model:///070-a_colored_wood_blocks/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/070-a_colored_wood_blocks/070-a_colored_wood_blocks.material</uri>
+            <uri>model:///070-a_colored_wood_blocks/070-a_colored_wood_blocks.material</uri>
             <name>070-a_colored_wood_blocks</name>
           </script>
         </material>

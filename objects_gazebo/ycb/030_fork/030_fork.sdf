@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/030_fork/030_fork_250_collision.stl</uri>
+            <uri>model:///030_fork/030_fork_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/030_fork/textured.obj</uri>
+            <uri>model:///030_fork/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/030_fork/030_fork.material</uri>
+            <uri>model:///030_fork/030_fork.material</uri>
             <name>030_fork</name>
           </script>
         </material>

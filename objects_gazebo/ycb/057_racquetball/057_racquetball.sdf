@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/057_racquetball/057_racquetball_250_collision.stl</uri>
+            <uri>model:///057_racquetball/057_racquetball_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/057_racquetball/textured.obj</uri>
+            <uri>model:///057_racquetball/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/057_racquetball/057_racquetball.material</uri>
+            <uri>model:///057_racquetball/057_racquetball.material</uri>
             <name>057_racquetball</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/CatSitting/CatSitting_250_collision.obj</uri>
+            <uri>model:///CatSitting/CatSitting_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/CatSitting/CatSitting_25k_tex.obj</uri>
+            <uri>model:///CatSitting/CatSitting_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/CatSitting/CatSitting.material</uri>
+            <uri>model:///CatSitting/CatSitting.material</uri>
             <name>CatSitting</name>
           </script>
         </material>

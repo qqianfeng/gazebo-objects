@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Pony/Pony_250_collision.obj</uri>
+            <uri>model:///Pony/Pony_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Pony/Pony_25k_tex.obj</uri>
+            <uri>model:///Pony/Pony_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Pony/Pony.material</uri>
+            <uri>model:///Pony/Pony.material</uri>
             <name>Pony</name>
           </script>
         </material>

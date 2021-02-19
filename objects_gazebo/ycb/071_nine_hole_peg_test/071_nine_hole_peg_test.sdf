@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/071_nine_hole_peg_test/071_nine_hole_peg_test_250_collision.stl</uri>
+            <uri>model:///071_nine_hole_peg_test/071_nine_hole_peg_test_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/071_nine_hole_peg_test/textured.obj</uri>
+            <uri>model:///071_nine_hole_peg_test/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/071_nine_hole_peg_test/071_nine_hole_peg_test.material</uri>
+            <uri>model:///071_nine_hole_peg_test/071_nine_hole_peg_test.material</uri>
             <name>071_nine_hole_peg_test</name>
           </script>
         </material>

@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/OrgHerbTea/OrgHerbTea_250_collision.obj</uri>
+            <uri>model:///OrgHerbTea/OrgHerbTea_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/OrgHerbTea/OrgHerbTea_25k_tex.obj</uri>
+            <uri>model:///OrgHerbTea/OrgHerbTea_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/OrgHerbTea/OrgHerbTea.material</uri>
+            <uri>model:///OrgHerbTea/OrgHerbTea.material</uri>
             <name>OrgHerbTea</name>
           </script>
         </material>

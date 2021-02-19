@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://ycb/022_windex_bottle/022_windex_bottle_250_collision.stl</uri>
+            <uri>model:///022_windex_bottle/022_windex_bottle_250_collision.stl</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://ycb/022_windex_bottle/textured.obj</uri>
+            <uri>model:///022_windex_bottle/textured.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://ycb/022_windex_bottle/022_windex_bottle.material</uri>
+            <uri>model:///022_windex_bottle/022_windex_bottle.material</uri>
             <name>022_windex_bottle</name>
           </script>
         </material>

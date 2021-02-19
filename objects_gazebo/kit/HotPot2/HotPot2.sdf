@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/HotPot2/HotPot2_250_collision.obj</uri>
+            <uri>model:///HotPot2/HotPot2_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/HotPot2/HotPot2_25k_tex.obj</uri>
+            <uri>model:///HotPot2/HotPot2_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/HotPot2/HotPot2.material</uri>
+            <uri>model:///HotPot2/HotPot2.material</uri>
             <name>HotPot2</name>
           </script>
         </material>

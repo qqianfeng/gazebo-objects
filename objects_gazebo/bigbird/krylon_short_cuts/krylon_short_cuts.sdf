@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/krylon_short_cuts/krylon_short_cuts_250_collision.obj</uri>
+            <uri>model:///krylon_short_cuts/krylon_short_cuts_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/krylon_short_cuts/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///krylon_short_cuts/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/krylon_short_cuts/krylon_short_cuts.material</uri>
+            <uri>model:///krylon_short_cuts/krylon_short_cuts.material</uri>
             <name>krylon_short_cuts</name>
           </script>
         </material>

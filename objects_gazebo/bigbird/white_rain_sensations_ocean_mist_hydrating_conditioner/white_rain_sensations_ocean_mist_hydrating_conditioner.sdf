@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/white_rain_sensations_ocean_mist_hydrating_conditioner_250_collision.obj</uri>
+            <uri>model:///white_rain_sensations_ocean_mist_hydrating_conditioner/white_rain_sensations_ocean_mist_hydrating_conditioner_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_tsdf_texture_mapped_mesh.obj</uri>
+            <uri>model:///white_rain_sensations_ocean_mist_hydrating_conditioner/optimized_tsdf_texture_mapped_mesh.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://bigbird/white_rain_sensations_ocean_mist_hydrating_conditioner/white_rain_sensations_ocean_mist_hydrating_conditioner.material</uri>
+            <uri>model:///white_rain_sensations_ocean_mist_hydrating_conditioner/white_rain_sensations_ocean_mist_hydrating_conditioner.material</uri>
             <name>white_rain_sensations_ocean_mist_hydrating_conditioner</name>
           </script>
         </material>

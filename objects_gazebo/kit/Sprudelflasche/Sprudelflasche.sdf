@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <!-- Use a downsampled mesh for collisions -->
-            <uri>model://kit/Sprudelflasche/Sprudelflasche_250_collision.obj</uri>
+            <uri>model:///Sprudelflasche/Sprudelflasche_250_collision.obj</uri>
 	        </mesh>
         </geometry>
         <surface>
@@ -34,12 +34,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://kit/Sprudelflasche/Sprudelflasche_25k_tex.obj</uri>
+            <uri>model:///Sprudelflasche/Sprudelflasche_25k_tex.obj</uri>
 	        </mesh>
         </geometry>
         <material>
           <script>
-            <uri>model://kit/Sprudelflasche/Sprudelflasche.material</uri>
+            <uri>model:///Sprudelflasche/Sprudelflasche.material</uri>
             <name>Sprudelflasche</name>
           </script>
         </material>
