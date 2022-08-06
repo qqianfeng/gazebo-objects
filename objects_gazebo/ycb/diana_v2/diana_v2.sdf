@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.7'>
+  <model name='diana_v2'>
+    <link name='base'>
+      <inertial>
+        <pose>0.001531 0.00152 0.052423 0 -0 0</pose>
+        <mass>1.33111</mass>
+        <inertia>
+          <ixx>0.0069588</ixx>
+          <ixy>9.99329e-05</ixy>
+          <ixz>7.99577e-05</ixz>
+          <iyy>0.00695366</iyy>
+          <iyz>7.90797e-05</iyz>
+          <izz>0.00729823</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/base.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/base.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_1' type='revolute'>
+      <pose relative_to='base'>0 0 0.2856 0 -0 0</pose>
+      <parent>base</parent>
+      <child>link_1</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-2.97</lower>
+          <upper>2.97</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_1'>
+      <pose relative_to='joint_1'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>5.5e-05 0.025488 -0.035544 0 -0 0</pose>
+        <mass>1.09026</mass>
+        <inertia>
+          <ixx>0.00585031</ixx>
+          <ixy>1.46303e-07</ixy>
+          <ixz>1.35352e-06</ixz>
+          <iyy>0.00645497</iyy>
+          <iyz>-0.001048</iyz>
+          <izz>0.00459531</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_1.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_1.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_2' type='revolute'>
+      <pose relative_to='link_1'>0 0 0 -1.5708 0 0</pose>
+      <parent>link_1</parent>
+      <child>link_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.57</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_2'>
+      <pose relative_to='joint_2'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-4e-06 -0.029274 -0.041281 0 -0 0</pose>
+        <mass>1.09515</mass>
+        <inertia>
+          <ixx>0.00575817</ixx>
+          <ixy>4.92454e-07</ixy>
+          <ixz>-5.75759e-07</ixz>
+          <iyy>0.00452593</iyy>
+          <iyz>0.00135207</iyz>
+          <izz>0.00589046</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_2.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_2.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_3' type='revolute'>
+      <pose relative_to='link_2'>0 -0.4586 0 1.5708 -0 0</pose>
+      <parent>link_2</parent>
+      <child>link_3</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-2.97</lower>
+          <upper>2.97</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_3'>
+      <pose relative_to='joint_3'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.011432 0.010171 -0.151317 0 -0 0</pose>
+        <mass>2.01687</mass>
+        <inertia>
+          <ixx>0.036247</ixx>
+          <ixy>-0.000992038</ixy>
+          <ixz>-0.0049444</ixz>
+          <iyy>0.0374857</iyy>
+          <iyz>-0.0031386</iyz>
+          <izz>0.0090585</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_3.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_3.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_4' type='revolute'>
+      <pose relative_to='link_3'>0.065 0 0 -1.5708 0 0</pose>
+      <parent>link_3</parent>
+      <child>link_4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.14</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_4'>
+      <pose relative_to='joint_4'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.024072 -0.023563 -0.036686 0 -0 0</pose>
+        <mass>0.849743</mass>
+        <inertia>
+          <ixx>0.00313444</ixx>
+          <ixy>-0.000681243</ixy>
+          <ixz>0.00072538</ixz>
+          <iyy>0.00333718</iyy>
+          <iyz>0.000771058</iyz>
+          <izz>0.00348477</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_4_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_4.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_4_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_4.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_5' type='revolute'>
+      <pose relative_to='link_4'>-0.0528 -0.47702 0 1.5708 -0 0</pose>
+      <parent>link_4</parent>
+      <child>link_5</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-2.97</lower>
+          <upper>2.97</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_5'>
+      <pose relative_to='joint_5'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008671 -0.03835 -0.210246 0 -0 0</pose>
+        <mass>1.2058</mass>
+        <inertia>
+          <ixx>0.0218436</ixx>
+          <ixy>-0.000309747</ixy>
+          <ixz>0.000890391</ixz>
+          <iyy>0.0205897</iyy>
+          <iyz>0.00493574</iyz>
+          <izz>0.0037227</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_5_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_5.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_5_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_5.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_6' type='revolute'>
+      <pose relative_to='link_5'>-0.0122 0 -0.021619 -1.5708 0 0</pose>
+      <parent>link_5</parent>
+      <child>link_6</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-2.97</lower>
+          <upper>2.97</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_6'>
+      <pose relative_to='joint_6'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.045897 -0.008486 0.007826 0 -0 0</pose>
+        <mass>0.847158</mass>
+        <inertia>
+          <ixx>0.00286927</ixx>
+          <ixy>-0.000341664</ixy>
+          <ixz>-0.000318082</ixz>
+          <iyy>0.00432947</iyy>
+          <iyz>-5.82962e-05</iyz>
+          <izz>0.00437293</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_6_collision'>
+        <pose>0 0 0 0 0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_6.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_6_visual'>
+        <pose>0 0 0 0 0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_6.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_7' type='revolute'>
+      <pose relative_to='link_6'>0.087 0.1169 0 1.5708 -0 -3.14159</pose>
+      <parent>link_6</parent>
+      <child>link_7</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-2.97</lower>
+          <upper>2.97</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link_7'>
+      <pose relative_to='joint_7'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.00117 5e-06 -0.015138 0 -0 0</pose>
+        <mass>0.233956</mass>
+        <inertia>
+          <ixx>0.000142027</ixx>
+          <ixy>1.76426e-08</ixy>
+          <ixz>2.14636e-07</ixz>
+          <iyy>0.000134422</iyy>
+          <iyz>-1.29989e-09</iyz>
+          <izz>0.000240243</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_7_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_7.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_7_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diana_v2/meshes/visual/obj/link_7.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
